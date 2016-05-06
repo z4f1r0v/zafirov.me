@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://alexanderzafirov.github.io/zafirov.me"
+baseurl = "http://alexanderzafirov.github.io/zafirov.me/"
 languageCode = "en-us"
 title = "Zax' Thoughts"
 theme = "hugo-cactus-theme"
