@@ -1,7 +1,7 @@
 # Site settings
-baseurl = "http://replace-this-with-your-domain.com/"
+baseurl = "http://alexanderzafirov.github.io/zafirov.me"
 languageCode = "en-us"
-title = "Hugo Cactus Theme"
+title = "Zax' Thoughts"
 theme = "hugo-cactus-theme"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
@@ -9,7 +9,7 @@ googleAnalytics = ""
 disqusShortname = "spf13"
 
 [params]
-	name = "John Doe"
+	name = "Alexander Zafirov"
 	description = "Describe your website"
 	bio = "Blogger - Programmer - Gopher"
 	# Enter optionally your twitter account
