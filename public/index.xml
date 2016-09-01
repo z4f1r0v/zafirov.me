@@ -355,5 +355,23 @@ so, such as in this example:&lt;/p&gt;
 </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>http://alexanderzafirov.github.io/zafirov.me/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://alexanderzafirov.github.io/zafirov.me/about/</guid>
+      <description>&lt;p&gt;+++ date = &amp;ldquo;2015-06-20T14:02:37+02:00&amp;rdquo; title = &amp;ldquo;About&amp;rdquo; hidden = true +++&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ullam earum dolorum! Sed, perspiciatis.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dicta corporis ad inventore itaque impedit dolor atque amet exercitationem! Veniam qui voluptas maiores vel laudantium necessitatibus, velit ducimus! Iste hic facere, accusamus fugiat enim facilis.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
