@@ -15,13 +15,14 @@ menu = "main"
 +++
 Today we are discussing User Defined Functions (UDF) in Spark. 
 
-Sometimes the simplest things are hardest to work out. Let's say we have a Dataframe created from a parquet file which can have nullable columns that are of a certain type - in this example that is `int`. Since I don't know what I'm getting (Int or null), I need to be able to specify that somehow or else I will get a runtime exception for wrong input type. 
+Sometimes the simplest things are hardest to work out. Let's say I have a Dataframe created from a parquet file which can have nullable columns that are of a certain type - in this example that is `Int`. Since I don't know what I'm getting (Int or null), I need to be able to specify that somehow or else I will get a runtime exception for wrong input type. 
 
 The first solution to the problem is super ugly. I don't like it but it works. I know that the following could be done with an implicit but I don't like them since they are hard to trace in a bigger code base.
 
 Here is a code snippet:
 ```scala
 def toInt(v: Any): Int = Option(v).getOrElse(-1).asInstanceOf[Int]
+
 def tripToMinStay: ((Any, Any, Any, Any) => Long) = (hs1bd: Any, hs2bd: Any, hs3bd: Any, os1bd: Any) => {
                       val hsbd = coalesce3s(toInt(hs3bd), toInt(hs2bd), toInt(hs1bd))
                       hsbd / 100000 - toInt(os1bd) / 100000
