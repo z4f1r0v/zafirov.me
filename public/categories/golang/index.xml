@@ -6,8 +6,42 @@
     <description>Recent content in Golang on Zax&#39; Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Nov 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://alexanderzafirov.github.io/zafirov.me/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Working with nulls in Spark UDFs</title>
+      <link>http://alexanderzafirov.github.io/zafirov.me/post/sparknulls/</link>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://alexanderzafirov.github.io/zafirov.me/post/sparknulls/</guid>
+      <description>&lt;p&gt;Today we are discussing User Defined Functions (UDF) in Spark.&lt;/p&gt;
+
+&lt;p&gt;Sometimes the simplest things are hardest to work out. Let&amp;rsquo;s say we have a Dataframe created from a parquet file which can have nullable columns that are of a certain type - in this example that is &lt;code&gt;int&lt;/code&gt;. Since I don&amp;rsquo;t know what I&amp;rsquo;m getting (Int or null), I need to be able to specify that somehow or else I will get a runtime exception for wrong input type.&lt;/p&gt;
+
+&lt;p&gt;The first solution to the problem is super ugly. I don&amp;rsquo;t like it but it works. I know that the following could be done with an implicit but I don&amp;rsquo;t like them since they are hard to trace in a bigger code base.&lt;/p&gt;
+
+&lt;p&gt;Here is a code snippet:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;def toInt(v: Any): Int = Option(v).getOrElse(-1).asInstanceOf[Int]
+def tripToMinStay: ((Any, Any, Any, Any) =&amp;gt; Long) = (hs1bd: Any, hs2bd: Any, hs3bd: Any, os1bd: Any) =&amp;gt; {
+                      val hsbd = coalesce3s(toInt(hs3bd), toInt(hs2bd), toInt(hs1bd))
+                      hsbd / 100000 - toInt(os1bd) / 100000
+                    }
+
+val toTripMinStays2 = udf(tripToMinStay)
+
+val inputOMIII = inputOMII
+    .withColumn(&amp;quot;trip_min_stay2&amp;quot;, toTripMinStays2(&#39;hsect1_BPT_departure, &#39;hsect2_BPT_departure, &#39;hsect3_BPT_departure, &#39;osect1_BPT_departure))
+    .select(&amp;quot;hsect1_BPT_departure&amp;quot;,&amp;quot;hsect2_BPT_departure&amp;quot;,&amp;quot;hsect3_BPT_departure&amp;quot;,&amp;quot;osect1_BPT_departure&amp;quot;,&amp;quot;trip_min_stay2&amp;quot;)
+    .show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I set the input of the UDF to be &lt;code&gt;Any&lt;/code&gt;. After that the most important thing happens in the &lt;code&gt;toInt&lt;/code&gt; function. Since I have a val of type &lt;code&gt;Any&lt;/code&gt; that may contain a null, I wrap that in an &lt;code&gt;Option&lt;/code&gt;. After that I proceed to set a default value. Since I&amp;rsquo;m specifying Int and Any as types, the compiler will try and resolve the first common type in the type tree - that is Any - I need to cast the result to Int.&lt;/p&gt;
+
+&lt;p&gt;Phew! As I said this is not bullet-proof. The reason is that I use &lt;code&gt;Any&lt;/code&gt;, I&amp;rsquo;ve opened the door to all types so if I pass a String, let&amp;rsquo;s say, the asInstanceOf will fail during execution.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>(Hu)go Template Primer</title>
@@ -352,40 +386,6 @@ so, such as in this example:&lt;/p&gt;
   {{end}}&amp;lt;/ul&amp;gt;
 &amp;lt;/nav&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Working with nulls in Spark UDFs</title>
-      <link>http://alexanderzafirov.github.io/zafirov.me/post/sparknulls/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://alexanderzafirov.github.io/zafirov.me/post/sparknulls/</guid>
-      <description>&lt;p&gt;Today we are discussing User Defined Functions (UDF) in Spark.&lt;/p&gt;
-
-&lt;p&gt;Sometimes the simplest things are hardest to work out. Let&amp;rsquo;s say we have a Dataframe created from a parquet file which can have nullable columns that are of a certain type - in this example that is &lt;code&gt;int&lt;/code&gt;. Since I don&amp;rsquo;t know what I&amp;rsquo;m getting (Int or null), I need to be able to specify that somehow or else I will get a runtime exception for wrong input type.&lt;/p&gt;
-
-&lt;p&gt;The first solution to the problem is super ugly. I don&amp;rsquo;t like it but it works. I know that the following could be done with an implicit but I don&amp;rsquo;t like them since they are hard to trace in a bigger code base.&lt;/p&gt;
-
-&lt;p&gt;Here is a code snippet:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;def toInt(v: Any): Int = Option(v).getOrElse(-1).asInstanceOf[Int]
-def tripToMinStay: ((Any, Any, Any, Any) =&amp;gt; Long) = (hs1bd: Any, hs2bd: Any, hs3bd: Any, os1bd: Any) =&amp;gt; {
-                      val hsbd = coalesce3s(toInt(hs3bd), toInt(hs2bd), toInt(hs1bd))
-                      hsbd / 100000 - toInt(os1bd) / 100000
-                    }
-
-val toTripMinStays2 = udf(tripToMinStay)
-
-val inputOMIII = inputOMII
-    .withColumn(&amp;quot;trip_min_stay2&amp;quot;, toTripMinStays2(&#39;hsect1_BPT_departure, &#39;hsect2_BPT_departure, &#39;hsect3_BPT_departure, &#39;osect1_BPT_departure))
-    .select(&amp;quot;hsect1_BPT_departure&amp;quot;,&amp;quot;hsect2_BPT_departure&amp;quot;,&amp;quot;hsect3_BPT_departure&amp;quot;,&amp;quot;osect1_BPT_departure&amp;quot;,&amp;quot;trip_min_stay2&amp;quot;)
-    .show()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I set the input of the UDF to be &lt;code&gt;Any&lt;/code&gt;. After that the most important thing happens in the &lt;code&gt;toInt&lt;/code&gt; function. Since I have a val of type &lt;code&gt;Any&lt;/code&gt; that may contain a null, I wrap that in an &lt;code&gt;Option&lt;/code&gt;. After that I proceed to set a default value. Since I&amp;rsquo;m specifying Int and Any as types, the compiler will try and resolve the first common type in the type tree - that is Any - I need to cast the result to Int.&lt;/p&gt;
-
-&lt;p&gt;Phew! As I said this is not bullet-proof. The reason is that I use &lt;code&gt;Any&lt;/code&gt;, I&amp;rsquo;ve opened the door to all types so if I pass a String, let&amp;rsquo;s say, the asInstanceOf will fail during execution.&lt;/p&gt;
 </description>
     </item>
     

@@ -6,7 +6,7 @@ tags = [
     "scala",
     "udf",
 ]   
-date = "06-11-2016"
+date = "2016-11-06"
 categories = [
     "Development",
     "golang",

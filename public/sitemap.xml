@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://alexanderzafirov.github.io/zafirov.me/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2016-11-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/post/sparknulls/</loc>
+    <lastmod>2016-11-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -14,10 +19,6 @@
   
   <url>
     <loc>http://alexanderzafirov.github.io/zafirov.me/about/</loc>
-  </url>
-  
-  <url>
-    <loc>http://alexanderzafirov.github.io/zafirov.me/post/sparknulls/</loc>
   </url>
   
 </urlset>
