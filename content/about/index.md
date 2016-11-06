@@ -1,4 +1,4 @@
-Hello and welcome to my blog. My name is Alex and I am software engineer. After several years of experience in the IT industry I have already faced some of the main challenges it has to offer. I have been part of big/distributed/multicultural/multilingual teams with skill set that varies from junior to top-notch devs. I would put myself in the middle of that journey aiming to lean at the latter part.
+Hello and welcome to my blog. My name is Alex and I am a software engineer. After several years of experience in the IT industry I have already faced some of the main challenges it has to offer. I have been part of big/distributed/multicultural/multilingual teams with skill set that varies from junior to top-notch devs. I would put myself in the middle of that journey, leaning towards the latter part.
  
 I'm particularly interested in the functional programming paradigm that I try to apply when building software. Scala and the Akka framework capture that concept nicely and give me the freedom to write maintainable, modularized and testable code that is released to production. I like quirky stuff like Bash, Haskell and less quirky stuff like Python.
 
