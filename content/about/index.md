@@ -1,9 +1,7 @@
-+++ date = "2015-06-20T14:02:37+02:00" title = "About" hidden = true +++
+Hello and welcome to my blog. My name is Alex and I am software engineer. After several years of experience in the IT industry I have already faced some of the main challenges it has to offer. I have been part of big/distributed/multicultural/multilingual teams with skill set that varies from junior to top-notch devs. I would put myself in the middle of that journey aiming to lean at the latter part. 
+I'm particularly interested in the functional programming paradigm that I try to apply when building software. Scala and the Akka framework capture that concept nicely and give me the freedom to write maintainable, modularized and testable code that is released to production. I like quirky stuff like Bash, Haskell and less quirky stuff like Python.
+I'm also on top of the Data Science hype train since it brings a whole new dimension to the field. I'm talking about Spark and a bit of machine learning. And, of course - where would I be if I haven't touched a Docker container (or two), Jenkins, AWS automation scripts for EC2 instance generation, etc.
+While I present you with the tech side of my experience I want to pivot here and say that I also enjoy practising the soft skills and the dynamics that they bring in the data driven environments I like to hang out in. Talking to people from different industries inspires me to learn more about the world we live in and take full advantage of the awesome job I get to practise daily.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ullam earum dolorum! Sed, perspiciatis.
+I am not afraid of failure because everything is a learning experience. So as an exercise I decided to start voicing my opinions here in hope that I stand corrected or supported on the solutions to various problems I tackle daily. 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-
-Lorem ipsum dolor.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dicta corporis ad inventore itaque impedit dolor atque amet exercitationem! Veniam qui voluptas maiores vel laudantium necessitatibus, velit ducimus! Iste hic facere, accusamus fugiat enim facilis.
