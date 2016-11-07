@@ -43,4 +43,6 @@ Phew! As I said this is not bullet-proof. The reason is that I use `Any`, I've o
 
 Luckily the solution is quite simple. Just use Java's `Integer` boxed primitive. It is a perfect candidate for the case. This means no conversions from `Any`, no opening of Pandora's Any box. If you need to make better sense of the `null` value you can leverage on the `Option` class.
 
-`def foo: (Integer => Option[Integer]) = (i: Integer) => Option(os3fc).map(_+1)`
+```scala
+def foo: (Integer => Option[Integer]) = (i: Integer) => Option(os3fc).map(_+1)
+```
