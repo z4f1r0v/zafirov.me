@@ -43,7 +43,7 @@ val toFoo = udf(foo)
 
 &lt;p&gt;Luckily the solution is quite simple. Just use Java&amp;rsquo;s &lt;code&gt;Integer&lt;/code&gt; boxed primitive. It is a perfect candidate for the case. This means no conversions from &lt;code&gt;Any&lt;/code&gt;, no opening of Pandora&amp;rsquo;s Any box. If you need to make better sense of the &lt;code&gt;null&lt;/code&gt; value you can leverage on the &lt;code&gt;Option&lt;/code&gt; class.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;def foo: (Integer =&amp;gt; Option[Integer]) = (i: Integer) =&amp;gt; Option(os3fc).map(_+1)
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;def foo: (Integer =&amp;gt; Option[Integer]) = (i: Integer) =&amp;gt; Option(i).map(_ + 1)
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>

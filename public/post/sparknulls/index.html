@@ -87,7 +87,7 @@ val toFoo = udf(foo)
 
 <p>Luckily the solution is quite simple. Just use Java&rsquo;s <code>Integer</code> boxed primitive. It is a perfect candidate for the case. This means no conversions from <code>Any</code>, no opening of Pandora&rsquo;s Any box. If you need to make better sense of the <code>null</code> value you can leverage on the <code>Option</code> class.</p>
 
-<pre><code class="language-scala">def foo: (Integer =&gt; Option[Integer]) = (i: Integer) =&gt; Option(os3fc).map(_+1)
+<pre><code class="language-scala">def foo: (Integer =&gt; Option[Integer]) = (i: Integer) =&gt; Option(i).map(_ + 1)
 </code></pre>
 
                 </section>
