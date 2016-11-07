@@ -61,29 +61,33 @@
                 <section id="post-body">
                     <p>Today we are discussing User Defined Functions (UDF) in Spark.</p>
 
-<p>Sometimes the simplest things are hardest to work out. Let&rsquo;s say I have a <code>Dataframe</code> created from a parquet file which can have nullable columns that are of a certain type - in this example that is <code>Int</code>. Since I don&rsquo;t know what I&rsquo;m getting (Int or null), I need to be able to specify that somehow or else I will get a runtime exception for wrong input type.</p>
+<p>Sometimes the simplest things are hardest to work out. Let&rsquo;s say I have a <code>Dataframe</code> created from a parquet file which can have nullable columns that are of a certain type - in this example that is <code>Int</code>. Since I don&rsquo;t know what I&rsquo;m getting (<code>Int</code> or <code>null</code>), I need to be able to specify that somehow or else I will get a runtime exception for wrong input type.</p>
 
 <p>The first solution to the problem is super ugly. I don&rsquo;t like it but it works. I know that the following could be done with an implicit but I don&rsquo;t like them since they are hard to trace in a bigger code base.</p>
 
 <p>The first step is to  set the input of the UDF to be <code>Any</code>.</p>
 
-<pre><code class="language-scala">def tripToMinStay: (Any =&gt; Int) = (a: Any) =&gt; toInt(a) / 100000
+<pre><code class="language-scala">def foo: (Any =&gt; Int) = (a: Any) =&gt; toInt(a) / 100000
 
-val toTripMinStay = udf(tripToMinStay)
+val toFoo = udf(foo)
 </code></pre>
 
-<p>After that the most important thing happens in the <code>toInt</code> function. Since I have a val of type <code>Any</code> that may contain a null, I wrap that in an <code>Option</code>. After that I proceed to set a default value. Since I&rsquo;m specifying Int and Any as types, the compiler will try and resolve the first common type     in the type tree - that is <code>Any</code> - I need to cast the result to Int.</p>
+<p>After that the most important thing happens in the <code>toInt</code> function. Since I have a val of type <code>Any</code> that may contain a <code>null</code>, I wrap that in an <code>Option</code>. After that I proceed to set a default value. Since I&rsquo;m specifying Int and Any as types, the compiler will try and resolve the first common type in the type tree - that is <code>Any</code> - I need to cast the result to Int.</p>
 
 <pre><code class="language-scala">def toInt(v: Any): Int = Option(v).getOrElse(0).asInstanceOf[Int]
 </code></pre>
 
 <pre><code class="language-scala">val outDf = dfParquet
-    .withColumn(&quot;trip_min_stay&quot;, toTripMinStay('a))
-    .select(&quot;a&quot;,&quot;b&quot;,&quot;trip_min_stay&quot;)
+    .withColumn(&quot;foo_column&quot;, toFoo('a))
+    .select(&quot;a&quot;,&quot;b&quot;,&quot;foo_column&quot;)
     .show()
 </code></pre>
 
 <p>Phew! As I said this is not bullet-proof. The reason is that I use <code>Any</code>, I&rsquo;ve opened the door to all types so if I pass a String, let&rsquo;s say, the <code>asInstanceOf</code> will fail during execution.</p>
+
+<p>Luckily the solution is quite simple. Just use Java&rsquo;s <code>Integer</code> boxed primitive. It is a perfect candidate for the case. This means no conversions from <code>Any</code>, no opening of Pandora&rsquo;s Any box. If you need to make better sense of the <code>null</code> value you can leverage on the <code>Option</code> class.</p>
+
+<p><code>def foo: (Integer =&gt; Option[Integer]) = (i: Integer) =&gt; Option(os3fc).map(_+1)</code></p>
 
                 </section>
             </article>
