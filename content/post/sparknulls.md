@@ -26,7 +26,7 @@ def foo: (Any => Int) = (a: Any) => toInt(a) / 100000
 val toFoo = udf(foo)
 ```
 
-After that the most important thing happens in the `toInt` function. Since I have a val of type `Any` that may contain a `null`, I wrap that in an `Option`. After that I proceed to set a default value. Since I'm specifying Int and Any as types, the compiler will try and resolve the first common type in the type tree - that is `Any` - I need to cast the result to Int.
+After that the most important thing happens in the `toInt` function. Since I have a val of type `Any` that may contain a `null`, I wrap that in an `Option`. After that I proceed to set a default value. Since I'm specifying Int and Any as types, the compiler will try and resolve the first common type in the type tree - that is `Any` - I need to cast the result to `Int`.
 
 ```scala
 def toInt(v: Any): Int = Option(v).getOrElse(0).asInstanceOf[Int]

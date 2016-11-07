@@ -28,7 +28,7 @@
 val toFoo = udf(foo)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;After that the most important thing happens in the &lt;code&gt;toInt&lt;/code&gt; function. Since I have a val of type &lt;code&gt;Any&lt;/code&gt; that may contain a &lt;code&gt;null&lt;/code&gt;, I wrap that in an &lt;code&gt;Option&lt;/code&gt;. After that I proceed to set a default value. Since I&amp;rsquo;m specifying Int and Any as types, the compiler will try and resolve the first common type in the type tree - that is &lt;code&gt;Any&lt;/code&gt; - I need to cast the result to Int.&lt;/p&gt;
+&lt;p&gt;After that the most important thing happens in the &lt;code&gt;toInt&lt;/code&gt; function. Since I have a val of type &lt;code&gt;Any&lt;/code&gt; that may contain a &lt;code&gt;null&lt;/code&gt;, I wrap that in an &lt;code&gt;Option&lt;/code&gt;. After that I proceed to set a default value. Since I&amp;rsquo;m specifying Int and Any as types, the compiler will try and resolve the first common type in the type tree - that is &lt;code&gt;Any&lt;/code&gt; - I need to cast the result to &lt;code&gt;Int&lt;/code&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;def toInt(v: Any): Int = Option(v).getOrElse(0).asInstanceOf[Int]
 &lt;/code&gt;&lt;/pre&gt;
