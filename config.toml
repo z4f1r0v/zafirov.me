@@ -13,7 +13,7 @@ disqusShortname = "zafirovme"
 	description = "Alexander Zafirov's blog"
 	bio = "Developer | Creator | Learner"
 	# Enter optionally your twitter account
-	twitter = "Your Twitter account"
+	twitter = "https://www.twitter.com/ovcrymysyn"
 	enableRSS = true
 
 	# Add custom assets with their paths relative to the static folder
