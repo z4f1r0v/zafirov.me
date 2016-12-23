@@ -138,9 +138,8 @@ nav.main-nav a.cta {
 }
 
 #wrapper {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 60px 40px 100px 40px;
 }
 
 #wrapper.home {
