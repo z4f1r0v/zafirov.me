@@ -42,34 +42,28 @@ def xmasTree(height: Int): Unit = {
 
 &lt;p&gt;Then the result will be a lovely&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;        *
-       ***
-      *****
-     *******
-    *********
-   ***********
-  *************
- ***************
-*****************
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;hr /&gt;
-
-&lt;hr /&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code&gt;       ###
-       ###
-       ###
-       ###
+&lt;pre&gt;&lt;code&gt;            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+    *****************
+   *******************
+  *********************
+ ***********************
+*************************
+           ###
+           ###
+           ###
+           ###
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Christmas tree :)&lt;/p&gt;
 
-&lt;p&gt;If I were to highlight something about his piece of code, it would be the tail-recursion - which is always awesome to have (and in this case it&amp;rsquo;s verified by the compiler). Then there is the simple math that counts the stars to be printed on the row and amount of spaces to be placed before the stars. Finally we have the trunk implementation which utilizes nested lists - done with &lt;code&gt;List.fill&lt;/code&gt; and (again) simple math to find the proper position of the trunk.&lt;/p&gt;
+&lt;p&gt;If I were to highlight something about this piece of code, it would be the tail-recursion - which is always awesome to have (and in this case it&amp;rsquo;s verified by the compiler). Then there is the simple math that counts the stars to be printed on the row and amount of spaces to be placed before the stars. Finally we have the trunk implementation which utilizes nested lists - done with &lt;code&gt;List.fill&lt;/code&gt; and (again) simple math to find the proper position of the trunk.&lt;/p&gt;
 
 &lt;p&gt;Happy Holidays&lt;/p&gt;
 </description>
