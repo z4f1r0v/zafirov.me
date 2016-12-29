@@ -6,8 +6,74 @@
     <description>Recent content in Posts on Zax&#39; Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://alexanderzafirov.github.io/zafirov.me/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Scala Christmas Tree</title>
+      <link>http://alexanderzafirov.github.io/zafirov.me/post/xmastree/</link>
+      <pubDate>Thu, 29 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://alexanderzafirov.github.io/zafirov.me/post/xmastree/</guid>
+      <description>&lt;p&gt;In the spirit of the Christmas and New Year&amp;rsquo;s festivities, I decided to share with all of you a short and fun recursive function that can warm your hearts. If not - hopefully it will warm your gray matter a bit.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;import scala.annotation.tailrec
+
+def xmasTree(height: Int): Unit = {
+  @tailrec
+  def xmasTree(n: Int, t: Int): Unit = {
+    if (n == t) {
+      println(&amp;quot; &amp;quot; * (t - n) + &amp;quot;*&amp;quot; * (1 + n * 2))
+      println(List.fill(n / 3)(&amp;quot; &amp;quot; * (n - 1) + &amp;quot;###&amp;quot;).mkString(&amp;quot;\n&amp;quot;))
+    } else {
+      println(&amp;quot; &amp;quot; * (t - n) + &amp;quot;*&amp;quot; * (1 + n * 2))
+      xmasTree(n + 1, t)
+    }
+  }
+
+  xmasTree(0, height)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Say you run this bad boy like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;xmasTree(12)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then the result will be a lovely&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;        *
+       ***
+      *****
+     *******
+    *********
+   ***********
+  *************
+ ***************
+*****************
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;       ###
+       ###
+       ###
+       ###
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Christmas tree :)&lt;/p&gt;
+
+&lt;p&gt;If I were to highlight something about his piece of code, it would be the tail-recursion - which is always awesome to have (and in this case it&amp;rsquo;s verified by the compiler). Then there is the simple math that counts the stars to be printed on the row and amount of spaces to be placed before the stars. Finally we have the trunk implementation which utilizes nested lists - done with &lt;code&gt;List.fill&lt;/code&gt; and (again) simple math to find the proper position of the trunk.&lt;/p&gt;
+
+&lt;p&gt;Happy Holidays&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Working with nulls in Spark UDFs</title>

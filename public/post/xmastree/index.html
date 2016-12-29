@@ -7,7 +7,7 @@
 		<meta name="author" content="Alexander Zafirov">
 		<meta name="description" content="Alexander Zafirov&#39;s blog">
 		<meta name="generator" content="Hugo 0.16-DEV" />
-		<title>Working with nulls in Spark UDFs &middot; Zax&#39; Thoughts</title>
+		<title>A Scala Christmas Tree &middot; Zax&#39; Thoughts</title>
 		<link rel="shortcut icon" href="http://alexanderzafirov.github.io/zafirov.me/images/favicon.ico">
 		<link rel="stylesheet" href="http://alexanderzafirov.github.io/zafirov.me/css/style.css">
 		<link rel="stylesheet" href="http://alexanderzafirov.github.io/zafirov.me/css/highlight.css">
@@ -41,54 +41,79 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>Working with nulls in Spark UDFs</h1>
+                    <h1>A Scala Christmas Tree</h1>
                     <h2 class="headline">
-                    November 6, 2016 
+                    December 29, 2016 
                     <br>
                     
                     
                         
                             <a href="http://alexanderzafirov.github.io/zafirov.me/tags/spark">spark</a>
                         
-                            <a href="http://alexanderzafirov.github.io/zafirov.me/tags/scala">scala</a>
-                        
-                            <a href="http://alexanderzafirov.github.io/zafirov.me/tags/udf">udf</a>
+                            <a href="http://alexanderzafirov.github.io/zafirov.me/tags/xmas">xmas</a>
                         
                     
                     
                     </h2>
                 </header>
                 <section id="post-body">
-                    <p>Today we are discussing User Defined Functions (UDF) in Spark.</p>
+                    <p>In the spirit of the Christmas and New Year&rsquo;s festivities, I decided to share with all of you a short and fun recursive function that can warm your hearts. If not - hopefully it will warm your gray matter a bit.</p>
 
-<p>Sometimes the simplest things are hardest to work out. Let&rsquo;s say I have a <code>DataFrame</code> created from a parquet file which can have nullable columns that are of a certain type - in this example that is <code>Int</code>. The reason I chose <code>Int</code> particularly is that it is <em>not a trivial</em> case i.e. it doesn&rsquo;t accept <code>null</code>s as values. The problem that arises is that the <code>DataFrame</code> can have <code>IntegerType</code> specified for the schema and still contain <code>null</code>s. I need to think of something that reflects the fact that I&rsquo;m getting <code>Int</code> and <code>null</code> in the same type or else I will get a runtime exception for wrong input type. Tackling this is the goal of this post. On a side note - <code>String</code> is <em>trivial</em> since it works with nulls - no need for magic there.</p>
+<pre><code class="language-scala">import scala.annotation.tailrec
 
-<p>The first solution to the problem is super ugly. I don&rsquo;t like it but it works. I know that the following could be done with an implicit but I don&rsquo;t like them since they are hard to trace in a bigger code base.</p>
+def xmasTree(height: Int): Unit = {
+  @tailrec
+  def xmasTree(n: Int, t: Int): Unit = {
+    if (n == t) {
+      println(&quot; &quot; * (t - n) + &quot;*&quot; * (1 + n * 2))
+      println(List.fill(n / 3)(&quot; &quot; * (n - 1) + &quot;###&quot;).mkString(&quot;\n&quot;))
+    } else {
+      println(&quot; &quot; * (t - n) + &quot;*&quot; * (1 + n * 2))
+      xmasTree(n + 1, t)
+    }
+  }
 
-<p>The first step is to  set the input of the UDF to be <code>Any</code>.</p>
-
-<pre><code class="language-scala">def foo: (Any =&gt; Int) = (a: Any) =&gt; toInt(a) / 100000
-
-val toFoo = udf(foo)
+  xmasTree(0, height)
+}
 </code></pre>
 
-<p>After that the most important thing happens in the <code>toInt</code> function. Since I have a val of type <code>Any</code> that may contain a <code>null</code>, I wrap that in an <code>Option</code>. After that I proceed to set a default value. Since I&rsquo;m specifying Int and Any as types, the compiler will try and resolve the first common type in the type tree - that is <code>Any</code> - I need to cast the result to <code>Int</code>.</p>
+<p>Say you run this bad boy like this:</p>
 
-<pre><code class="language-scala">def toInt(v: Any): Int = Option(v).getOrElse(0).asInstanceOf[Int]
+<pre><code class="language-scala">xmasTree(12)
 </code></pre>
 
-<pre><code class="language-scala">val outDf = dfParquet
-    .withColumn(&quot;foo_column&quot;, toFoo('a))
-    .select(&quot;a&quot;,&quot;b&quot;,&quot;foo_column&quot;)
-    .show()
+<p>Then the result will be a lovely</p>
+
+<pre><code>        *
+       ***
+      *****
+     *******
+    *********
+   ***********
+  *************
+ ***************
+*****************
 </code></pre>
 
-<p>Phew! As I said this is not bullet-proof. The reason is that I use <code>Any</code>, I&rsquo;ve opened the door to all types so if I pass a String, let&rsquo;s say, the <code>asInstanceOf</code> will fail during execution.</p>
+<hr />
 
-<p>Luckily the solution is quite simple. Just use Java&rsquo;s <code>Integer</code> boxed primitive. It is a perfect candidate for the case. This means no conversions from <code>Any</code>, no opening of Pandora&rsquo;s Any box. If you need to make better sense of the <code>null</code> value you can leverage on the <code>Option</code> class.</p>
+<hr />
 
-<pre><code class="language-scala">def foo: (Integer =&gt; Option[Integer]) = (i: Integer) =&gt; Option(i).map(_ + 1)
+<hr />
+
+<hr />
+
+<pre><code>       ###
+       ###
+       ###
+       ###
 </code></pre>
+
+<p>Christmas tree :)</p>
+
+<p>If I were to highlight something about his piece of code, it would be the tail-recursion - which is always awesome to have (and in this case it&rsquo;s verified by the compiler). Then there is the simple math that counts the stars to be printed on the row and amount of spaces to be placed before the stars. Finally we have the trunk implementation which utilizes nested lists - done with <code>List.fill</code> and (again) simple math to find the proper position of the trunk.</p>
+
+<p>Happy Holidays</p>
 
                 </section>
             </article>
@@ -101,7 +126,7 @@ val toFoo = udf(foo)
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2falexanderzafirov.github.io%2fzafirov.me%2fpost%2fsparknulls%2f - Working%20with%20nulls%20in%20Spark%20UDFs by @ovcrymysyn"><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2falexanderzafirov.github.io%2fzafirov.me%2fpost%2fxmastree%2f - A%20Scala%20Christmas%20Tree by @ovcrymysyn"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -117,9 +142,9 @@ val toFoo = udf(foo)
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'zafirovme';
-    var disqus_identifier = 'http:\/\/alexanderzafirov.github.io\/zafirov.me\/post\/sparknulls\/';
-    var disqus_title = 'Working with nulls in Spark UDFs';
-    var disqus_url = 'http:\/\/alexanderzafirov.github.io\/zafirov.me\/post\/sparknulls\/';
+    var disqus_identifier = 'http:\/\/alexanderzafirov.github.io\/zafirov.me\/post\/xmastree\/';
+    var disqus_title = 'A Scala Christmas Tree';
+    var disqus_url = 'http:\/\/alexanderzafirov.github.io\/zafirov.me\/post\/xmastree\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
