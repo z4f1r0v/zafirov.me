@@ -25,7 +25,7 @@ def xmasTree(height: Int): Unit = {
       println(" " * (t - n) + "*" * (1 + n * 2))
       println(if (n == 1) " # "
               else if (n == 2) "  #  "
-              else List.fill(n / 3)(" " * (n - 1) + "###").mkString("\n"))
+              else List.fill(n / 3)(" " * (n - 1) + "###").mkString("\n")
       )
     } else {
       println(" " * (t - n) + "*" * (1 + n * 2))
