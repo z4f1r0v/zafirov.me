@@ -26,4 +26,4 @@ Finally - `reading` and `writing`. Quite some time passed before I could turn to
 
 Taking into account the aforementioned three things I have come to an inner peace with myself and am ready to face a variety of challenges. And that is what being human is all about, right? Knowing that you are vulnerable and that you know how much you don't know. Aiming to keep on fighting so that you ultimately get better. Taking responsibility and living to the fullest.
 
-So, yes - it has been a terrible year. But that doesn't mean that another revolution around the Sun by our planet has to make us be ignorant, disconnected and aggressive. On the contrary! Now is the time to celebrate life with your loved ones, to take on new challenges and to open up to existing ones. Now is the time to be ready for changes.
+So, yes - it has been a terrible year. But that doesn't mean that another revolution around the Sun by our planet has to turn us into ignorant, disconnected and aggressive beings. On the contrary! Now is the time to celebrate life with your loved ones, to take on new challenges and to open up to existing ones. Now is the time to be ready for changes.
