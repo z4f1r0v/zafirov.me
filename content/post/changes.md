@@ -10,7 +10,7 @@ categories = [
 ]   
 menu = "main"
 +++
-2016 was a rough year. Everywhere you look you see turmoil. Brexit, Trump, Syria, Nice, Berlin, Migrants, Bowie, George Michael, Prince, ... And here comes a question - has this world been in a tougher spot? Of course. An we have always persevered. How? By being human!
+2016 was a rough year. Everywhere you look you see turmoil. Brexit, Trump, Syria, Nice, Berlin, Migrants, ... And here comes a question - has this world been in a tougher spot? Of course. An we have always persevered. How? By being human!
 
 I will come back to this thought but first let me take you through my 2016. It was also full of highs and lows. Fortunately for me it peaked in mainly positive outcomes. Nevertheless to get to those great moments of happiness I had to get through a great deal of obstacles. Instead of the achievements themselves, I'd like to talk about the tools that guided me towards my accomplishments.
 
