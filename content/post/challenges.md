@@ -1,5 +1,5 @@
 +++
-title = "2017 - Today is a great day ..."
+title = "Today is a great day ..."
 description = ""
 tags = [
    "thoughts"
