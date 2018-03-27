@@ -4,6 +4,7 @@ description = ""
 tags = [
    "thoughts"
 ]   
+date = "2018-03-27"
 categories = [
    "thoughts",
 ]   
