@@ -21,7 +21,7 @@ The other day I was talking to a friend and he said "Man, I'm gonna leave this s
 - The so-called echo chambers created by FB so that we can continue to believe in what we say even if it is not true surrounded by like-minded people who repeat our words and deepen our opinion further without the possibility of a reply
 - The meddling in the US elections
 - Whose posts do I actually see? Only your closest people? Those I'm chatting with? Or the ones the algorithm in the sky decides? It does not matter, because even if I know what it is - tomorrow may be different. It all depends on what gets me to see more ads.
-- Endless feed - this infinite stream of information limited to 7-8 byte-sized words to form a bombastic title of an article. This is not how I want to consume information.
+- Endless feed - this infinite stream of information limited to 7-8 bite-sized words to form a bombastic title of an article. This is not how I want to consume information.
 
 So, yes, something like that. I will be happy to see how this goes. I think that being abroad and having a fast connection with people will be a bit harder but definitely not impossible. And in the end this is what I want to get - space for myself.
 I plan on exploring ways to stay in touch with friends e.g. send an email to a friend I haven't spoken to in a while once a week, write more posts on my website, use more [Signal](www.signal.org), etc...
