@@ -7,7 +7,7 @@
 		<meta name="author" content="Alexander Zafirov">
 		<meta name="description" content="Alexander Zafirov&#39;s blog">
 		<meta name="generator" content="Hugo 0.16-DEV" />
-		<title>Working with nulls in Spark UDFs &middot; Zax&#39; Thoughts</title>
+		<title>Goodbye cruel Facebook world I&#39;m leaving you today &middot; Zax&#39; Thoughts</title>
 		<link rel="shortcut icon" href="http://alexanderzafirov.github.io/zafirov.me/images/favicon.ico">
 		<link rel="stylesheet" href="http://alexanderzafirov.github.io/zafirov.me/css/style.css">
 		<link rel="stylesheet" href="http://alexanderzafirov.github.io/zafirov.me/css/highlight.css">
@@ -41,54 +41,35 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>Working with nulls in Spark UDFs</h1>
+                    <h1>Goodbye cruel Facebook world I&#39;m leaving you today</h1>
                     <h2 class="headline">
-                    November 6, 2016 
+                    December 24, 2017 
                     <br>
                     
                     
                         
-                            <a href="http://alexanderzafirov.github.io/zafirov.me/tags/spark">spark</a>
-                        
-                            <a href="http://alexanderzafirov.github.io/zafirov.me/tags/scala">scala</a>
-                        
-                            <a href="http://alexanderzafirov.github.io/zafirov.me/tags/udf">udf</a>
+                            <a href="http://alexanderzafirov.github.io/zafirov.me/tags/thoughts">thoughts</a>
                         
                     
                     
                     </h2>
                 </header>
                 <section id="post-body">
-                    <p>Today we are discussing User Defined Functions (UDF) in Spark.</p>
+                    <p>Before I write this I want to assure you that this no plead for attention. For anyone that has been a part of my contacts on the aforementioned social network - you would know that I am mainly reposting articles that I read. So in a sense I use FB as another way to store articles.</p>
 
-<p>Sometimes the simplest things are hardest to work out. Let&rsquo;s say I have a <code>DataFrame</code> created from a parquet file which can have nullable columns that are of a certain type - in this example that is <code>Int</code>. The reason I chose <code>Int</code> particularly is that it is <em>not a trivial</em> case i.e. it doesn&rsquo;t accept <code>null</code>s as values. The problem that arises is that the <code>DataFrame</code> can have <code>IntegerType</code> specified for the schema and still contain <code>null</code>s. I need to think of something that reflects the fact that I&rsquo;m getting <code>Int</code> and <code>null</code> in the same type or else I will get a runtime exception for wrong input type. Tackling this is the goal of this post. On a side note - <code>String</code> is <em>trivial</em> since it works with nulls - no need for magic there.</p>
+<p>The other day I was talking to a friend and he said &ldquo;Man, I&rsquo;m gonna leave this shit one day soon&rdquo;. I didn&rsquo;t pay much attention to him but at one point I asked myself &ldquo;Why am I using Facebook?&rdquo;. Reason - keeping in touch with people that are far away. And that&rsquo;s the only reason. I use messenger primarily and sometimes I go on a &ldquo;waste my time spree&rdquo; on the actual website. Not your power user for sure. So why leave? Aside the Cambridge Analytics the reasons for me are many. In no particular order they are:
+- This damn red button at the top right with the digits that makes you open the FB hour after hour and wait for someone to turn it on
+- Advertisements in Messenger? And are they tailored to what you talk about with your friends! Someone has been eves-dropping (duh)
+- Also the fact that Messenger devours the battery on the phone like a madman
+- The so-called echo chambers created by FB so that we can continue to believe in what we say even if it is not true surrounded by like-minded people who repeat our words and deepen our opinion further without the possibility of a reply
+- The meddling in the US elections
+- Whose posts do I actually see? Only your closest people? Those I&rsquo;m chatting with? Or the ones the algorithm in the sky decides? It does not matter, because even if I know what it is - tomorrow may be different. It all depends on what gets me to see more ads.
+- Endless feed - this infinite stream of information limited to 7-8 byte-sized words to form a bombastic title of an article. This is not how I want to consume information.</p>
 
-<p>The first solution to the problem is super ugly. I don&rsquo;t like it but it works. I know that the following could be done with an implicit but I don&rsquo;t like them since they are hard to trace in a bigger code base.</p>
+<p>Yes, something like that. I will be happy to see how this goes. I think that being abroad and having a fast connection with people will be a bit harder but definitely not impossible. And in the end this is what I want to get - space for myself.
+I plan on exploring ways to stay in touch with friends e.g. send an email to a friend I haven&rsquo;t spoken to in a while once a week, write more posts on my website, use more <a href="www.signal.org">Signal</a>.</p>
 
-<p>The first step is to  set the input of the UDF to be <code>Any</code>.</p>
-
-<pre><code class="language-scala">def foo: (Any =&gt; Int) = (a: Any) =&gt; toInt(a) / 100000
-
-val toFoo = udf(foo)
-</code></pre>
-
-<p>After that the most important thing happens in the <code>toInt</code> function. Since I have a val of type <code>Any</code> that may contain a <code>null</code>, I wrap that in an <code>Option</code>. After that I proceed to set a default value. Since I&rsquo;m specifying Int and Any as types, the compiler will try and resolve the first common type in the type tree - that is <code>Any</code> - I need to cast the result to <code>Int</code>.</p>
-
-<pre><code class="language-scala">def toInt(v: Any): Int = Option(v).getOrElse(0).asInstanceOf[Int]
-</code></pre>
-
-<pre><code class="language-scala">val outDf = dfParquet
-    .withColumn(&quot;foo_column&quot;, toFoo('a))
-    .select(&quot;a&quot;,&quot;b&quot;,&quot;foo_column&quot;)
-    .show()
-</code></pre>
-
-<p>Phew! As I said this is not bullet-proof. The reason is that I use <code>Any</code>, I&rsquo;ve opened the door to all types so if I pass a String, let&rsquo;s say, the <code>asInstanceOf</code> will fail during execution.</p>
-
-<p>Luckily the solution is quite simple. Just use Java&rsquo;s <code>Integer</code> boxed primitive. It is a perfect candidate for the case. This means no conversions from <code>Any</code>, no opening of Pandora&rsquo;s Any box. If you need to make better sense of the <code>null</code> value you can leverage on the <code>Option</code> class.</p>
-
-<pre><code class="language-scala">def foo: (Integer =&gt; Option[Integer]) = (i: Integer) =&gt; Option(i).map(_ + 1)
-</code></pre>
+<p>All will be well!</p>
 
                 </section>
             </article>
@@ -101,7 +82,7 @@ val toFoo = udf(foo)
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2falexanderzafirov.github.io%2fzafirov.me%2fpost%2fsparknulls%2f - Working%20with%20nulls%20in%20Spark%20UDFs by @ovcrymysyn"><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2falexanderzafirov.github.io%2fzafirov.me%2fpost%2fno_fb%2f - Goodbye%20cruel%20Facebook%20world%20I%27m%20leaving%20you%20today by @ovcrymysyn"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -117,9 +98,9 @@ val toFoo = udf(foo)
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'zafirovme';
-    var disqus_identifier = 'http:\/\/alexanderzafirov.github.io\/zafirov.me\/post\/sparknulls\/';
-    var disqus_title = 'Working with nulls in Spark UDFs';
-    var disqus_url = 'http:\/\/alexanderzafirov.github.io\/zafirov.me\/post\/sparknulls\/';
+    var disqus_identifier = 'http:\/\/alexanderzafirov.github.io\/zafirov.me\/post\/no_fb\/';
+    var disqus_title = 'Goodbye cruel Facebook world I\x27m leaving you today';
+    var disqus_url = 'http:\/\/alexanderzafirov.github.io\/zafirov.me\/post\/no_fb\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
