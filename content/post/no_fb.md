@@ -14,6 +14,7 @@ menu = "main"
 Before I write this I want to assure you that this no plead for attention. For anyone that has been a part of my contacts on the aforementioned social network - you would know that I am mainly reposting articles that I read. So in a sense I use FB as another way to store articles.
 
 The other day I was talking to a friend and he said "Man, I'm gonna leave this shit one day soon". I didn't pay much attention to him but at one point I asked myself "Why am I using Facebook?". Reason - keeping in touch with people that are far away. And that's the only reason. I use messenger primarily and sometimes I go on a "waste my time spree" on the actual website. Not your power user for sure. So why leave? Aside the Cambridge Analytics the reasons for me are many. In no particular order they are:
+
 - This damn red button at the top right with the digits that makes you open the FB hour after hour and wait for someone to turn it on
 - Advertisements in Messenger? And are they tailored to what you talk about with your friends! Someone has been eves-dropping (duh)
 - Also the fact that Messenger devours the battery on the phone like a madman
