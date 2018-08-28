@@ -21,9 +21,8 @@ In order to remedy this many people - including myself - have adopted the idea o
 - do simple stuff - read a book, put a puzzle together
 - say "c'est la vie" to things you don't control - e.g. train is late, it's raining
 - spend time with your parents/loved ones/friends
-- you are not your possessions - so if one of them gets broken/stolen/lost, keep calm and see what can be done (DIY of consumerism)
-
-
+- you are not your possessions - so if one of them gets broken/stolen/lost, keep calm and see what can be done (DIY of consumerism)  
+  
 All of these I'd say deserve a post on their own but the initial reason for writing this post is the first point. Occasionally I like to split my commute in a such a way that I get to walk a good 30 mins. What I have found fascinating is that if you really want to become present a simple trick is to start looking at the facades and most importantly the rooftops of the buildings on the street where you currently are. It is important to watch where you step, of course! Having done that take a look at what's above you. I am lucky to be able to wonder around in streets I don't primarily walk on. I find pleasure in discovering that some architects left some nuggets only for the curious ones.
 
 In short - pick your head up, watch and think about where you are going but don't forget to enjoy trip.
