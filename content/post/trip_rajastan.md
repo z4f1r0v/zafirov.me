@@ -41,6 +41,7 @@ During our 2 weeks stay I experienced many different things — both good an
 - driving madness — “In India you need good brake, good horn and good luck”. This is one of the mantras Hasan, a cab driver from Agra shared with me. I guess everyone is well aware that Indian people cause havoc on the driving lanes. Everything you read or saw is true. And then some. I could go on forever explaining how holy cows just cross 3 lane roads randomly, how camels come up on a highway, how people walk on highways, how tuk-tuks aka auto-rikshas swiftly traverse the endless mess consisting of bikes, cars, cows, pedestrians ... One thing’s for sure — if a local is driving, you will be fine.
 - helpful — the Indians surprised me with the way they approached me as a client. They definitely tried to welcome me to their shops. If I said yes, they tried to find the exact item I was looking for. If not — they would just reply they don’t have it. If I requested for some directions as to where I could find what I was looking for, they readily helped. A very, very pleasant surprise.
 - relatively safe — there where very few occasions when I felt insecure. All in all people where kind and helpful.
+
 </br>
 ### Food
 
@@ -48,6 +49,7 @@ During our 2 weeks stay I experienced many different things — both good an
 - spices in the food — there are so many different nuances that the Indians have mastered with all their spices that the dishes are a culinary orgasm.
 - lassi — a yogurt drink with spices that has heavenly taste. The best place to have it is in the old town of Jodhpur. You will not regret it!
 - sweets and candy
+
 </br>
 ### Health and hygiene
 
