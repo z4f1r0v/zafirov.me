@@ -28,15 +28,17 @@ Through the years I have gone through different training programs and sports. Ea
 - ve ready every single day — unlike professional athletes that demonstrate their abilities for a limited amount of time at a given day, karate requires the students to be ready all the time
 - be at peace with yourself — learning to learn from your mistakes, accept feedback and continue to improve is the true way to mastery
 
+</br>
 ### Climbing
 - there is a possibility in even the tiniest of cracks — it is very hard to grab on some specific holds but with perseverance things happen
 - you gotta learn to let go — it is natural to be afraid to take the next leap and grab for the next hold but holding tight will not get you anywhere
 - there will be pain - both physical and mental so cultivate patience
-
+</br>
 ### Basketball
 - there’s no “I” in team — you are as good as your weakest teammate. Sure you can play alone but that won’t get you far in the long term.
 - there’s “I” in win — you need to step up your game in a time of need (borrowed the first two from Michael Jordan’s speech upon being inducted in the Basketball Hall of Fame)
 - sharing is caring — you don’t need to be in the spotlight to know you’ve done the job right
+</br>
 
 ### Street workout
 - all you need is will — fancy equipment can get you hyped up but the best results come if you have the right attitude
@@ -45,6 +47,7 @@ Through the years I have gone through different training programs and sports. Ea
 - try something new — it’s always cool to break the repetitiveness by mixing up your routine. Do it every once in a while to keep on having fun and to progress!
 - results take time — sometimes you need to work hard for a veeeeery long period of time to achieve a certain goal. Don’t give up. Be patient and things will fall into their place.
 
+</br>
 ### Running
 - the hardest part is yet to come — to a person that cannot start the hardest part is the beginning; to a person out of shape the hardest part is somewhere along the track
 - it takes commitment — you have to want it
