@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Nov 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://alexanderzafirov.github.io/zafirov.me/tags/udf/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://alexanderzafirov.github.io/zafirov.me/tags/udf/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Working with nulls in Spark UDFs</title>
@@ -15,37 +17,8 @@
       <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>http://alexanderzafirov.github.io/zafirov.me/post/sparknulls/</guid>
-      <description>&lt;p&gt;Today we are discussing User Defined Functions (UDF) in Spark.&lt;/p&gt;
-
-&lt;p&gt;Sometimes the simplest things are hardest to work out. Let&amp;rsquo;s say I have a &lt;code&gt;DataFrame&lt;/code&gt; created from a parquet file which can have nullable columns that are of a certain type - in this example that is &lt;code&gt;Int&lt;/code&gt;. The reason I chose &lt;code&gt;Int&lt;/code&gt; particularly is that it is &lt;em&gt;not a trivial&lt;/em&gt; case i.e. it doesn&amp;rsquo;t accept &lt;code&gt;null&lt;/code&gt;s as values. The problem that arises is that the &lt;code&gt;DataFrame&lt;/code&gt; can have &lt;code&gt;IntegerType&lt;/code&gt; specified for the schema and still contain &lt;code&gt;null&lt;/code&gt;s. I need to think of something that reflects the fact that I&amp;rsquo;m getting &lt;code&gt;Int&lt;/code&gt; and &lt;code&gt;null&lt;/code&gt; in the same type or else I will get a runtime exception for wrong input type. Tackling this is the goal of this post. On a side note - &lt;code&gt;String&lt;/code&gt; is &lt;em&gt;trivial&lt;/em&gt; since it works with nulls - no need for magic there.&lt;/p&gt;
-
-&lt;p&gt;The first solution to the problem is super ugly. I don&amp;rsquo;t like it but it works. I know that the following could be done with an implicit but I don&amp;rsquo;t like them since they are hard to trace in a bigger code base.&lt;/p&gt;
-
-&lt;p&gt;The first step is to  set the input of the UDF to be &lt;code&gt;Any&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;def foo: (Any =&amp;gt; Int) = (a: Any) =&amp;gt; toInt(a) / 100000
-
-val toFoo = udf(foo)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After that the most important thing happens in the &lt;code&gt;toInt&lt;/code&gt; function. Since I have a val of type &lt;code&gt;Any&lt;/code&gt; that may contain a &lt;code&gt;null&lt;/code&gt;, I wrap that in an &lt;code&gt;Option&lt;/code&gt;. After that I proceed to set a default value. Since I&amp;rsquo;m specifying Int and Any as types, the compiler will try and resolve the first common type in the type tree - that is &lt;code&gt;Any&lt;/code&gt; - I need to cast the result to &lt;code&gt;Int&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;def toInt(v: Any): Int = Option(v).getOrElse(0).asInstanceOf[Int]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val outDf = dfParquet
-    .withColumn(&amp;quot;foo_column&amp;quot;, toFoo(&#39;a))
-    .select(&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,&amp;quot;foo_column&amp;quot;)
-    .show()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Phew! As I said this is not bullet-proof. The reason is that I use &lt;code&gt;Any&lt;/code&gt;, I&amp;rsquo;ve opened the door to all types so if I pass a String, let&amp;rsquo;s say, the &lt;code&gt;asInstanceOf&lt;/code&gt; will fail during execution.&lt;/p&gt;
-
-&lt;p&gt;Luckily the solution is quite simple. Just use Java&amp;rsquo;s &lt;code&gt;Integer&lt;/code&gt; boxed primitive. It is a perfect candidate for the case. This means no conversions from &lt;code&gt;Any&lt;/code&gt;, no opening of Pandora&amp;rsquo;s Any box. If you need to make better sense of the &lt;code&gt;null&lt;/code&gt; value you can leverage on the &lt;code&gt;Option&lt;/code&gt; class.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;def foo: (Integer =&amp;gt; Option[Integer]) = (i: Integer) =&amp;gt; Option(i).map(_ + 1)
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>Today we are discussing User Defined Functions (UDF) in Spark.
+Sometimes the simplest things are hardest to work out. Let&amp;rsquo;s say I have a DataFrame created from a parquet file which can have nullable columns that are of a certain type - in this example that is Int. The reason I chose Int particularly is that it is not a trivial case i.e. it doesn&amp;rsquo;t accept nulls as values. The problem that arises is that the DataFrame can have IntegerType specified for the schema and still contain nulls.</description>
     </item>
     
   </channel>

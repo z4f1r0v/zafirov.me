@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>http://alexanderzafirov.github.io/zafirov.me/</loc>
-    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>http://alexanderzafirov.github.io/zafirov.me/post/present_quick/</loc>
@@ -38,7 +33,103 @@
   </url>
   
   <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/post/iagainsti/</loc>
+    <lastmod>2016-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/post/trip_rajastan/</loc>
+    <lastmod>2016-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/post/interstellar_aftermath/</loc>
+    <lastmod>2014-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/post/lighting_the_torch/</loc>
+    <lastmod>2014-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/post/because_hard/</loc>
+    <lastmod>2014-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://alexanderzafirov.github.io/zafirov.me/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/categories/development/</loc>
+    <lastmod>2016-12-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/post/</loc>
+    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/categories/scala/</loc>
+    <lastmod>2016-12-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/tags/scala/</loc>
+    <lastmod>2016-12-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/tags/spark/</loc>
+    <lastmod>2016-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/tags/</loc>
+    <lastmod>2016-12-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/categories/thoughts/</loc>
+    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/tags/thoughts/</loc>
+    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/tags/udf/</loc>
+    <lastmod>2016-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/tags/xmas/</loc>
+    <lastmod>2016-12-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://alexanderzafirov.github.io/zafirov.me/</loc>
+    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
