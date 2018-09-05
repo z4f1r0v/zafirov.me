@@ -11,7 +11,7 @@ categories = [
 menu = "main"
 +++
 
-_I share with you some thoughts on a part of my life that I hold very dear to me and has kept me going through my toughest times._
+_I share with you some thoughts on a part of my life that I hold very dear to me and has kept me going through my toughest of times._
 
 I have enjoyed physical activity from a very early age. Since I was blessed with being a child of the pre-computer era I spent my free time outside on the street, playing with my peers. I clearly remember the endless summer days when I was chasing a football with my legs covered in black and blue spots from all the falls they had to bear. While competing against other players I came to know what it means to win and lose. I also realized that it takes dedication to pursue your goals. It was simple — some people trained more than others. I learned to pay respect to hard work and appreciate that type of mentality. I’m talking about that awesome moment when you defeat a worthy opponent who is giving it everything they got. Or when you lose to someone who was better but beat you fair and square. I find the latter case even gratifying since it shows you your weaknesses and gives you something to work on.
 
@@ -41,7 +41,6 @@ Through the years I have gone through different training programs and sports. Ea
 - sharing is caring — you don’t need to be in the spotlight to know you’ve done the job right
 
 </br>
-
 ### Street workout
 - all you need is will — fancy equipment can get you hyped up but the best results come if you have the right attitude
 - no off days — really there are none. People may say “Today I am tired” ... that’s just a mental state. Go out in the sun, in the dark, in the rain, in the wind — go and move!
@@ -53,7 +52,7 @@ Through the years I have gone through different training programs and sports. Ea
 ### Running
 - the hardest part is yet to come — to a person that cannot start the hardest part is the beginning; to a person out of shape the hardest part is somewhere along the track
 - it takes commitment — you have to want it
-- leave it to the professionals — you always see the awesome athletes in the magazines, on the Internet, TV, etc ... It’s good and all but these are people that do that for a living. Now think about what your goals are. If you want to be a professional at this task/sport/job then you gotta get going. If not — don’t compare yourself to them since you don’t have the same amount of time, money, trainers, tools, rehabilitation. Looking up to them is completely fine when looking for inspiration!
+- leave it to the professionals — you always see the awesome athletes in the magazines, on the Internet, TV, etc ... It’s good and all but these are people that do that for a living. Now think about what your goals are. If you want to be a professional at this task/sport/job then you gotta get going. If not — don’t compare yourself to them since you don’t have the same amount of time, money, trainers, tools, rehabilitation. Looking up to them is perfectly normal.
 
 </br>
 Many celebrities in the world are victim of hate. One of them is basketball superstar LeBron James. I wouldn’t call myself a big fan of his but I respect him and his achievements. I’ve seen many videos of him and in one of them he said something like “There are no shortcuts to greatness”. I cannot explain how precisely this sentence strikes me as it defines all the values I hold dear and sums them up in a concise manner. Unfolding that I hear — “You need to work hard. You need to devote your time, your energy and your whole being to what you do in order to be successful. It will be tough and most probably you will fail many, many times. But that is ok. The minute you stop fearing failure you will be on the right path. And, of course — have fun with it.”
