@@ -42,16 +42,12 @@ During our 2 weeks stay I experienced many different things — both good an
 - helpful — the Indians surprised me with the way they approached me as a client. They definitely tried to welcome me to their shops. If I said yes, they tried to find the exact item I was looking for. If not — they would just reply they don’t have it. If I requested for some directions as to where I could find what I was looking for, they readily helped. A very, very pleasant surprise.
 - relatively safe — there where very few occasions when I felt insecure. All in all people where kind and helpful.
 
-</br>
-
 ### Food
 
 - spicy food — for breakfast, for lunch, for dinner. It is always present on the table — one way or another. Look on the bright side of things — spicy food kills the bacteria in you stomach.
 - spices in the food — there are so many different nuances that the Indians have mastered with all their spices that the dishes are a culinary orgasm.
 - lassi — a yogurt drink with spices that has heavenly taste. The best place to have it is in the old town of Jodhpur. You will not regret it!
 - sweets and candy
-
-</br>
 
 ### Health and hygiene
 
