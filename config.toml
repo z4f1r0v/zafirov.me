@@ -28,7 +28,7 @@ disqusShortname = "zafirovme"
 	about = ""
 	subscribe = ""
 	# Pagination links
-	paginatePath = "http://alexanderzafirov.github.io/"
+	paginatePath = ""
 	olderPosts = ""
 	newerPosts = ""
 	readMore = ""
