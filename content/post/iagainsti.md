@@ -33,11 +33,13 @@ Through the years I have gone through different training programs and sports. Ea
 - there is a possibility in even the tiniest of cracks — it is very hard to grab on some specific holds but with perseverance things happen
 - you gotta learn to let go — it is natural to be afraid to take the next leap and grab for the next hold but holding tight will not get you anywhere
 - there will be pain - both physical and mental so cultivate patience
+
 </br>
 ### Basketball
 - there’s no “I” in team — you are as good as your weakest teammate. Sure you can play alone but that won’t get you far in the long term.
 - there’s “I” in win — you need to step up your game in a time of need (borrowed the first two from Michael Jordan’s speech upon being inducted in the Basketball Hall of Fame)
 - sharing is caring — you don’t need to be in the spotlight to know you’ve done the job right
+
 </br>
 
 ### Street workout
