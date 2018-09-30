@@ -1,1 +1,0 @@
-# zafirov.me

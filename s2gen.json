@@ -1,0 +1,25 @@
+{
+  "directories": {
+    "basedir": ".",
+    "content": "content",
+    "output": "site",
+    "archive": "blog",
+    "templates": "templates"
+  },
+  "templates": {
+    "post": "post.ftl",
+    "archive": "archive.ftl",
+    "index": "index.ftl",
+    "custom": ["about.ftl"],
+    "customXml": ["feed.ftl", "sitemap.ftl"]
+  },
+  "site": {
+    "title": "Zax' Thoughts",
+    "description": "Thinking about software and life ...",
+    "host": "http://zafirov.me",
+    "lastmod": "2018-09-30"
+  },
+  "server": {
+    "port": 8080
+  }
+}
