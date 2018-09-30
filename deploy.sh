@@ -19,7 +19,7 @@ echo "Removing existing files"
 rm -rf site/*
 
 echo "Generating site"
-hugo
+s2gen -once
 
 echo "Updating gh-pages branch"
 cd site && git add --all && git commit -m "Publishing to gh-pages `date`"
