@@ -1,5 +1,5 @@
 <div class="blog-archive">
-	<h1 class="page-title">Blog</h1>
+  </br>
   <#list posts as post>
       <#if (post.status == "published")>
         <div class="blog-archive__blog-post">
