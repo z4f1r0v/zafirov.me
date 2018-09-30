@@ -1,17 +1,25 @@
-#!/bin/bash
+#!/bin/sh
 
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+if [[ $(git status -s) ]]
+then
+    echo "The working directory is dirty. Please commit any pending changes."
+    exit 1;
+fi
 
-# Build the project.
-s2gen -once
+echo "Deleting old publication"
+rm -rf site
+mkdir site
+git worktree prune
+rm -rf .git/worktrees/site/
 
-# Add changes to git.
-git add -A
+echo "Checking out gh-pages branch into public"
+git worktree add -B gh-pages site origin/gh-pages
 
-# Commit changes.
-msg="rebuilding site `date`"
-git commit -m "$msg"
+echo "Removing existing files"
+rm -rf site/*
 
-# Push source and build repos.
-git push origin master
-git subtree push --prefix=site git@github.com:alexanderzafirov/zafirov.me.git gh-pages
+echo "Generating site"
+hugo
+
+echo "Updating gh-pages branch"
+cd site && git add --all && git commit -m "Publishing to gh-pages `date`"
