@@ -1,11 +1,5 @@
 #!/bin/sh
 
-if [[ $(git status -s) ]]
-then
-    echo "The working directory is dirty. Please commit any pending changes."
-    exit 1;
-fi
-
 echo "Deleting old publication"
 rm -rf site
 mkdir site
@@ -22,4 +16,7 @@ echo "Generating site"
 s2gen -once
 
 echo "Updating gh-pages branch"
-cd site && git add --all && git commit -m "Publishing to gh-pages `date`"
+cd site
+echo "zafirov.me" >> CNAME
+git add --all && git commit -m "Publishing to gh-pages `date`" && git push && cd ..
+
