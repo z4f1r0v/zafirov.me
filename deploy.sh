@@ -18,5 +18,6 @@ s2gen -once
 echo "Updating gh-pages branch"
 cd site
 echo "zafirov.me" >> CNAME
+cp -r ../css css
 git add --all && git commit -m "Publishing to gh-pages `date`" && git push && cd ..
 
