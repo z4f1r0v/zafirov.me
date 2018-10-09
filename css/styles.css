@@ -43,6 +43,7 @@
 .main-content {
   font-family: Arial, Helvetica, sans-serif;
   color: #444;
+  line-height: 26px;
 }
 
 div.blog-single__blog-post__content p:first-of-type {
