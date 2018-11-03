@@ -7,12 +7,9 @@ link=blog/sparknulls
 ~~~~~~
 
 [//]: # "__PREVIEW__"
-Let's make it a Scala-ble XMAS
+How User Defined are these Functions?
 
 [//]: # "__PREVIEW__"
-
-
-Today we are discussing User Defined Functions (UDF) in Spark.
 
 Sometimes the simplest things are hardest to work out. Let's say I have a `DataFrame` created from a parquet file which can have nullable columns that are of a certain type - in this example that is `Int`. The reason I chose `Int` particularly is that it is _not a trivial_ case i.e. it doesn't accept `null`s as values. The problem that arises is that the `DataFrame` can have `IntegerType` specified for the schema and still contain `null`s. I need to think of something that reflects the fact that I'm getting `Int` and `null` in the same type or else I will get a runtime exception for wrong input type. Tackling this is the goal of this post. On a side note - `String` is _trivial_ since it works with nulls - no need for magic there.
 
