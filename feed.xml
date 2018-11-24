@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Zax' Thoughts</title>
+        <link>http://zafirov.me</link>
+        <atom:link href="http://zafirov.me/feed.xml" rel="self" type="application/rss+xml" />
+        <description>Thinking about software and life ...</description>
+        <pubDate>Sat, 24 Nov 2018 00:00:00 +0100</pubDate>
+        <lastBuildDate>Sat, 24 Nov 2018 17:43:07 +0100</lastBuildDate>
+
+            <item>
+                <title>Leaving a trail</title>
+                <link>http://zafirov.me/blog/leaving_trail</link>
+                <pubDate>Sat, 24 Nov 2018 00:00:00 +0100</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/leaving_trail</guid>
+                <description>My way of work</description>
+            </item>
+            <item>
+                <title>Modern day office job health tips</title>
+                <link>http://zafirov.me/blog/desk_health</link>
+                <pubDate>Sat, 20 Oct 2018 00:00:00 +0200</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/desk_health</guid>
+                <description>Things you can do daily to improve your sedentary, screen bound life</description>
+            </item>
+            <item>
+                <title>Staying present</title>
+                <link>http://zafirov.me/blog/present_quick</link>
+                <pubDate>Mon, 27 Aug 2018 00:00:00 +0200</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/present_quick</guid>
+                <description>I quick trick to snap you out of the matrix</description>
+            </item>
+            <item>
+                <title>Goodbye cruel Facebook world I&apos;m leaving you today</title>
+                <link>http://zafirov.me/blog/no_fb</link>
+                <pubDate>Tue, 27 Mar 2018 00:00:00 +0200</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/no_fb</guid>
+                <description>One distraction less</description>
+            </item>
+            <item>
+                <title>2017</title>
+                <link>http://zafirov.me/blog/challenges</link>
+                <pubDate>Sun, 24 Dec 2017 00:00:00 +0100</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/challenges</guid>
+                <description>Today is a great day ...</description>
+            </item>
+            <item>
+                <title>2016</title>
+                <link>http://zafirov.me/blog/changes</link>
+                <pubDate>Fri, 30 Dec 2016 00:00:00 +0100</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/changes</guid>
+                <description>A Year Of Changes</description>
+            </item>
+            <item>
+                <title>A Scala Christmas Tree</title>
+                <link>http://zafirov.me/blog/xmastree</link>
+                <pubDate>Thu, 29 Dec 2016 00:00:00 +0100</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/xmastree</guid>
+                <description>Let's make it a Scala-ble XMAS</description>
+            </item>
+            <item>
+                <title>Working with nulls in Spark UDFs</title>
+                <link>http://zafirov.me/blog/sparknulls</link>
+                <pubDate>Sun, 6 Nov 2016 00:00:00 +0100</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/sparknulls</guid>
+                <description>How User Defined are these Functions?</description>
+            </item>
+            <item>
+                <title>I against I</title>
+                <link>http://zafirov.me/blog/iagainsti</link>
+                <pubDate>Sat, 19 Mar 2016 00:00:00 +0100</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/iagainsti</guid>
+                <description>Something I hold very dear that has kept me going through the toughest of times</description>
+            </item>
+            <item>
+                <title>Trip to Rajasthan, India</title>
+                <link>http://zafirov.me/blog/trip_rajastan</link>
+                <pubDate>Wed, 3 Feb 2016 00:00:00 +0100</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/trip_rajastan</guid>
+                <description>A place you need to visit at least once in your lifetime</description>
+            </item>
+            <item>
+                <title>Ruminations on life</title>
+                <link>http://zafirov.me/blog/interstellar_aftermath</link>
+                <pubDate>Mon, 17 Nov 2014 00:00:00 +0100</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/interstellar_aftermath</guid>
+                <description>An Interstellar aftermath </description>
+            </item>
+            <item>
+                <title>Lighting the torch</title>
+                <link>http://zafirov.me/blog/lighting_the_torch</link>
+                <pubDate>Sun, 27 Apr 2014 00:00:00 +0200</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/lighting_the_torch</guid>
+                <description>My music journey and the learnings from it</description>
+            </item>
+            <item>
+                <title>Because it’s hard</title>
+                <link>http://zafirov.me/blog/because_hard</link>
+                <pubDate>Thu, 10 Apr 2014 00:00:00 +0200</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/because_hard</guid>
+                <description>Run away, run home.</description>
+            </item>
+    </channel>
+</rss>
