@@ -6,7 +6,7 @@
         <atom:link href="http://zafirov.me/feed.xml" rel="self" type="application/rss+xml" />
         <description>Thinking about software and life ...</description>
         <pubDate>Tue, 25 Dec 2018 00:00:00 +0100</pubDate>
-        <lastBuildDate>Thu, 10 Jan 2019 22:49:13 +0100</lastBuildDate>
+        <lastBuildDate>Sat, 19 Oct 2019 14:05:04 +0200</lastBuildDate>
 
             <item>
                 <title>A Christmas journey through Europe</title>
@@ -14,6 +14,13 @@
                 <pubDate>Tue, 25 Dec 2018 00:00:00 +0100</pubDate>
                 <guid isPermaLink="false">http://zafirov.me/blog/journey_xmas_eu</guid>
                 <description>A limbic journey</description>
+            </item>
+            <item>
+                <title>The evolution of a developer</title>
+                <link>http://zafirov.me/blog/evolution_developer</link>
+                <pubDate>Tue, 25 Dec 2018 00:00:00 +0100</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/evolution_developer</guid>
+                <description>As seen through the eyes of one</description>
             </item>
             <item>
                 <title>Leaving a trail</title>
