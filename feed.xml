@@ -5,9 +5,16 @@
         <link>http://zafirov.me</link>
         <atom:link href="http://zafirov.me/feed.xml" rel="self" type="application/rss+xml" />
         <description>Thinking about software and life ...</description>
-        <pubDate>Tue, 25 Dec 2018 00:00:00 +0100</pubDate>
-        <lastBuildDate>Sat, 19 Oct 2019 14:05:04 +0200</lastBuildDate>
+        <pubDate>Fri, 1 Nov 2019 00:00:00 +0100</pubDate>
+        <lastBuildDate>Fri, 1 Nov 2019 18:59:27 +0100</lastBuildDate>
 
+            <item>
+                <title>How Dixa is built</title>
+                <link>http://zafirov.me/blog/how_dixa_is_built</link>
+                <pubDate>Fri, 1 Nov 2019 00:00:00 +0100</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/how_dixa_is_built</guid>
+                <description>Where engineering happens</description>
+            </item>
             <item>
                 <title>A Christmas journey through Europe</title>
                 <link>http://zafirov.me/blog/journey_xmas_eu</link>
