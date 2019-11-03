@@ -5,9 +5,16 @@
         <link>http://zafirov.me</link>
         <atom:link href="http://zafirov.me/feed.xml" rel="self" type="application/rss+xml" />
         <description>Thinking about software and life ...</description>
-        <pubDate>Fri, 1 Nov 2019 00:00:00 +0100</pubDate>
-        <lastBuildDate>Fri, 1 Nov 2019 18:59:27 +0100</lastBuildDate>
+        <pubDate>Sat, 2 Nov 2019 00:00:00 +0100</pubDate>
+        <lastBuildDate>Sun, 3 Nov 2019 22:55:56 +0100</lastBuildDate>
 
+            <item>
+                <title>Software development</title>
+                <link>http://zafirov.me/blog/software_development</link>
+                <pubDate>Sat, 2 Nov 2019 00:00:00 +0100</pubDate>
+                <guid isPermaLink="false">http://zafirov.me/blog/software_development</guid>
+                <description>Under the hood</description>
+            </item>
             <item>
                 <title>How Dixa is built</title>
                 <link>http://zafirov.me/blog/how_dixa_is_built</link>
@@ -21,13 +28,6 @@
                 <pubDate>Tue, 25 Dec 2018 00:00:00 +0100</pubDate>
                 <guid isPermaLink="false">http://zafirov.me/blog/journey_xmas_eu</guid>
                 <description>A limbic journey</description>
-            </item>
-            <item>
-                <title>The evolution of a developer</title>
-                <link>http://zafirov.me/blog/evolution_developer</link>
-                <pubDate>Tue, 25 Dec 2018 00:00:00 +0100</pubDate>
-                <guid isPermaLink="false">http://zafirov.me/blog/evolution_developer</guid>
-                <description>As seen through the eyes of one</description>
             </item>
             <item>
                 <title>Leaving a trail</title>
