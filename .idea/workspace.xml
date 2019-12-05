@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="216f1736-402e-4211-a84b-00bdea7b1938" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/content/blog/evolution_developer.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/evolution_developer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site" beforeDir="false" afterPath="$PROJECT_DIR$/site" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1Ua4Lm7cHGMY3G40bS2w1ruzrxj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../dixa/acclient" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/agent-event-aggregator" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/akkahttp" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/appserver" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/authservice" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/conversation-domain-event-aggregator" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/conversation-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/convo-streamer" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/dynamoutil" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/emailservice" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/exports" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/facebook-messenger-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/files" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/flow-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/integrations" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/internal-cache" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/kafka-to-sqs" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/libfeatureflag" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/libtext" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/media-processor" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/offer-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/orgservice" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/outbound-webhooks" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/presence" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/protocols" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/pubsub-client" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/queue-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/redis-front" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/rest-api" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/samuel-fib" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/search" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/slack-push" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/sqsclientutil" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/statistics-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/tags" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/telephony" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/testutil" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/thirdparty" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/thrift" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/transfer-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/voxbone-client" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/webforms-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/widget-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../dixa/wsserver" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../falcon/twitter-gnip-to-kafka" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../toys/functional-hangman" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../toys/zio-todo-backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../toys/zio-workshop" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../toys/zio3d" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../other/stem-client" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../other/twitter-on-connect-indexing" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../personal/toys/scala-macro-tutorial" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="216f1736-402e-4211-a84b-00bdea7b1938" name="Default Changelist" comment="" />
+      <created>1575581318440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575581318440</updated>
+    </task>
+    <servers />
+  </component>
+</project>
