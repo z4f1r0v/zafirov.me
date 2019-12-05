@@ -18,6 +18,7 @@ Fundamental question, in my opinion. As species ever since we figured how to mak
 
 ## What do developers do?
 As the job title suggests - they develop. What do they develop? _Software_. Ok, but what is the process of developing software? Now we are getting somewhere. Well, like any other job software development follows steps - or in fancier lingo _methodologies_ - that companies have given names to e.g. Agile, Waterfall, etc... Throw away all that cruft and you are left with something like: 
+
 1. Identify a task/problem/need
 2. Describe it in sufficient detail so there is no ambiguity around what is supposed to happen for the developer that is implementing it
 3. Allocate resources/minions/developers
@@ -26,6 +27,7 @@ As the job title suggests - they develop. What do they develop? _Software_. Ok, 
 6. Repeat
 
 The recipe listed above describes the process from a manager/stakeholder/domain expert's perspective. Now if we are talking about the same process from the perspective of the developer himself then we get a different picture:
+
 1. Task assignment - pick up a task from a list/get a task assigned to you
 2. Design phase - identify the challenges presented by a task, generate various documentation and diagrams that describe a proposed solution and choose the technology that can power that solution
 3. Implementation phase - this is where work gets really done. This step can be merged into the previous one. This, however, is discouraged since it leads to prolonged development cycles and inability to focus solely on technology problems.
