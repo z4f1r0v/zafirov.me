@@ -4,6 +4,6 @@
 
 	<#include "menu.ftl">
 
-	<#include "blog.ftl">
+	<#include "main.ftl">
 
 <#include "footer.ftl">
