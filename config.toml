@@ -1,0 +1,50 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "hello"
+paginate = 1000000
+
+[params]
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # "light" or "dark"
+  defaultTheme = "dark"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
+  # Show reading time in minutes for posts
+  showReadingTime = false
+
+[languages]
+  [languages.en]
+    title = "A life exploration"
+    subtitle = ""
+    keywords = ""
+    copyright = ""
+    menuMore = ""
+    writtenBy = ""
+    readMore = ""
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+    # leave empty to disable, enter display text to enable
+    # lastModDisplay = ""
+
+    [languages.en.params.logo]
+      logoText = "updating mental models ... "
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "twitter"
+        name = "Twitter"
+        url = "/twitter"
