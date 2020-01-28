@@ -28,6 +28,7 @@ paginate = 1000000
     minuteReadingTime = "min read"
     dateFormatSingle = "2006-01-02"
     dateFormatList = "2006-01-02"
+    googleAnalytics = "UA-77368278-1"
     # leave empty to disable, enter display text to enable
     # lastModDisplay = ""
 
