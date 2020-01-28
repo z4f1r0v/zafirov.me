@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>A Scala Christmas Tree :: A life exploration</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="In the spirit of the Christmas and New Year&amp;rsquo;s festivities, I decided to share with you a short and fun recursive function that can warm your hearts. If not - hopefully it will warm your gray matter a bit.
+import scala.annotation.tailrec def xmasTree(height: Int): Unit = { @tailrec def xmasTree(n: Int, t: Int): Unit = { if (n == t) { println(&amp;#34; &amp;#34; * (t - n) &#43; &amp;#34;*&amp;#34; * (1 &#43; n * 2)) println(if (n == 1) &amp;#34; # &amp;#34; else if (n == 2) &amp;#34; # &amp;#34; else List."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/xmastree/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A Scala Christmas Tree"/>
+<meta name="twitter:description" content="Let&#39;s make it a Scala-ble XMAS"/>
+
+
+
+<meta property="og:title" content="A Scala Christmas Tree" />
+<meta property="og:description" content="Let&#39;s make it a Scala-ble XMAS" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/xmastree/" />
+<meta property="article:published_time" content="2016-12-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-12-29T00:00:00+00:00" /><meta property="og:site_name" content="A life exploration" />
+
+
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">updating mental models ... </span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/twitter">Twitter</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/twitter">Twitter</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="/posts/xmastree/">A Scala Christmas Tree</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2016-12-29
+        </span>
+
+        
+          
+        
+      
+
+      
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="/tags/code/">code</a>&nbsp;
+        
+          #<a href="/tags/scala/">scala</a>&nbsp;
+        
+      </span>
+    
+
+    
+
+    <div class="post-content">
+      <p>In the spirit of the Christmas and New Year&rsquo;s festivities, I decided to share with you a short and fun recursive function that can warm your hearts. If not - hopefully it will warm your gray matter a bit.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#66d9ef">import</span> scala.annotation.tailrec
+
+<span style="color:#66d9ef">def</span> xmasTree<span style="color:#f92672">(</span>height<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Unit</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+  <span style="color:#a6e22e">@tailrec</span>
+  <span style="color:#66d9ef">def</span> xmasTree<span style="color:#f92672">(</span>n<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span><span style="color:#f92672">,</span> t<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Int</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Unit</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">==</span> t<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      println<span style="color:#f92672">(</span><span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">*</span> <span style="color:#f92672">(</span>t <span style="color:#f92672">-</span> n<span style="color:#f92672">)</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;*&#34;</span> <span style="color:#f92672">*</span> <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> n <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+      println<span style="color:#f92672">(</span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">)</span> <span style="color:#e6db74">&#34; # &#34;</span>
+              <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">)</span> <span style="color:#e6db74">&#34;  #  &#34;</span>
+              <span style="color:#66d9ef">else</span> <span style="color:#a6e22e">List</span><span style="color:#f92672">.</span>fill<span style="color:#f92672">(</span>n <span style="color:#f92672">/</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">)</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">*</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">)</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;###&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span>mkString<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;\n&#34;</span><span style="color:#f92672">)</span>
+      <span style="color:#f92672">)</span>
+    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+      println<span style="color:#f92672">(</span><span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">*</span> <span style="color:#f92672">(</span>t <span style="color:#f92672">-</span> n<span style="color:#f92672">)</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;*&#34;</span> <span style="color:#f92672">*</span> <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> n <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+      xmasTree<span style="color:#f92672">(</span>n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> t<span style="color:#f92672">)</span>
+    <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>
+
+  xmasTree<span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">,</span> height<span style="color:#f92672">)</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Say you run this bad boy like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">xmasTree<span style="color:#f92672">(</span><span style="color:#ae81ff">12</span><span style="color:#f92672">)</span>
+</code></pre></div><p>Then the result will be a lovely &hellip;</p>
+<pre><code>            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+    *****************
+   *******************
+  *********************
+ ***********************
+*************************
+           ###
+           ###
+           ###
+           ###
+</code></pre><p>&hellip; Christmas tree :)</p>
+<p>If I were to highlight something about this piece of code, it would be the tail-recursion - which is always awesome to have (and in this case it&rsquo;s verified by the compiler). Then there is the simple math that counts the stars to be printed on the row and amount of spaces to be placed before the stars. Finally we have the trunk implementation which utilizes nested lists - done with <code>List.fill</code> and (again) simple math to find the proper position of the trunk.</p>
+<p>Happy Holidays!</p>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">Read other posts</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="/posts/changes/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">2016</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="/posts/sparknulls/">
+                  <span class="button__text">Working with nulls in Spark UDFs</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+        
+
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>
