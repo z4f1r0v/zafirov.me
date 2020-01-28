@@ -118,6 +118,11 @@
   </url>
   
   <url>
+    <loc>/twitter/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
   </url>
   
