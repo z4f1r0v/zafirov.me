@@ -45,7 +45,7 @@ I am not the first to come up with these ideas - I am sure of it. However intern
 
 [^2]: I'm talking about [black swans](https://www.youtube.com/watch?v=vKA4w2O61Xo)
 
-[^3] I heard that one first from [Mr. Ross Edgley](https://rossedgley.com/)
+[^3]: I heard that one first from [Mr. Ross Edgley](https://rossedgley.com/)
 
-[^4] Paul Graham recently [wrote](http://www.paulgraham.com/noob.html)
+[^4]: Paul Graham recently [wrote](http://www.paulgraham.com/noob.html)
 
