@@ -40,7 +40,6 @@ In a world where we are bombarded with fast solutions to complex problems, and a
 
 I am not the first to come up with these ideas - I am sure of it. However internalizing and synthesizing them in writing felt so damn great. 
 
----
 [^1]: Constant until the [Heat death of the universe](https://en.wikipedia.org/wiki/Heat_death_of_the_universe), a change at a cosmic scale or another scientific reality bending discovery at least. For the purposes of this writing the current understanding of constant will suffice.
 
 [^2]: I'm talking about [black swans](https://www.youtube.com/watch?v=vKA4w2O61Xo)
