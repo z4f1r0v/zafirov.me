@@ -6,7 +6,7 @@ tags: ["thoughts"]
 draft: false
 ---
 
-This year I decided that instead of making my regular 3 hour plane trip towards home for Christmas, I will instead join some friends for a road trip through the old continent. I did that with the clear understanding that it will take 3 days - of which the majority would be spent into the confined space of a car. Yes, it does seem counterintuitive since:
+This year I decided that instead of making my regular 3 hour plane trip towards home for Christmas, I will instead join some friends for a road trip through the old continent. I did that with the clear understanding that it will take 3 days - of which the majority would be spent into the confined space of a car. Yes, it does seem counter-intuitive since:
 
 - it doesn't get you from point A to point B that fast 
 - and it's holiday season

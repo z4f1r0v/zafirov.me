@@ -50,7 +50,7 @@ As I mentioned we have very different backgrounds and we find that to be a great
 - it makes us feel confident that we can find help when necessary in forums/Gitter/stackoverflow
 - it ensures that we can pass the knowledge to a colleague that can adopt the project and continue expanding it
 
-All these perks will not be possible if people are narrow minded and have their very special preference towards one single technology that their are masters of yet fail to grasp the greater concepts. Thus the most important thing is realizng that it is the difference between technolgies that matters and the way they relate to one another.
+All these perks will not be possible if people are narrow minded and have their very special preference towards one single technology that their are masters of yet fail to grasp the greater concepts. Thus the most important thing is realizing that it is the difference between technologies that matters and the way they relate to one another.
 
 ## Conclusions
 

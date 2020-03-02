@@ -26,7 +26,7 @@ Let us start with the elephant in the room - eye strain. The fixed distance that
 
 My way of coping with this is the 20/20/20 rule. It stands for _every 20 minutes look 20 meters away for 20 seconds_. I would say that these numbers are a guideline. Generally speaking the more time you do - the better. This I believe has stuck since it is easy to remember. It is also easy to implement as a habit. All you need is an app that will remind you every time the period you choose is up and a vantage point to a object that is further away. 
 
-The advantages of this practise are great as your eyes get to focus on a something that is at a greater distance every now and then, allowing your eyes to relax. On the other hand this can be a bit disturbing to people that like to allocate long stretches of concentrated work time. Simply put it is best if can break down your work into smaller increments. Theres is a tradeoff, for sure. Of course, you can always combine your break with a short walk to the kitchen for a tea/coffee/water.
+The advantages of this practise are great as your eyes get to focus on a something that is at a greater distance every now and then, allowing your eyes to relax. On the other hand this can be a bit disturbing to people that like to allocate long stretches of concentrated work time. Simply put it is best if can break down your work into smaller increments. There is a tradeoff, for sure. Of course, you can always combine your break with a short walk to the kitchen for a tea/coffee/water.
 
 ### Lower back pain
 

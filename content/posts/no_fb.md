@@ -18,7 +18,6 @@ The other day I was talking to a friend and he said "Man, I'm gonna leave this s
 - Whose posts do I actually see? Only your closest people? Those I'm chatting with? Or the ones the algorithm in the sky decides? It does not matter, because even if I know what it is - tomorrow may be different. It all depends on what gets me to see more ads.
 - Endless feed - this infinite stream of information limited to 7-8 bite-sized words to form a bombastic title of an article. This is not how I want to consume information.
 
-</br>
 So, yes, something like that. I will be happy to see how this goes. I think that being abroad and having a direct connection with people will be a bit harder but definitely not impossible. And in the end this is what I want to get - space for myself.
 I plan on exploring ways to stay in touch with friends e.g. send an email to a friend I haven't spoken to in a while once a week, write more posts on my website, use more [Signal](www.signal.org), etc...
 
