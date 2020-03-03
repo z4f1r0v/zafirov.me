@@ -15,7 +15,7 @@ paginate = 1000000
 
 [languages]
   [languages.en]
-    title = "updating mental models ..."
+    title = "experiencing side effects ... "
     subtitle = ""
     keywords = ""
     copyright = ""
@@ -33,7 +33,7 @@ paginate = 1000000
     # lastModDisplay = ""
 
     [languages.en.params.logo]
-      logoText = "updating mental models ... "
+      logoText = "experiencing side effects ... "
       logoHomeLink = "/"
     # or
     #
