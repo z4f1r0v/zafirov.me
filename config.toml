@@ -15,7 +15,7 @@ paginate = 1000000
 
 [languages]
   [languages.en]
-    title = "experiencing side effects ... "
+    title = "./side_effects.sh "
     subtitle = ""
     keywords = ""
     copyright = ""
@@ -33,7 +33,7 @@ paginate = 1000000
     # lastModDisplay = ""
 
     [languages.en.params.logo]
-      logoText = "experiencing side effects ... "
+      logoText = "./side_effects.sh "
       logoHomeLink = "/"
     # or
     #
