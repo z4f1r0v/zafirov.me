@@ -6,10 +6,20 @@
     <description>Recent content in thoughts on experiencing side effects ... </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Core traits of a skilled software engineer</title>
+      <link>/posts/traits_of_skilled_soft_eng/</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/traits_of_skilled_soft_eng/</guid>
+      <description>Making software in this day and age seems like a trivial task. There are cloud providers - Amazon Web Services (AWS), Google Cloud Platform (GCP), Azure - open-source languages, tools and frameworks, and many sources like blogs/podcasts/youtube channels where experienced engineers share their success and failure. Thus theoretically it should not be hard to learn a tool, write some code and solve a problem that exists in the world.
+I personally agree and disagree with this statement.</description>
+    </item>
     
     <item>
       <title>Changing reality</title>
@@ -27,15 +37,6 @@
       
       <guid>/posts/software_development/</guid>
       <description>Developers, software engineers, coders. Many names that in all honesty refer to the same persona. But what do these people do all day? Why are they in such high demand? Why do they get such high salaries? Why don&amp;rsquo;t they conform to the norms that people laid out for many years as far as clothing, procedures, communication skills go? I will attempt to answer these and other questions in this post.</description>
-    </item>
-    
-    <item>
-      <title>How Dixa is built</title>
-      <link>/posts/how_dixa_is_built/</link>
-      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/how_dixa_is_built/</guid>
-      <description>Making software in this day and age seems like a trivial task. There are cloud providers - Amazon Web Services (AWS), Google Cloud Platform (GCP), Azure - open-source languages, tools and frameworks, and many sources like blogs/podcasts/youtube channels where experienced engineers share their success and failure. Thus theoretically it should not be hard to get a good idea, write some code and fulfil a need that&amp;rsquo;s out there. I personally agree and disagree with this statement.</description>
     </item>
     
     <item>
