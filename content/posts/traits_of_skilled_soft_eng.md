@@ -12,16 +12,15 @@ and many sources like blogs/podcasts/youtube channels where experienced engineer
 Thus theoretically it should not be hard to learn a tool, write *some code* and solve a problem that exists in the world.
 
 I personally agree and disagree with this statement. 
-On one hand I share the view that willingness to learn seems to be the main divider between those who want to craft something 
-and those who don't. 
+On one hand I share the view that willingness to learn seems to be the main divider between those who want to craft something, and those who don't. 
 The tools available out there are so stable and mature that they can practically erase the lack of skills on the application developer's side. 
 This is also known as _throwing money at the problem_.
 On the other hand the countless possibilities to implement an idea lead to an explosion of ways you can mix and match technologies. 
 One needs to distinguish between approaches by making a choice based on a comparison between their pros and cons with respect to a given scenario. 
 This ability has become a crucial piece in the arsenal of a software engineer.
 
-Hence the name of the game, in my eyes, is developing transferable skills and traits that allow you to drive a product, a team or an organization. 
-Subsequently these traits will enable you to make strategic choices about technologies and 
+Hence, the name of the game, in my eyes, is developing transferable skills and traits that allow you to drive a product, a team or an organization. 
+Subsequently, these traits will enable you to make strategic choices about technologies and 
 find trade-offs between them such that the software that is built is easy to implement and maintain.
 This mindset proliferates across the different hats that you as an engineer may be wearing at any given time.
 Hiring, project selection, process definition, establishing engineering culture, etc. 
@@ -47,7 +46,7 @@ It is very important that people who want to build software have a strong intern
 That will surely keep them going after long hours of work, experiencing frustration and fatigue from failure. 
 That inner passion to deliver a functioning piece of software takes time and dedication 
 but most importantly being curious see how the whole thing plays out in the end.
-Does your software handle the expected load for a prolonged period of time? 
+Does your software handle the expected load for a prolonged period? 
 Does the algorithm bring better performance? 
 Is the designed architecture scalable?
 Answers to questions like these are found only by the persistent and the curious.
@@ -66,7 +65,7 @@ Understand that ownership encompasses different traits on its own. The topics un
 - proactiveness - keeping the project's tech stack and practises up-to-date
 - protectiveness - when working within a given domain, the engineer develops not only technical but also domain expertise. 
 It is very much encouraged for engineers to protect the product they helped build by educating business people on what is actually possible and technically feasible.
-Otherwise "visionaries" may push the project to an inconsistent and unmaintainable state from a technology perspective.
+Otherwise, "visionaries" may push the project to an inconsistent and unmaintainable state from a technology perspective.
 - commitment - deadlines should be set with both engineers and stakeholders signing off on them. 
 Once that is done it is up to the engineer to be proactive and transparent when it comes to voicing concerns with respect to timeline reevaluation.
 
