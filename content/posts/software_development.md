@@ -24,7 +24,7 @@ As the job title suggests - they develop. What do they develop? _Software_. Ok, 
 The recipe listed above describes the process from a manager/stakeholder/domain expert's perspective. Now if we are talking about the same process from the perspective of the developer himself then we get a different picture:
 
 1. Task assignment - pick up a task from a list/get a task assigned to you
-2. Design phase - identify the challenges presented by a task, generate various documentation and diagrams that describe a proposed solution and choose the technology that can power that solution
+2. Design phase - identify the challenges presented by a task, generate various types of documentation and diagrams that describe a proposed solution and choose the technology that can power that solution
 3. Implementation phase - this is where work gets really done. This step can be merged into the previous one. This, however, is discouraged since it leads to prolonged development cycles and inability to focus solely on technology problems.
 4. Test your work - see if it actually behaves as specified
 5. Iterate until the solution is technically sound and fulfills the specification it was designed against
@@ -61,4 +61,4 @@ As far as work goes there is one thing that every successful developer needs to 
 Work and life can be quite juxtaposing sometimes so it is important to be able to find time for hobbies and be able to make a clear separation between time that you are paid for and personal time. It is often the case that work seeps through everything you do leaving you with very little time for your own hobbies.
 
 ## Conclusion
-Crafting software takes hard work, dedication and experience. Software keeps on getting more and more abstract with focus on the actual goal that is being pursued while hiding the gory details behind nice facades. In order to become successful and keep on evolving at as a developer, one needs to embrace failure and seek challenges. That being said I know many people that work as developers but don't put that much emphasis on their job. They view it just as a job. And that works for them. So frankly it's up to the individual to decide for themselves - do they want to make the wheel turn or turn with everyone else.
+Crafting software takes hard work, dedication and experience. Software keeps on getting more and more abstract with focus on the actual goal that is being pursued while hiding the gory details behind nice facades. In order to become successful and keep on evolving as a developer, one needs to embrace failure and seek challenges. That being said I know many people that work as developers but don't put that much emphasis on their job. They view it just as a job. And that works for them. So frankly it's up to the individual to decide for themselves - do they want to make the wheel turn or turn with everyone else.
