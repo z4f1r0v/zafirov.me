@@ -9,7 +9,7 @@ draft: false
 Making software in this day and age seems like a trivial task. 
 There are cloud providers - Amazon Web Services (AWS), Google Cloud Platform (GCP), Azure - open-source languages, tools and frameworks, 
 and many sources like blogs/podcasts/youtube channels where experienced engineers share their success and failure. 
-Thus theoretically it should not be hard to learn a tool, write *some code* and solve a problem that exists in the world.
+Thus, theoretically it should not be hard to learn a tool, write *some code* and solve a problem that exists in the world.
 
 I personally agree and disagree with this statement. 
 On one hand I share the view that willingness to learn seems to be the main divider between those who want to craft something, and those who don't. 
@@ -34,7 +34,7 @@ Bear in mind that the traits I will describe are quite interconnected so if you 
 
 The first manifestation of freedom I will examine is the freedom to be curious. 
 I am talking about the pure happiness of making a discovery be that a new framework or plugin that will save you a couple of keystrokes.
-The absolute joy of struggling with a problem for a given period of time and ultimately finding a solution or - event better - 
+The absolute joy of struggling with a problem for a given period and ultimately finding a solution or - event better - 
 failing miserably and moving forward. That is curiosity for me. Some examples include:
 
 - being interested in what the latest and greatest tech with respect to your domain and work is
@@ -72,17 +72,17 @@ Once that is done it is up to the engineer to be proactive and transparent when 
 ## Inclusion
 
 Writing software is a team endeavour. Letting team members be in on your work however is a personal responsibility. 
-Thus it is the job of a software engineer to communicate - verbally and in written form - to keep colleagues updated as to how their work is progressing. 
+Thus, it is the job of a software engineer to communicate - verbally and in written form - to keep colleagues updated as to how their work is progressing. 
 Another way to say this is that an engineer needs to be inclusive towards others. 
 
-That is a two way street. 
+That is a two-way street. 
 Inclusion from the organization's side is the freedom to learn of any problem, product or be part of any discussion that relates to an engineer's daily activities.
 No tasks are to come from the all powerful consciousness in the sky. 
 There should be no superheroes that decide how the world runs and fix everything at will. 
 
-A way to achieve this two way transparency is by creating a forum where engineers across teams can spar freely amongst each other.
+A way to achieve this two-way transparency is by creating a forum where engineers across teams can spar freely amongst each other.
 The conversations revolve around topics brought up by themselves that include primarily tools, processes and technologies.
-After a round table discussion, tasks are assigned for given action items and a Minutes-of-Meeting document is uploaded online for managers and other interested parties to see.
+After a round table discussion, tasks are assigned for given action items, and a Minutes-of-Meeting document is uploaded online for managers and other interested parties to see.
 The way inclusion plays a part in this practise is by allowing for open conversations, 
 an ability for everyone to challenge the status quo and a fair treatment of every problem taken into consideration during the meeting. 
 
