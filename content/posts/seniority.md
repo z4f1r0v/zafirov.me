@@ -141,7 +141,7 @@ As the [definition](#definition) I have given previously, these don't make up a 
 Rather, they are traits that when internalized can make work an exciting journey for the engineer and everyone around them.
 
 Adopting these traits is a process that starts from within.
-However, having a culture in the team and organization the developer is part of, can greatly stimulate that process.
+However, having a culture - in the team and organization the developer is part of - that promotes such traits, can greatly stimulate that process.
 That is why, I believe that an often overlooked but majorly important task of a senior software engineer is to be a flagman of the culture that 
 the company wants to employ.
 
