@@ -149,7 +149,7 @@ the company wants to employ.
 
 Many people achieve the distinction "senior" during their software engineering careers.
 For some markets that is the only way to get a raise.
-For some companies demonstrating that they have a team full of "senior staff" is away to attract talent and look more appealing to VCs when looking for funding.
+For some companies demonstrating that they have a team full of "senior staff" is a way to attract talent and look more appealing to VCs when looking for funding.
 Unfortunately, that has lead to a bloated and messy term that contributes little when looking at a job post or accessing who a person is as a professional.
 Yet software engineers don't care about labels.
 We care about solving complicated problems through efficient and elegant solutions.
