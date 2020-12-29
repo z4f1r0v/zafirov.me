@@ -6,30 +6,7 @@
     <description>Recent content in thoughts on ./side_effects.sh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Achieving fulfillment in tech</title>
-      <link>/posts/seniority/</link>
-      <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/seniority/</guid>
-      <description>During my career as a software developer I have had many colleagues in the engineering department that had the word &amp;ldquo;senior&amp;rdquo; as part of their job title. Others used fancier alternatives such as &amp;ldquo;specialist&amp;rdquo;, &amp;ldquo;expert&amp;rdquo; and &amp;ldquo;master&amp;rdquo;. Those people were quite different among themselves in their knowledge, technical skills and attitude towards teammates to name a few. Having interacted with them for prolonged durations at a time, I realized that it is not straightforward to give a precise definition as to what makes up a &amp;ldquo;senior software engineer&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Core traits of a skilled software engineer</title>
-      <link>/posts/traits_of_skilled_soft_eng/</link>
-      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/traits_of_skilled_soft_eng/</guid>
-      <description>Making software in this day and age seems like a trivial task. There are cloud providers - Amazon Web Services (AWS), Google Cloud Platform (GCP), Azure - open-source languages, tools and frameworks, and many sources like blogs/podcasts/youtube channels where experienced engineers share their success and failure. Thus, theoretically it should not be hard to learn a tool, write some code and solve a problem that exists in the world.
-I personally agree and disagree with this statement.</description>
-    </item>
-    
+    <lastBuildDate>Sun, 16 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Changing reality</title>
       <link>/posts/changing_reality/</link>
@@ -40,50 +17,12 @@ I personally agree and disagree with this statement.</description>
     </item>
     
     <item>
-      <title>Software development</title>
-      <link>/posts/software_development/</link>
-      <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/software_development/</guid>
-      <description>Developers, software engineers, coders. Many names that in all honesty refer to the same persona. But what do these people do all day? Why are they in such high demand? Why do they get such high salaries? Why don&amp;rsquo;t they conform to the norms that people laid out for many years as far as clothing, procedures, communication skills go? I will attempt to answer these and other questions in this post.</description>
-    </item>
-    
-    <item>
-      <title>A Christmas journey through Europe</title>
-      <link>/posts/journey_xmas_eu/</link>
-      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/journey_xmas_eu/</guid>
-      <description>This year I decided that instead of making my regular 3 hours plane trip towards home for Christmas, I will instead join some friends for a road trip through the old continent. I did that with the clear understanding it will take 3 days - of which the majority would be spent into the confined space of a car. Yes, it does seem counter-intuitive since:
- it doesn&amp;rsquo;t get you from point A to point B that fast it&amp;rsquo;s holiday season there are many cars on the highways the weather conditions can be difficult to drive in etc.</description>
-    </item>
-    
-    <item>
       <title>Leaving a trail</title>
       <link>/posts/leaving_trail/</link>
       <pubDate>Sat, 24 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>/posts/leaving_trail/</guid>
       <description>When we make decisions about our career we can never be absolutely sure whether they will play out the way we expect them. Having switched my job several times with an average stay at a position of 2 years, I can easily say that job switching has allowed me to be excited about work, meet new people, see different points of view and continuously learn. Along the way I have tried to gather as much knowledge applicable to any domain that I&amp;rsquo;m crafting software for.</description>
-    </item>
-    
-    <item>
-      <title>Modern day office job health tips</title>
-      <link>/posts/desk_health/</link>
-      <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/desk_health/</guid>
-      <description>As a person doing an primarily sitting type of job I am sure you will relate to some of the following health issues:
- eye strain lower back pain wrist pain headaches reduced mobility trouble falling asleep etc.  Depending on which part of the world you live in, office working conditions may or may not be viewed as a contributor to these things. I am lucky to be part of a society where these things matter and people are conscientious about their health.</description>
-    </item>
-    
-    <item>
-      <title>Staying present</title>
-      <link>/posts/present_quick/</link>
-      <pubDate>Mon, 27 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/present_quick/</guid>
-      <description>If you aren&amp;rsquo;t familiar with the concept of being (in the) present, let me quickly bring you up to speed. We lead our daily lives stormed by visual stimuli. They bombard us at every step from the moment we go out into the real or the digital world. That is slowly starting to wear people down. The reason is that from an evolutionary standpoint the increased amount of visual signals make us more alert and push us in fight-or-flight mode.</description>
     </item>
     
     <item>
@@ -123,16 +62,6 @@ I will come back to this thought but first let me take you through my 2016. It w
       
       <guid>/posts/iagainsti/</guid>
       <description>I have enjoyed physical activity from a very early age. Since I was blessed with being a child of the pre-computer era I spent my free time outside on the street, playing with my peers. I clearly remember the endless summer days when I was chasing a football with my legs covered in black and blue spots from all the falls they had to bear. While competing against other players I came to know what it means to win and lose.</description>
-    </item>
-    
-    <item>
-      <title>Trip to Rajasthan, India</title>
-      <link>/posts/trip_rajastan/</link>
-      <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/trip_rajastan/</guid>
-      <description>I recently visited the Rajasthan state in India and, boy, was it a memorable experience. In this post I’d like to share my experiences and hopefully help out somebody that is planning a trip to this funky place.
-The reason for which I headed to India in the first place was that my girlfriend was invited to a wedding. Honestly I had no idea of what to expect. After some google-ing I found out that Indian weddings last for days and are a sight to see.</description>
     </item>
     
     <item>
