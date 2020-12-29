@@ -2,7 +2,7 @@
 title: "2017"
 date: 2017-12-24
 description: "Today is a great day ..."
-tags: ["thoughts"]
+tags: ["recap"]
 draft: false
 ---
 
