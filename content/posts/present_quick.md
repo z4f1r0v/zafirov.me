@@ -2,7 +2,7 @@
 title: "Staying present"
 date: 2018-08-27
 description: "Snap yourself out of the matrix"
-tags: ["healthy"]
+tags: ["health"]
 draft: false
 ---
 
