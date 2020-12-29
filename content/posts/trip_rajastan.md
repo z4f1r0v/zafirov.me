@@ -2,7 +2,7 @@
 title: "Trip to Rajasthan, India"
 date: 2016-02-03
 description: "A place you need to visit at least once in your lifetime"
-tags: ["thoughts"]
+tags: ["travels"]
 draft: false
 ---
 

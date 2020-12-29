@@ -2,7 +2,7 @@
 title: "A Christmas journey through Europe"
 date: 2018-12-25
 description: "A limbic journey"
-tags: ["thoughts"]
+tags: ["travels"]
 draft: false
 ---
 

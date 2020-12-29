@@ -2,7 +2,7 @@
 title: "Digital transformation"
 date: 2020-07-14
 description: "When new tech meets an old mind"
-tags: ["thoughts"]
+tags: ["software engineering"]
 draft: true
 ---
 

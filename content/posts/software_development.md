@@ -2,7 +2,7 @@
 title: "Software development"
 date: 2019-11-03
 description: "Under the hood"
-tags: ["thoughts"]
+tags: ["software engineering"]
 draft: false
 ---
 

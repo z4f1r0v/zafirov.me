@@ -2,7 +2,7 @@
 title: "The technical interview"
 date: 2020-07-14
 description: "Methods of execution"
-tags: ["thoughts"]
+tags: ["software engineering"]
 draft: true
 ---
 

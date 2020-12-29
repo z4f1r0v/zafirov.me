@@ -2,7 +2,7 @@
 title: "Achieving fulfillment in tech"
 date: 2020-11-23
 description: "Is being a \"senior\" enough?"
-tags: ["thoughts"]
+tags: ["software engineering"]
 draft: false
 ---
 

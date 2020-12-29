@@ -2,7 +2,7 @@
 title: "Modern day office job health tips"
 date: 2018-10-20
 description: "Improvements to your sedentary, screen bound life"
-tags: ["thoughts"]
+tags: ["health"]
 draft: false
 ---
 

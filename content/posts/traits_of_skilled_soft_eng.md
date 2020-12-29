@@ -2,7 +2,7 @@
 title: "Core traits of a skilled software engineer"
 date: 2020-03-08
 description: "There's more to it than technical skills"
-tags: ["thoughts"]
+tags: ["software engineering"]
 draft: false
 ---
 
