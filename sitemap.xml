@@ -18,12 +18,12 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/tags/software-engineering/</loc>
     <lastmod>2020-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/thoughts/</loc>
+    <loc>/tags/</loc>
     <lastmod>2020-11-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,6 +38,11 @@
   </url>
   
   <url>
+    <loc>/tags/thoughts/</loc>
+    <lastmod>2020-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/software_development/</loc>
     <lastmod>2019-11-03T00:00:00+00:00</lastmod>
   </url>
@@ -48,13 +53,28 @@
   </url>
   
   <url>
+    <loc>/tags/travels/</loc>
+    <lastmod>2018-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/leaving_trail/</loc>
     <lastmod>2018-11-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/health/</loc>
+    <lastmod>2018-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/desk_health/</loc>
     <lastmod>2018-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/healthy/</loc>
+    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
