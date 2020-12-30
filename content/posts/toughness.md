@@ -47,7 +47,7 @@ In the midst of this madness I realized that I need to change my job. So I did.
 It was an exhausting but very educational process.
 A post on recruitment informed from that experience will come next year.
 
-What is the greatest lesson that 2020 taught me? Be humble and keep working on what you believe in.
+What is the greatest lesson that 2020 taught me? Be humble and keep working on your craft.
 If you believe in something, you will find the drive to propel you over all the hardship.
 It can _always_ get worse. 
 
