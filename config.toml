@@ -11,7 +11,7 @@ paginate = 1000000
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
   # Show reading time in minutes for posts
-  showReadingTime = false
+  showReadingTime = true
 
 [languages]
   [languages.en]
@@ -49,3 +49,7 @@ paginate = 1000000
         identifier = "twitter"
         name = "Twitter"
         url = "https://twitter.com/ovcrymysyn/"
+      [[languages.en.menu.main]]
+        identifier = "github"
+        name = "GitHub"
+        url = "https://github.com/z4f1r0v"
