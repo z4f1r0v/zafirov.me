@@ -51,4 +51,4 @@ What is the greatest lesson that 2020 taught me? Be humble and keep working on y
 If you believe in something, you will find the drive to propel you over all the hardship.
 It can _always_ get worse. 
 
-From my family to yours we send you wishes for health and positive thoughts.
+From my family to yours - we send you wishes for health and positive thoughts.
