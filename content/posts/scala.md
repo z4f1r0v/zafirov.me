@@ -46,9 +46,9 @@ Therefore, I provide the reader with a table of contents, so they can jump ahead
       - [Compiled and statically typed](#compiled-and-statically-typed)
       - [Versatile](#versatile)
       - [Succinct](#succinct)
-      - [Evolving](#evolving)
+      - [Adaptive](#adaptive)
       - [JVM-native](#jvm-native)
-      - [robust](#robust)
+      - [Robust](#robust)
     - [The bad](#the-bad)
         - [(Lack of) Scala style](#lack-of-scala-style)
         - [Compilation time](#compilation-time)
@@ -233,7 +233,7 @@ Something that many of us can relate to are enumerations.
 Take a look at how Scala 3 [enums](https://dotty.epfl.ch/docs/reference/enums/enums.html) 
 take the concept to a [new level](https://dotty.epfl.ch/docs/reference/enums/adts.html).
 
-### Adaptability
+### Adaptive
 Scala has been one of the few languages that explored the marriage between OO and FP.
 Throughout the years it became obvious that the initial attempts weren't perfect.
 **And that is ok**.
@@ -364,14 +364,23 @@ It is a good starting point for a conversation at least on programming languages
 to the next level.
 
 # Conclusion
-In this post I gave my perspective on Scala.
-During this exercise I came to a simple realisation - Scala is a language where the developer needs to be the one
+In this post I gave my perspective on Scala as an overall experience. 
+During this exercise I came to a simple realization - Scala is a language where the developer needs to be the one
 exercising self-discipline.
-That is diametrically opposed to Python and Go where the language is the one "disciplining" the software developer.
+That is diametrically opposed to Python and Go where the language is nudging the developer's hand throughout 
+the working process.
 What is the right way to go about it? 
-It depends on quite of few things some of which have nothing to do with programming (hint: $$$ and :muscle:).
+The main decision-maker for both employers and employees is whether a given language and its ecosystem can
+generate revenue i.e. have practical application in the industry.
+For a developer that translates into ease of development, ability to find resources when getting stuck and,
+last but not least, joy in daily work.
+For employers that means ability to scale teams, deliver features and produce stable products.
 
-My hope lays in [Scala 3](https://docs.scala-lang.org/scala3/getting-started.html).
+During its existence, Scala has managed to tick some of these checkboxes.
+Yet, things like gory FP elitism, and a multitude of ways to achieve the same thing have been a barrier for
+new developers attempting to enter the ecosystem.
+Hopefully a fix to the majority of the problems is coming [soon](https://scala3party.sphere.it) in the face of 
+[Scala 3](https://docs.scala-lang.org/scala3/getting-started.html).
 Behind it are Martin Odersky's theoretical proofs, years of industry experience with the current Scala version, 
 and the voice of a community that clearly knows what it does _not_ want.
 The first question mark for its success revolves around tooling.
@@ -385,7 +394,8 @@ Once that happens, it would seem logical to move to Scala 3.
 Whether Databricks wants to invest in a future with Scala as a core language
 or [not](https://databricks.com/blog/2020/06/24/introducing-delta-engine.html) remains to be seen.
 
-Finally, the software that is produced needs to be geared towards practical application in the industry. 
-For a developer that translates into ease of development, ability to find resources when getting stuck and,
-last but not least, joy in daily work.
-For employers that means ability to scale teams, deliver features and produce stable products.
+I am optimistic that Scala will continue to find applications across domains.
+It has already powered some of the most prominent software products many of us use on a daily basis.
+When looking at community surrounding the language, I see many bright and curious individuals, 
+willing to take a step in uncharted territories.
+That brings one word to mind - excitement.
