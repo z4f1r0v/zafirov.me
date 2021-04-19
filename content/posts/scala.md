@@ -1,6 +1,6 @@
 ---
 title: "Scala"
-date: 2021-04-11
+date: 2021-04-20
 description: "A language of self-discipline"
 tags: ["scala"]
 draft: true
