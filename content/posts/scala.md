@@ -1,14 +1,14 @@
 ---
 title: "Scala"
 date: 2021-04-11
-description: "A language about self-discipline"
+description: "A language of self-discipline"
 tags: ["scala"]
 draft: true
 ---
 Ever since its public release in 2004, Scala has been challenging the traditional development strategies.
 Due to its mix of object-oriented (OO) and functional programming (FP), the language has received a fair amount
 of criticism regarding being complex, unopinionated and slow to develop.
-I recently stumbled upon [this](https://mungingdata.com/scala/maintenance-nightmare-upgrade/) post.
+Fast-forward to more recent times, I stumbled upon [this](https://mungingdata.com/scala/maintenance-nightmare-upgrade/) post.
 In it the author mentions many valid criticisms towards Scala as an overall experience.
 Furthermore, he gives recommendations as to where Scala's strength resides.
 I was previously acquainted with the [author](https://github.com/MrPowers) and his website.
@@ -24,28 +24,20 @@ What was initially thought of as a LinkedIn brain-dump, quickly escalated to the
 It has the aim to give an educated opinion on the professional experience of working with Scala
 in a majority of circumstances.
 The opinion is mine and as such is biased.
-Yet, as a software engineer that focus on elegant, scalable and cost-effective solutions that solve real problems,
-I have taken my red marker and circled all key points that a newcomer or season developer should know.
+Yet, as a software engineer that focuses on elegant, scalable and cost-effective solutions that solve real problems,
+I have taken my red marker and circled all key points that a newcomer or season developer should know about.
 
 As is the case with all my posts, I have aimed to follow a coherent thought process.
 That being said, I feel that the subsections in my experiences and recommendations, for the most part, 
 can stand on their own.
 Therefore, I provide the reader with a table of contents, so they can jump ahead if they feel so inclined.
 
-- [My Scala journey](#my-scala-journey)
-    - [Coursera](#coursera)
-    - [Take off](#take-off)
-    - [The fair](#the-fair)
-        - [Meetup](#meetup)
-    - [Dix it](#dix-it)
-    - [Take Dat Corporation](#take-dat-corporation)
-    - [Simba](#simba)
+- [On my Scala journey](#on-my-scala-journey)
 - [Experiences](#experiences)
     - [The good](#the-good)
       - [Fun to write](#fun-to-write)
-      - [Compiled and statically typed](#compiled-and-statically-typed)
+      - [Compiled and statically-typed](#compiled-and-statically-typed)
       - [Versatile](#versatile)
-      - [Succinct](#succinct)
       - [Adaptive](#adaptive)
       - [JVM-native](#jvm-native)
       - [Robust](#robust)
@@ -54,132 +46,58 @@ Therefore, I provide the reader with a table of contents, so they can jump ahead
         - [Compilation time](#compilation-time)
         - [Backward compatibility](#backward-compatibility)
 - [Recommendations](#recommendations)
-    - [Principle of least power](#principle-of-least-power)
+    - [Principle of Least Power](#principle-of-least-power)
     - [Production ready](#production-ready)
     - [Tapping further into data](#tapping-further-into-data)
 - [Conclusion](#conclusion)
 
-# My Scala journey
+# On my Scala journey
 
-## Coursera
-I became acquainted with Scala around 2014. 
-A colleague suggested I try Martin Odersky's course on Coursera called "Functional Programming Principles" in Scala. 
-Afterwards I went to the subsequent "Principles of Reactive Programming" which gave me a sense of the
-applicability of Scala in my day-to-day job.
-By the end of this "formal education", I had already found who the Twitter stars in the domain where, and followed
-the content they made.
-I also started to feel that using Java (1.8 had just been released) at work felt like I'm crippled in some way.
-The streams API was a mock of functional programming, Optional values raised questions like 
-"but why can I just do `!= null`? instead" 
-and people had to write `final` everywhere just to feel a bit more immutable.
-
-## Take off
-When the opportunity to use Scala at work (a growing social media management startup) finally presented itself, 
-I jumped on it without hesitation.
-I was lucky to have a colleague who felt as excited while also having the support of management in trying out 
-something new.
-Another great coincidence was that at the time Lightbend (formerly known as Typesafe) had just released akka-streams 1.0.
-Albeit scarce on documentation, it was a major upgrade over other Java frameworks that did streaming e.g. RxJava.
-
-The result of the work our tag-team did was a stable set of services that made a 10x data ingestion throughput 
-improvement, and a stable product that succeeded our stay at the given employer.
-
-## The fair
-Hungry for the next Scala gig, I landed at a company working with fair volumes of airfare observations.
-They found themselves with smart guys who knew how to build the data products they needed.
-That was my first taste of Spark.
-Discovering Spark really forced me to reevaluate my understanding of software.
-Distributed systems, data encodings, batch and stream processing - it was great.
-At the time Databricks was just a SaaS (Spark as a Service :D) product.
-Their selling point was "Let us do the heavy wiring of Spark, so you can focus on your data pipelines".
-Yet, the only thing they had for us developers was a notebook, and a (cron) job to run it.
-It was a painful process to figure out how to develop data pipelines as a software.
-
-We ended up with plain jobs that called notebooks, that called jars whose work was passed between cells.
-This beautiful madness run by a growing team of 10s of developers resulted in TBs of batch processed 
-data for our data warehouse and GBs of data exports for our clients.
-
-### Meetup
-Around this point in time I had the pleasure to host a Meetup dedicated to Scala.
-It was fun, challenging and disappointing at the same time.
-Fun because you got to see what funky things people and companies did with the language.
-Challenging because finding people able to present who had something to present was hard.
-As was finding a venue and making appealing events.
-The disappointment came from usual suspects and the lack of unusual ones.
-Good times!
-
-## Dix it
-Next was life back in the SaaS startup scene within a customer support software product.
-This time around there was Kubernetes and Scala was the language the platform was build on.
-The Akka and Typelevel stacks had found their way into the product and showed that either could do the job.
-
-My focus was to build up an ecosystem around Kafka that would power future data driven efforts.
-Effectively my job was very much centered around the creation of a 
-seamless process that allowed developing the SaaS product and its data counterpart without pain.
-Having amazing colleagues (numbering in the double digits) with solid software foundations 
-made my success inevitable.
-Scala was just the cherry on top.
-
-## Take Dat Corporation
-From personal observations most SaaS companies don't have enough data to make data products.
-Some never do, some eventually have but sort of.
-Old corporations on the other hand have tons of it.
-Traditionally slow and bureaucratic, these giants are awakening to the power of cloud.
-They assemble small, high-skilled, autonomous units that take great strides 
-towards a big change in the overall output of company.
-
-That being said, I decided to join such a big machine within Telco in hope of facing challenging data problems.
-That was my first stint with Azure and another take on how to do data products.
-Contrary to [the fair](#the-fair),
-this time we had an orchestration service in the face of Data Factory to help separate data transformations
-from boring and flaky tasks like integrations between systems, retries on connection timeouts
-and simple "convert csv to parquet" jobs.
-
-With a limited amount of hands (just a couple of data engineers and data scientists) on the team 
-and an ever-growing product portfolio, our team still managed to deliver.
-Although short-lived, some ML products that we made were quite powerful 
-(making thousands of predictions daily), while being implemented in an elegant and cost-efficient manner.
-As for Scala - I brought my Spark chops up-to-date with Delta and Azure Databricks. 
-In the process I compared the Scala and Python APIs and educated people on distributed systems.
-
-## Simba
-Here I am on my latest trip around the Sun.
-Converting a Pharma tank to a Tesla with data-powered, custom-tailored software products.
-This journey has just begun, but the usual players have already presented themselves.
-Again data, again Spark, again Azure and - you guessed it - again Scala.
-This time around we have ZIO.
-We also have Scala 3 knocking on the door.
+When considering writing this post, I looked through the web and found quite a few of these.
+One thing that stood out to me was that the authors - for the most part - jump head-first into giving orders and assigning labels without bothering to give background on their source of knowledge.
+As developers often times we are quite impatient when going through tech articles and want to cut to the "good stuff".
+Yet, I feel that putting labels on software needs to come from first hand experiences.
+That being said, I have attempted to share a short reference - wherever applicable - from my humble journey in an attempt to give context.
+This comes as an alternative to making a long and potentially boring story of my [LinkedIn](https://www.linkedin.com/in/zafirovalexander/) profile.
+Feel free to jump over if you feel uninterested.
 
 # Experiences
-After presenting you with a brief description of my career and its Scala side,
-I hope to have earned your trust.
-The trust that I have spent a considerable amount of time using this language in different environments,
-surrounded by different professionals, writing different types of software.
-Of course, that is not sufficient to convince anyone of my ability to write proper software.
-Yet, hopefully it is just enough to give you, the reader, the belief that 
-what comes next is neither the blabbering of an enthusiastic bachelor in CS,
-nor is it the pondering of a micro-optimizing virtuoso who has worked at Google, Facebook, Amazon and Twitter.
-Yes, these are biased thoughts, but they are based on various experiences with Scala across the board.
-
-I will proceed to list the good and bad sides of working with Scala. 
-Hopefully, that will give a more complete picture as to how the choice of a programming language affects
-a company's ability to deliver software products in a business context.
 
 ## The good
 
 ### Fun to write
-From the bat, Scala is fun to write.
+Right of the bat, Scala is fun to write.
 Every time I need to hit the keyboard, I feel inspired to tackle the technical problem I'm working on.
 There is just something about the way one can express a solution they have in their mind,
-succinctly using Scala, that I cannot find elsewhere.
+in a simple and powerful way using Scala, that I cannot find elsewhere.
 That may sound like my personal attitude, and it is. 
 Still, my attitude needs the right vehicle to flourish.
+
+In today's world where application developers write glue code with a bit of domain logic,
+building nested trees of `for { for { if ... else } }` is equivalent to a lot of maintenance 
+and decreased productivity.
+Scala allows for elegant solutions to these types of problems.
+By elegant I mean succinct and concrete.
+Fewer lines of code means fewer opportunities for bugs.
+Especially if those lines rest on language constructs.
+To illustrate my point, take a look at how Scala 3 [enums](https://dotty.epfl.ch/docs/reference/enums/enums.html) 
+take the concept to a [new level](https://dotty.epfl.ch/docs/reference/enums/adts.html).
 
 In general, I never felt that the language is stopping me from expressing a solution to a problem.
 If anything, there are so many ways to do one thing - I'll get back to that later.
 The main reason for the freedom I feel lays in Scala's building blocks.
-I'm talking about the ability to encode state in types and move from one state to the next in a predictable manner -  
-through immutable iterations driven by powerful constructs that always return a result.
+I'm talking about the ability to encode state in types and move from one state to the next in a predictable manner -  through immutable iterations driven by powerful constructs that always return a result.
+
+#### Take off
+I became acquainted with Scala around 2014. 
+A colleague suggested I try Martin Odersky's course on Coursera called "Functional Programming Principles" in Scala. 
+Everything in Scala seemed familiar but with a twist.
+`map`-ing reminded my of the Java 1.8 streams API, pattern matching of `switch` statements, `object`s of static classes and
+the factory pattern.
+It felt so elegant and powerful.
+On the flip side, going back to work with Java felt like I'm crippled in some way.
+The streams were a mock of functional programming, Optional values raised questions like 
+"but why can I just do `!= null`? instead" among my colleagues and we had to write `final` everywhere just to feel a bit more immutable.
 
 ### Compiled and statically-typed
 I, honestly, cannot fathom who would willingly jump over the safety and quick feedback that you get from types
@@ -218,38 +136,40 @@ The point I'm trying to make is that from simple to complex and front to back, S
 - mobile - see what's possible for 
   [Android](https://makingthematrix.wordpress.com/2021/04/07/how-to-build-an-android-app-in-scala-2-13/)
 
-### Succinct
-In today's world where application developers write glue code with a bit of domain logic,
-building nested trees of `for { for { if ... else } }` is equivalent to a lot of maintenance 
-and decreased productivity.
-Scala allows for elegant solutions to these types of problems.
-By elegant I mean succinct and concrete.
-Fewer lines of code means fewer opportunities for bugs.
-Especially if those lines rest on language constructs.
+#### All over the stack
+At one employer dealing with reasonable amounts of airfare observations, we were using Scala for a plethora of things:
+- Spark Streaming (with DStreams)
+- Spark batch processing
+- services
+- writing libraries for metrics, Databricks cli management, etc.
 
-However, I'm referring only to Scala's ability to iterate over collections. 
-`map`-ping over a collection is something that many languages do.
-Something that many of us can relate to are enumerations.
-Take a look at how Scala 3 [enums](https://dotty.epfl.ch/docs/reference/enums/enums.html) 
-take the concept to a [new level](https://dotty.epfl.ch/docs/reference/enums/adts.html).
+It was fun to try different problems with Scala. This experience also gave the team great insights into the amount of things we can throw at the language and still feel productive.
 
 ### Adaptive
 Scala has been one of the few languages that explored the marriage between OO and FP.
 Throughout the years it became obvious that the initial attempts weren't perfect.
-**And that is ok**.
+And that is ok.
 The ability to adapt to the changing demands of the world around us should be viewed as a positive thing.
-With the evolution of the language, comes the evolution of the practitioner.
 Finding a common ground between the [versatile](#versatile) software products that I listed,
 gives continuation and comfort to take baby steps when learning new things.
-Some projects a pretty new, some have been there for quite a while and are battle-tested.
-Seeing more work being done to this day, gives me confidence of the many unexplored sides of the language.
+Some projects are pretty new, some have been there for quite a while and are battle-tested.
+Seeing more work being done to this day, gives me confidence there are many sides of the language to be explored.
+
+Also with the evolution of the language, comes the evolution of the practitioner.
+With Go, for example, the way your code looks after a year of using the langauge is pretty close to the way it looks after
+several years of experience.
+Scala just scales better with skill.
+The language allows for creating much more sophisticated abstractions thus allowing single individuals to absorb enormous amounts of complexity and still be productive. 
+Think [Li Haoyi](https://www.lihaoyi.com) or [John de Goes](https://degoes.net).
+They've both spawned entire ecosystems of libraries in a rather short amount of time.
+The corresponding feat would have surely taken them much longer to build in other languages. 
 
 ### JVM-native
 Software doesn't exist in isolation.
 Scala's ability to have a seamless integration with Java code is majorly overlooked.
 The last 30 years of Java have produced many libraries that any Scala project can utilize without impediments.
 Also, it cannot be overstated that the language runs on the JVM.
-The amount of developers working in this ecosystem is humungous.
+The amount of developers working in this ecosystem is humongous.
 Lastly, at this point garbage collection is a science of its own.
 Any improvements made to the GC become available for Scala just like that.
 
@@ -265,7 +185,19 @@ the majority of the time I revisited my implementation was to address business n
 and my inability to program against specification.
 Solely has it been due to the memory leaks and complicated concurrency issues.
 As much as this could be my luck and lack of right problem to push the tools to their limits,
-I still maintain the opinion that the Scala is the right choice for building reliant software.
+I still maintain the opinion that Scala is the right choice for building reliant software.
+
+#### Twitter ingestion
+I was working at a growing social media management startup when my team got the green light to reimplement a core
+piece of functionality that ingested Twitter data.
+We wanted to use Scala.
+Lightbend (at the time Typesafe) had just released akka-streams 1.0.
+Albeit scarce on documentation, it was a major upgrade over other Java libraries like RxJava.
+We were an excited tag-team that spawned a set of services that made a 10x data ingestion throughput 
+improvement.
+We implemented subscription management of Twitter accounts, real-time streaming of tweets,
+up-to-date refresh of tweets, restreaming in case of failure, monitoring, alerting.
+We ended up with a stable product that succeeded our stay at the given employer.
 
 ## The bad
 
@@ -274,13 +206,25 @@ Depending on which developer/team's code you look at, you are getting different 
 Unlike Python which is mostly written the same way, Scala's mix of OO and FP allow for wiggle room.
 That is quite bad if you are interested in getting better as a developer and attempt reading different 
 source code.
-It is also but when it comes to maintenance and knowledge-sharing.
+It is also bat when it comes to maintenance and knowledge-sharing.
 
 Unfortunately, there is no general solution to this one.
 It is about documenting your team's knowledge and experience with Scala and FP,
 education and automation of practises (formatting tools, linters, compiler warnings).
 Looking at the upcoming Scala 3, I'd say the direction is more towards functional which is definitely helpful
 for the community as a whole.
+
+#### Schedule it
+I hope you are familiar with the [Eisenhower matrix](http://alyjuma.com/wp-content/uploads/2017/09/myMatrix-904x1024.jpg).
+At one of my employers, the backenders knew that we should sit down and make a common Scala style for all projects. 
+I actually made a proposal. 
+Besides the long discussion on PRs, the effort didn't get traction.
+Just because it was an important but not urgent task.
+We ended up not doing anything globally.
+It wasn't a devastating experience but the sense of shared values and common learnings was missing.
+
+From that pont on, settling on a Scala style is one of the first things that gets done on the projects I work on.
+Tools like [scalafmt](https://scalameta.org/scalafmt/) make this process a breeze.
 
 ### Compilation time
 Much has been said about Scala's compilation speed over the years.
@@ -294,6 +238,15 @@ speeding up compile times.
 Furthermore, articles like [this](https://medium.com/graalvm/compiling-scala-faster-with-graalvm-86c5c0857fa3)
 have presented GraalVM as an alternative to solving the problem of compilation speed.
 
+#### No fun
+The one time in my career when I felt compile time is too much was when I worked on a contracts library.
+The premise was that different services within the ecosystem needed to communicate on various planes.
+For the interservice comms there was Finagle and Scrooge.
+For the event bus - Avro.
+These contracts needed to evolve in lock-step - hence the common repo.
+Once all the classes needed to be generated based on the given binary encoding and their respective tests run, we ended up with a solid portion of time wasted on compilations.
+To add to the frustration was a sporadic flaky test that render 10s of minutes of waiting useless. 
+
 ### Backward compatibility
 [Here](https://www.quora.com/Why-isnt-Scala-backward-compatible?share=1) is a great writeup of why Scala 
 historically has broken minor (the y in x.y.z) version compatibility. The gist of it is:
@@ -304,6 +257,12 @@ The author goes on to say:
 
 Right on queue we get a [post](https://scala-lang.org/blog/2021/04/08/scala-3-in-sbt.html#a-new-compatibility-era) 
 regarding that in Scala 3.
+
+#### Transitive dependency hell
+I haven't had this problem too many times but when I did it took a lot of time to get right.
+I remember clearly how I was adding milestone versions of akka-http and hoping that the one I'm using, is the one that would fit all my requirements. 
+It was so tedious to look at the dependency graph on web pages, zooming in and out, trying to find what calls what.
+A tough task that when done leaves you with the feeling that you wasted your time for no good reason.
 
 ## Recommendations
 
@@ -399,3 +358,7 @@ It has already powered some of the most prominent software products many of us u
 When looking at community surrounding the language, I see many bright and curious individuals, 
 willing to take a step in uncharted territories.
 That brings one word to mind - excitement.
+
+---
+_I would like to thank [Rune](https://www.linkedin.com/in/rune-pedersen-80723b93/) and [Viet](https://www.linkedin.com/in/nguyenvietyen/) who where generous enough to pre-read and give feedback on this 
+work._
