@@ -3,7 +3,7 @@ title: "Scala"
 date: 2021-04-20
 description: "A language of self-discipline"
 tags: ["scala"]
-draft: true
+draft: false
 ---
 Ever since its public release in 2004, Scala has been challenging the traditional development strategies.
 Due to its mix of object-oriented (OO) and functional programming (FP), the language has received a fair amount
