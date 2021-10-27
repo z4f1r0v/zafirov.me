@@ -1,6 +1,6 @@
 ---
 title: "DataOps"
-date: 2021-04-20
+date: 2021-10-27
 description: "Essential practices, processes and roles for working with data"
 tags: ["dataops"]
 draft: false
