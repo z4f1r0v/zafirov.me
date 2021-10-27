@@ -52,7 +52,7 @@ In general, DataOps aims to provide the following organizational benefits:
 
 Viewing DataOps from a practices' perspective, it is a combination of Agile development, DevOps and Statistical Process Control. Applying these practices to digital data, results in DataOps.
 
-![](img/dataops.jpeg)
+![](/img/dataops.jpeg)
 
 ### DevOps
 
@@ -115,7 +115,7 @@ With logic tests in place, the development pipeline can be automated for continu
 The two workflows are combined into the Value-Innovation Pipeline in the figure below.
 The Value-Innovation Pipeline captures the interplay between development and production, and between data and code. DataOps breaks down this barrier so that cycle time and quality can be improved. The practices it employs help orchestrate data to production and the deployment of new features, while maintaining quality. DataOps speeds the extraction of value from data and improves the velocity of new development while ensuring the quality of data and code in production systems.
 
-![](img/value-innovation.png)
+![](/img/value-innovation.png)
 
 ## Process
 
@@ -133,7 +133,7 @@ DevOps introduces three foundational concepts: Continuous Integration (CI), Cont
 
 Once an application passes all qualification tests, it is deployed to production. Together CI and CD resolve the main constraint hampering Agile development. Before DevOps, Agile created a rapid succession of updates and innovations that would stall in a manual integration and deployment process. With automated CI and CD, DevOps has enabled companies to update their software many times per day.
 
-![](img/dataops-process.png)
+![](/img/dataops-process.png)
 
 ### Testing
 
@@ -145,7 +145,7 @@ In the Innovation Pipeline code is variable and data is fixed. The analytics are
 
 Some tests are aimed at both data and code. For example, a test that makes sure that a database has the right number of rows helps your data and code work together. Ultimately both data tests and code tests work together to ensure output quality.
 
-![](img/testing.png)
+![](/img/testing.png)
 
 ### Sandbox and test data management
 
@@ -179,7 +179,7 @@ One important benefit of DataOps is its ability to harmonize the back-and-forth 
 
 DataOps brings localized and centralized development together enabling organizations to reap the efficiencies of centralization while preserving localized development — the tip of the innovation spear.
 
-![](img/org-effect.png)
+![](/img/org-effect.png)
 
 ### Competences and Roles
 
@@ -191,7 +191,7 @@ Looking closer into the data and operations teams, we find a set of competences 
 - Analytics skills - ability to explore the data
 - Software engineering skills - ability to develop, maintain and operate
 
-![](img/roles-spider.png)
+![](/img/roles-spider.png)
 
 The above diagram shows the distribution and overlap of these competences among the key roles that partake in the generation of a data asset. Those roles and their intersection are described below.
 
