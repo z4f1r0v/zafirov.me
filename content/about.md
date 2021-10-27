@@ -10,7 +10,6 @@ My approach relies on consuming quality content, exercise and travel.
 
 "./side_effects.sh" (read execute the _side_effects_ shell script) links to a concept in computer science which describes 
 changes that happen to the state of a computer program.
-In functional programming side effects are rarely used as they make computer programs hard to reason about.
 
 With that in mind I think that reality - by humanity's current understanding of it - is very much full of side effects. 
 In *Side Effects* I intend to ruminate on what I know and don't know about how life works. 
