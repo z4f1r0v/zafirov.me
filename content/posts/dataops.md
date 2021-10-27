@@ -181,7 +181,7 @@ DataOps brings localized and centralized development together enabling organizat
 
 ![](img/org-effect.png)
 
-### Competences &amp; Roles
+### Competences and Roles
 
 Looking closer into the data and operations teams, we find a set of competences necessary for extracting business value out of data. These are as follows:
 
@@ -191,7 +191,7 @@ Looking closer into the data and operations teams, we find a set of competences 
 - Analytics skills - ability to explore the data
 - Software engineering skills - ability to develop, maintain and operate
 
-![](roles-spider.png)
+![](img/roles-spider.png)
 
 The above diagram shows the distribution and overlap of these competences among the key roles that partake in the generation of a data asset. Those roles and their intersection are described below.
 
