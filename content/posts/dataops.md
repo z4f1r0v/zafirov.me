@@ -251,3 +251,7 @@ Albeit orthogonal to the data plane, the Cloud Engineer role is integral to ever
 
 1. DataOps Right - [https://get.oreilly.com/ind\_getting-dataops-right.html](https://get.oreilly.com/ind_getting-dataops-right.html)
 2. DataOps Cookbook - [https://datakitchen.io/the-dataops-cookbook](https://datakitchen.io/the-dataops-cookbook)
+
+---
+_I would like to thank my colleagues from the Data & Analytics department in R&D at Leo for their time and feedback. 
+I would very much like to thank my colleague [Radu](https://www.linkedin.com/in/radudragusin/) for the contributions, sparring, feedback and excellent research on inspirational resources._
