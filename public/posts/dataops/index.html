@@ -208,7 +208,7 @@
 </ul>
 <h2 id="practices">Practices</h2>
 <p>Viewing DataOps from a practices' perspective, it is a combination of Agile development, DevOps and Statistical Process Control. Applying these practices to digital data, results in DataOps.</p>
-<p><img src="img/dataops.jpeg" alt=""></p>
+<p><img src="/img/dataops.jpeg" alt=""></p>
 <h3 id="devops">DevOps</h3>
 <p>The initial push for DataOps comes from DevOps. Development and Operations (DevOps) is a methodology that sits at the intersection between software development and IT operations. It focuses on the continuous integration, delivery and deployment of software products.</p>
 <p>DataOps utilizes software engineering practices stemming from DevOps such as:</p>
@@ -251,7 +251,7 @@ loop. Innovation spurs new questions and ideas for enhanced analytics. This requ
 <h3 id="the-value-innovation-pipeline">The Value-Innovation Pipeline</h3>
 <p>The two workflows are combined into the Value-Innovation Pipeline in the figure below.
 The Value-Innovation Pipeline captures the interplay between development and production, and between data and code. DataOps breaks down this barrier so that cycle time and quality can be improved. The practices it employs help orchestrate data to production and the deployment of new features, while maintaining quality. DataOps speeds the extraction of value from data and improves the velocity of new development while ensuring the quality of data and code in production systems.</p>
-<p><img src="img/value-innovation.png" alt=""></p>
+<p><img src="/img/value-innovation.png" alt=""></p>
 <h2 id="process">Process</h2>
 <h3 id="development-and-deployment">Development and Deployment</h3>
 <p>DataOps builds upon the DevOps development model. The DevOps process flow includes a series of steps that are common to software development projects:</p>
@@ -264,13 +264,13 @@ The Value-Innovation Pipeline captures the interplay between development and pro
 </ul>
 <p>DevOps introduces three foundational concepts: Continuous Integration (CI), Continuous Delivery (CD) and Continuous Deployment. The goal of Continuous Integration is to enable an automated way to build, package, and test applications. Continuous Delivery is tasked with automating the delivery of applications to a given environment via manual release process. Finally, Continuous Deployment is the process of automatically releasing source code to a production environment.</p>
 <p>Once an application passes all qualification tests, it is deployed to production. Together CI and CD resolve the main constraint hampering Agile development. Before DevOps, Agile created a rapid succession of updates and innovations that would stall in a manual integration and deployment process. With automated CI and CD, DevOps has enabled companies to update their software many times per day.</p>
-<p><img src="img/dataops-process.png" alt=""></p>
+<p><img src="/img/dataops-process.png" alt=""></p>
 <h3 id="testing">Testing</h3>
 <p>Tests in DataOps have a role in both the Value and Innovation Pipelines. In the Value Pipeline, tests monitor the data values flowing through, to catch anomalies or flag data values outside statistical norms. In the Innovation Pipeline, tests validate new analytics before deploying them.</p>
 <p>In DataOps, tests target either data or code. The Figure below illustrates this concept. Data that flows through the Value Pipeline is variable and subject to SCP and monitoring. Tests target the data which is continuously changing. Analytics in the Value Pipeline, on the other hand, are fixed and change only using a formal release process. In the Value Pipeline, analytics are revision controlled to minimize any disruptions in service that could affect the data pipeline.</p>
 <p>In the Innovation Pipeline code is variable and data is fixed. The analytics are revised and updated until complete. Once the sandbox (analytics development environment) is set up, the data usually doesn&rsquo;t change. In the Innovation Pipeline, tests target the code (analytics), not the data. All tests must pass before promoting (merging) new code into production. A good test suite serves as an automated form of impact analysis that runs on any and every code change before deployment.</p>
 <p>Some tests are aimed at both data and code. For example, a test that makes sure that a database has the right number of rows helps your data and code work together. Ultimately both data tests and code tests work together to ensure output quality.</p>
-<p><img src="img/testing.png" alt=""></p>
+<p><img src="/img/testing.png" alt=""></p>
 <h3 id="sandbox-and-test-data-management">Sandbox and test data management</h3>
 <p>When an engineer joins a software development team, one of their first steps is to create a &quot;sandbox.&quot; A sandbox is an isolated development environment where the engineer can write and test new application features, without impacting teammates who are developing other features in parallel.</p>
 <p>In order to create a dev environment for analytics, you have to create a copy of the Value Pipeline. This requires the data professional to replicate data which may have security, governance or licensing restrictions. It may be impractical or expensive to copy the entire data set, so some thought and care is required to construct a representative data set. Once a data set is sampled or filtered, it may have to be cleaned or redacted (have sensitive information removed). The data also requires infrastructure which may not be easy to replicate due to technical obstacles or license restrictions.</p>
@@ -287,7 +287,7 @@ The Value-Innovation Pipeline captures the interplay between development and pro
 <p>Centralizing analytics development under the control of one group, such as IT, enables the organization to standardize metrics, control data quality, enforce security and governance, and eliminate islands of data. The issue is that too much centralization risks of inhibiting creativity.</p>
 <p>One important benefit of DataOps is its ability to harmonize the back-and-forth between the decentralized and centralized development of data analytics — the tension between centralization and freedom. In a DataOps enterprise, new analytics originate and undergo refinement in the local pockets of innovation. When an idea proves useful or is worthy of wider distribution, it is promoted to a centralized development group who can more efficiently and robustly implement it at scale.</p>
 <p>DataOps brings localized and centralized development together enabling organizations to reap the efficiencies of centralization while preserving localized development — the tip of the innovation spear.</p>
-<p><img src="img/org-effect.png" alt=""></p>
+<p><img src="/img/org-effect.png" alt=""></p>
 <h3 id="competences-and-roles">Competences and Roles</h3>
 <p>Looking closer into the data and operations teams, we find a set of competences necessary for extracting business value out of data. These are as follows:</p>
 <ul>
@@ -297,7 +297,7 @@ The Value-Innovation Pipeline captures the interplay between development and pro
 <li>Analytics skills - ability to explore the data</li>
 <li>Software engineering skills - ability to develop, maintain and operate</li>
 </ul>
-<p><img src="img/roles-spider.png" alt=""></p>
+<p><img src="/img/roles-spider.png" alt=""></p>
 <p>The above diagram shows the distribution and overlap of these competences among the key roles that partake in the generation of a data asset. Those roles and their intersection are described below.</p>
 <h4 id="subject-matter-expert-sme">Subject-Matter Expert (SME)</h4>
 <p>The SME is a representative of the business. It is a role that represents a substantial amount of domain knowledge on a given subject. These professionals have an interest in extracting business insight from data as seen from their respective business context.</p>
