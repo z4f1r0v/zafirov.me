@@ -21,7 +21,7 @@
 
 ## Lead Data Engineer, R&D Data and Analytics at Leo Pharma
 
-_Jan 2020 - Present_
+_Jan 2021 - Present_
 
 Strategic contributions:
 
@@ -43,7 +43,7 @@ Strategic contributions:
     - recruitment - structured and carried out te hiring process for data engineers
     - evangelism - stakeholder management within the company, sparring with technical and non-technical colleagues alike
       to provide the technical guidance for a given use-case
-    - procurement - assessment and sparing with software vendors when deciding on "buy vs build vs wait"
+    - procurement - assessment and sparring with software vendors when deciding on "buy vs build vs wait"
 
 Individual contributions:
 
