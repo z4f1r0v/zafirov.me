@@ -1,4 +1,4 @@
-+++ title = "CV"
++++ title = "Curriculum Vitae"
 +++
 
 - [More strategy, less IC](#more-strategy-less-ic)
