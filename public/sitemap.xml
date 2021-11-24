@@ -104,5 +104,7 @@
     <loc>/about/</loc>
   </url><url>
     <loc>/categories/</loc>
+  </url><url>
+    <loc>/cv/</loc>
   </url>
 </urlset>
