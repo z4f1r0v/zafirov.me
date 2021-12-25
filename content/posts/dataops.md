@@ -72,7 +72,7 @@ For DataOps to be effective, it must support people by enabling better collabora
 
 The following Agile practices apply to the DataOps methodology:
 
-- **work in small, empowered teams with clear roles** – establishing teams that consists of individuals with all the skills required for delivery that span across disciplines
+- **work in small, empowered teams with clear roles** – establishing teams that consist of individuals with all the skills required for delivery that span across disciplines
 - **deliver working software frequently, in short increments** – leveraging the DevOps tools and practices, teams are enabled to deliver software at a high cadence
 - **get frequent feedback from Line of Business (LoB)** – allows for business representatives to see the progress and guide the development from a domain expert perspective. The team gains confidence in the direction they have developed their software. The project as a whole becomes accepting of changing requirements and comes as closest to reality as technically feasible.
 

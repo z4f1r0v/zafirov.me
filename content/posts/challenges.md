@@ -13,7 +13,7 @@ I traveled, I faced obstacles and learned a lot of lessons from my mistakes.
 If 2016 was a year of changes then 2017 was that and some more, so I name the last 12 months - a year of challenges.
 
 First - work related challenges. I am software engineer. 
-In my profession to be on the top of your technical game you need to posses one quality. Just one! 
+In my profession to be on the top of your technical game you need to possess one quality. Just one! 
 And that's _curiosity_. That translates to constant reading, learning, tinkering, discussing - being (self-)aware.
 But if you want to go beyond that to a more _communicative_ position you need a whole different assortment of skills. 
 I'm talking about the infamous _soft skills_. 
@@ -21,7 +21,7 @@ I was faced with a situation where my team needed someone to step up and give pe
 and open about their work. Being the helping guy I am, I volunteered for the task. 
 I did my research as to what is necessary to do in this situation as well as asked other people whose job includes 
 such tasks. 
-I applied the learning to my team and soon we were rolling forward. Funny enough that served for some time 
+I applied the learning to my team, and soon we were rolling forward. Funny enough that served for some time 
 and then when I no longer had time to address the aforementioned problems, they came to bite us back. 
 Even though I won the battle, I lost the war. I didn't put things into perspective, 
 and the initial effort was made useless. 
@@ -37,7 +37,7 @@ nearly useless.
 The first OCR took me to the hills of Oslo where I had to go up and down a hilly terrain with a denivelation of 
 probably 700-1000 m several times capping it off with a run up a ski slope.
 Then I did a half-marathon which took place in the streets of Copenhagen. 
-It started off bad as my new fitness tracker had mislead me with my pace in the month leading up to the race. 
+It started off bad as my new fitness tracker had misled me with my pace in the month leading up to the race. 
 I started far too fast, ended up burning out and having to suffer for it all the way until the last quarter of the race. 
 And in the end there was a thunderstorm with hail. And I lost my wireless headphones. 
 And I had to change in a muddy field with rain pouring on me.
@@ -45,7 +45,7 @@ I finished the month in style with a nice OCR on a beach in the Copenhagen area.
 If I have to sum this month up, I would say - it was amazing but if I am to do that ever again 
 I will definitely prepare differently for it. Again - experience gained, skills improved, team strengthened, self - bettered.
 
-September came and went, and my body didn't seem to have any problem with taking so much beating 
+September came and went, and my body didn't seem to have any problem with taking so much beating,
 but subsequently it started giving up in areas I didn't expect it would. 
 Which is a nice segway into the third and final - health challenges. 
 Unlike previous years when I would get the occasional cold this year I had a whole plethora of health related issues. 
@@ -76,10 +76,10 @@ and work through them patiently one item at a time results will inevitably come.
 
 The bold - both meanings of the word - statements from the previous two paragraphs are deeply connected 
 and lead (me) to the following understanding - __every day that you wake up, 
-and you get to realize it is a great day already__. That's the base line. Ground zero. Rock bottom. 
+and you get to realize it is a great day already__. That's the baseline. Ground zero. Rock bottom. 
 From here on in everything is a gain. The bad things are life experiences. 
-The good things are just a follow up of the previous ones. 
-Life is multi-dimensional and full of colors so everything counts, everything matters. 
+The good things are just a follow-up of the previous ones. 
+Life is multidimensional and full of colors so everything counts, everything matters. 
 In other words - time is our most precious resource, so we should be mindful how we spend it.  
 
 And so we are here. Alive. Today. Again. And it feels awesome!

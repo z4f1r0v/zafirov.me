@@ -8,7 +8,7 @@ draft: false
 
 Making software in this day and age seems like a trivial task. 
 There are cloud providers - Amazon Web Services (AWS), Google Cloud Platform (GCP), Azure - open-source languages, tools and frameworks, 
-and many sources like blogs/podcasts/youtube channels where experienced engineers share their success and failure. 
+and many sources like blogs/podcasts/YouTube channels where experienced engineers share their success and failure. 
 Thus, theoretically it should not be hard to learn a tool, write *some code* and solve a problem that exists in the world.
 
 I personally agree and disagree with this statement. 
@@ -112,7 +112,7 @@ Examples of the generalist mindset may be:
 - translation - enabling colleagues on both sides of the technical boundary to understand the problem statement so that you speak the same ubiquitous language[^1]
 - lowering [bus factor](https://en.wikipedia.org/wiki/Bus_factor) - being able to jump in and help/substitute colleagues regarding topics you don't work with daily
 - increased learning capabilities - when introduced to new technology if understand concepts in detail it really doesn't matter how that technology is marketed.
-Take away all the shiny lingo and you will come back to home base - the things that stood the test of time which are hidden by context and [accidental complexity](https://medium.com/swlh/how-to-avoid-accidental-complexity-in-software-design-2792ad99fddc).
+Take away all the shiny lingo, and you will come back to home base - the things that stood the test of time which are hidden by context and [accidental complexity](https://medium.com/swlh/how-to-avoid-accidental-complexity-in-software-design-2792ad99fddc).
 
 ## Conclusion
 

@@ -114,7 +114,7 @@ A software engineer absolutely needs to earn the trust of their employer and co-
 
 Modern day software is not written in isolation. 
 Building and maintaining it at scale is very much a team[^1] endeavour. 
-Thus, to be considered for a developer position - not to mention a "senior" one - candidates need to posses good communication skills.
+Thus, to be considered for a developer position - not to mention a "senior" one - candidates need to possess good communication skills.
 Communication for me means a proficient level of English (I consider that the standard in tech for now) across reading, listening, writing and speaking.
 
 Examples where communication is key include:
@@ -167,7 +167,7 @@ In the process I arrived at the following ingredients to a recipe for fulfillmen
 - transparency through clear communication with people across the organization
 - inclusion and encouragement by setting a positive example
 
-To me these will help everyone continue to grow as a person and professional.
+To me these will help everyone to continue growing as a person and professional.
 
 [^1]: Depending on the size of the organization the team could be the entire org, engineering department 
 or a [cross-functional team](https://www.visual-paradigm.com/scrum/what-is-cross-functional-team-in-agile/). 
