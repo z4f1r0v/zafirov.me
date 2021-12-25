@@ -1,12 +1,12 @@
 ---
 title: "2017"
 date: 2017-12-24
-description: "Today is a great day ..."
+description: "A year of challenges"
 tags: ["recap"]
 draft: false
 ---
 
-... already! But why is that? To answer that question first let me walk you through my year.
+Today is a great day! But why is that? To answer that question first let me walk you through my year.
 
 As is obvious I haven't written much in 2017 and that is for a reason. 
 I traveled, I faced obstacles and learned a lot of lessons from my mistakes. 

@@ -1,7 +1,7 @@
 ---
 title: "2016"
 date: 2016-12-30
-description: "A Year Of Changes"
+description: "A year of changes"
 tags: ["recap"]
 draft: false
 ---
