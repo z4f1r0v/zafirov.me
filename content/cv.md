@@ -12,7 +12,7 @@
 - [Junior days](#junior-days)
     - [Java Developer at WorldTicket A/S](#java-developer-at-worldticket-as)
 - [Side-hustle](#side-hustle)
-    - [Java Developer and Release Manager at Exiqon](#java-developer-and-release-manager)
+    - [Java Developer](#java-developer)
     - [Freelance developer](#freelance-developer)
     - [Software Developer at Abas Business Solutions Bulgaria Ltd.](#software-developer-at-abas-business-solutions-bulgaria-ltd)
     - [Teaching assistant at Technical University of Sofia](#teaching-assistant-at-technical-university-of-sofia)
@@ -199,7 +199,7 @@ Technologies:
 
 # Side-hustle
 
-## Java Developer and Release Manager
+## Java Developer
 
 _Nov 2011 - Oct 2013_
 
