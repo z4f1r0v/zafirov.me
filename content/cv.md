@@ -1,12 +1,12 @@
 +++ title = "Curriculum Vitae"
 +++
 
-- [More strategy, less IC](#more-strategy-less-ic)
+- [Focus on strategy](#focus-on-strategy)
     - [Lead Data Engineer, R&D Data and Analytics at Leo Pharma](#lead-data-engineer-rd-data-and-analytics-at-leo-pharma)
-- [Strong IC with soft skills](#strong-ic-with-soft-skills)
+- [Technical proficiency, a bit of strategy](#technical-proficiency-a-bit-of-strategy)
     - [Technical Lead, Advanced Analytics at TDC Net](#technical-lead-advanced-analytics-at-tdc-net)
     - [Senior Software Engineer at Dixa](#senior-software-engineer-at-dixa)
-- [Expanding IC across the backend and data stack](#expanding-ic-across-the-backend-and-data-stack)
+- [Expanding technical skills across the backend and data stack](#expanding-technical-skills-across-the-backend-and-data-stack)
     - [Platform Engineer at Infare](#platform-engineer-at-infare)
     - [Platform Engineer at Falcon.io](#platform-engineer-at-falconio)
 - [Junior days](#junior-days)
@@ -17,7 +17,7 @@
     - [Software Developer at Abas Business Solutions Bulgaria Ltd.](#software-developer-at-abas-business-solutions-bulgaria-ltd)
     - [Teaching assistant at Technical University of Sofia](#teaching-assistant-at-technical-university-of-sofia)
 
-# More strategy, less IC
+# Focus on strategy
 
 ## Lead Data Engineer, R&D Data and Analytics at Leo Pharma
 
@@ -53,6 +53,10 @@ Individual contributions:
   service were they can deploy and monitor ML deployments at scale
 - Sample Catalogue - took part in implementing a data pipeline for an application, which enables the user to search and
   inspect various samples from across the "Research" part of the organization
+- Snowflake setup 
+  - worked on defining roles and privileges implemented using the Snowflake governance model
+  - set up SSO with AAD
+  - orchestration done via Terraform
 
 Technologies:
 
@@ -67,7 +71,7 @@ Technologies:
 - Visualization - Grafana, Azure App Insights, DataDog
 - DevOps - Azure DevOps
 
-# Strong IC with soft skills
+# Technical proficiency, a bit of strategy
 
 ## Technical Lead, Advanced Analytics at TDC Net
 
@@ -128,7 +132,7 @@ Technologies:
 - Orchestration - Kubernetes
 - Database - DynamoDB, PostgresSQL
 
-# Expanding IC across the backend and data stack
+# Expanding technical skills across the backend and data stack
 
 ## Platform Engineer at Infare
 
@@ -211,9 +215,9 @@ Contributions:
 
 Technologies:
 
-- Backend stack: Tomcat, Java EE, Spring, JSP, Servlets, XSLT 
-- Frontend stack: JQuery DB: MySQL, SQLite 
-- Version control - Subversion 
+- Backend stack: Tomcat, Java EE, Spring, JSP, Servlets, XSLT
+- Frontend stack: JQuery DB: MySQL, SQLite
+- Version control - Subversion
 - CI - Jenkins, Artifactory
 
 ## Freelance developer
