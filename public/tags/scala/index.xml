@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scala on ./side_effects.sh</title>
+    <link>/tags/scala/</link>
+    <description>Recent content in scala on ./side_effects.sh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/scala/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scala</title>
+      <link>/posts/scala/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/scala/</guid>
+      <description>Ever since its public release in 2004, Scala has been challenging the traditional development strategies. Due to its mix of object-oriented (OO) and functional programming (FP), the language has received a fair amount of criticism regarding being complex, unopinionated and slow to develop. Fast-forward to more recent times, I stumbled upon this post. In it the author mentions many valid criticisms towards Scala as an overall experience. Furthermore, he gives recommendations as to where Scala&amp;rsquo;s strength resides.</description>
+    </item>
+    
+    <item>
+      <title>A Scala Christmas Tree</title>
+      <link>/posts/xmastree/</link>
+      <pubDate>Thu, 29 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/xmastree/</guid>
+      <description>In the spirit of the Christmas and New Year&amp;rsquo;s festivities, I decided to share with you a short and fun recursive function that can warm your hearts. If not - hopefully it will warm your gray matter a bit.
+import scala.annotation.tailrec def xmasTree(height: Int): Unit = { @tailrec def xmasTree(n: Int, t: Int): Unit = { if (n == t) { println(&amp;#34; &amp;#34; * (t - n) + &amp;#34;*&amp;#34; * (1 + n * 2)) println(if (n == 1) &amp;#34; # &amp;#34; else if (n == 2) &amp;#34; # &amp;#34; else List.</description>
+    </item>
+    
+    <item>
+      <title>Working with nulls in Spark UDFs</title>
+      <link>/posts/sparknulls/</link>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sparknulls/</guid>
+      <description>Sometimes the simplest things are hardest to work out. Let&amp;rsquo;s say I have a DataFrame created from a parquet file which can have nullable columns that are of a certain type - in this example that is Int. The reason I chose Int particularly is that it is not a trivial case i.e. it doesn&amp;rsquo;t accept nulls as values. The problem that arises is that the DataFrame can have IntegerType specified for the schema and still contain nulls.</description>
+    </item>
+    
+  </channel>
+</rss>
