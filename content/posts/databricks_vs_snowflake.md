@@ -1,6 +1,7 @@
 ---
 title: "Databricks vs Snowflake"
-date: 2022-02-21 description: "Who is who and what's in it for me?"
+date: 2022-02-21 
+description: "Who is who and what's in it for me?"
 tags: ["thoughts", "software vendors"]
 draft: true
 ---
