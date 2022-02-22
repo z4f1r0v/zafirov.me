@@ -103,14 +103,6 @@ they solve customers' data problems, but they also provide them with the ability
 marketplace. The ability to pull big amounts of curated data for no extra cost providing high degree of enrichment is a
 big plus for anyone doing analytics and data science at scale.
 
-Now there is Snowpark which is cool but also overdue. I know that SQL is king in the database world, but it is also very
-limited when it comes to expressing complex business logic (left joins and stored procedures - I'm looking at you).
-Teaming up with Anaconda is smart because all the Data Science folks suddenly get enormous superpowers for no price.
-Unfortunately, unlike its predecessor, Snowpark can only wrangle the data within Snowflake. The minute you want to port
-it out, you need other functionality or an integration. Plus, you always need to spend money to run it as it cannot run
-outside Snowflake itself. Also, there is no such thing as writing tests for it. In short - right now it's more of an
-homage to people that prefer Python/Scala to SQL, rather than the CI/CD way of doing data engineering.
-
 ## Conclusion
 
 This post was an attempt to address the two elephants in the room. As it is visible, Databricks and Snowflake are
