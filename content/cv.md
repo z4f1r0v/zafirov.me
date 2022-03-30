@@ -142,7 +142,7 @@ Individual contributions:
 
 - implemented batch processing data pipeline of TBs of airfare observations towards a centralized data lake through
   Apache Spark batch jobs
-- implemented an ETL job generating customer tailored output towards customer's FTP serer powered by Apache Spark
+- implemented an ETL job generating customer tailored output towards customer's FTP server powered by Apache Spark
   Streaming
 - redesigned a multistep pipeline transforming and aggregating airfare observations from MSSQL Server to Memsql with
   Apache Spark
@@ -169,7 +169,7 @@ _Sep 2014 - Aug 2016_
 Contributions:
 
 - extracted functionality from a polling-based monolith application to a service-based streaming architecture of the
-  Twitter indexing component increasing the ingestion speed of tweets 10 times
+  Twitter indexing component increasing the ingestion speed of tweets 10x
 - designed and implemented the public Falcon API
 - maintained data retrieval from all major social networks APIs - Facebook, Twitter, etc.
 
