@@ -21,7 +21,7 @@
 
 ## Lead Data Engineer, R&D Data and Analytics at Leo Pharma
 
-_Jan 2021 - Present_
+_Jan 2021 - June 2022_
 
 Strategic contributions:
 
@@ -53,10 +53,12 @@ Individual contributions:
   service were they can deploy and monitor ML deployments at scale
 - Sample Catalogue - took part in implementing a data pipeline for an application, which enables the user to search and
   inspect various samples from across the "Research" part of the organization
-- Snowflake setup 
-  - worked on defining roles and privileges implemented using the Snowflake governance model
-  - set up SSO with AAD
-  - orchestration done via Terraform
+- Snowflake governance
+    - worked on defining roles and privileges implemented using the Snowflake governance model
+    - set up SSO with AAD
+    - orchestration done via Terraform
+- AlphaFold setup - using Azure Machine Learning to help "Research and Early Development" use state-of-the-art Deep
+  Learning in order to predict protein’s 3D structure from its amino acid sequence
 
 Technologies:
 
