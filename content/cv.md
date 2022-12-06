@@ -2,6 +2,7 @@
 +++
 
 - [Expanding technical leadership through high degree of hands-on](#expanding-technical-leadership-through-high-degree-of-hands-on)
+    - [Lead Engineer at Logpoint](#lead-engineer-at-logpoint)
 - [Focus on strategy](#focus-on-strategy)
     - [Lead Data Engineer, R&D Data and Analytics at Leo Pharma](#lead-data-engineer-rd-data-and-analytics-at-leo-pharma)
 - [Technical proficiency, a bit of strategy](#technical-proficiency-a-bit-of-strategy)
