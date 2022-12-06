@@ -39,7 +39,7 @@ Technologies:
 
 - Cloud - AWS
 - Databases - PostgreSQL
-- Services
+- Service stack
   - Typelevel (Scala)
   - AWS Lambda (Python)
 - CI - GitLab CI
