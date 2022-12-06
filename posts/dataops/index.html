@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>DataOps :: ./side_effects.sh</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Description Purpose Practices DevOps Agile Statistical Process Control Data Lifecycle The Value Pipeline The Innovation Pipeline The Value-Innovation Pipeline Process Development and Deployment Testing Sandbox and test data management Data Lineage and Cataloging Organizational effect Freedom vs. Centralization Competences and Roles Subject-Matter Expert (SME) Data Steward Data Engineer Data Scientist ML Engineer Cloud Engineer References Description DataOps (Data Operations) is a methodology whose goal is to improve the quality and reduce the development lifecycle of data analytics solutions – from ideation to creation of charts, graphs and models that generate value."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/dataops/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DataOps"/>
+<meta name="twitter:description" content="Essential practices, processes and roles for working with data"/>
+
+
+
+<meta property="og:title" content="DataOps" />
+<meta property="og:description" content="Essential practices, processes and roles for working with data" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/dataops/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-10-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-10-27T00:00:00+00:00" /><meta property="og:site_name" content="./side_effects.sh" />
+
+
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">./side_effects.sh</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/cv">CV</a></li>
+        
+      
+        
+          <li><a href="https://github.com/z4f1r0v">GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/zafirovalexander/">LinkedIn</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/cv">CV</a></li>
+      
+    
+      
+        <li><a href="https://github.com/z4f1r0v">GitHub</a></li>
+      
+    
+      
+        <li><a href="https://www.linkedin.com/in/zafirovalexander/">LinkedIn</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="/posts/dataops/">DataOps</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2021-10-27
+        </span>
+
+        
+          
+        
+      
+
+      
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="/tags/dataops/">dataops</a>&nbsp;
+        
+      </span>
+    
+
+    
+
+    <div class="post-content">
+      <ul>
+<li><a href="#description">Description</a></li>
+<li><a href="#purpose">Purpose</a></li>
+<li><a href="#practices">Practices</a>
+<ul>
+<li><a href="#devops">DevOps</a></li>
+<li><a href="#agile">Agile</a></li>
+<li><a href="#statistical-process-control">Statistical Process Control</a></li>
+<li><a href="#data">Data</a></li>
+</ul>
+</li>
+<li><a href="#lifecycle">Lifecycle</a>
+<ul>
+<li><a href="#the-value-pipeline">The Value Pipeline</a></li>
+<li><a href="#the-innovation-pipeline">The Innovation Pipeline</a></li>
+<li><a href="#the-value-innovation-pipeline">The Value-Innovation Pipeline</a></li>
+</ul>
+</li>
+<li><a href="#process">Process</a>
+<ul>
+<li><a href="#development-and-deployment">Development and Deployment</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#sandbox-and-test-data-management">Sandbox and test data management</a></li>
+<li><a href="#data-lineage-and-cataloging">Data Lineage and Cataloging</a></li>
+</ul>
+</li>
+<li><a href="#organizational-effect">Organizational effect</a>
+<ul>
+<li><a href="#freedom-vs-centralization">Freedom vs. Centralization</a></li>
+<li><a href="#competences-and-roles">Competences and Roles</a>
+<ul>
+<li><a href="#subject-matter-expert-sme">Subject-Matter Expert (SME)</a></li>
+<li><a href="#data-steward">Data Steward</a></li>
+<li><a href="#data-engineer">Data Engineer</a></li>
+<li><a href="#data-scientist">Data Scientist</a></li>
+<li><a href="#ml-engineer">ML Engineer</a></li>
+<li><a href="#cloud-engineer">Cloud Engineer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+</ul>
+<h2 id="description">Description</h2>
+<p>DataOps (Data Operations) is a methodology whose goal is to improve the quality and reduce the development lifecycle of data analytics solutions – from ideation to creation of charts, graphs and models that generate value.</p>
+<h2 id="purpose">Purpose</h2>
+<p>The necessity for DataOps has emerged as enterprises realize that using all the data generated in the company can be a strategic asset, contributing to better decisions every day. DataOps is as much about the technology and the processes that govern it, as it is about changing people's relationship to data.</p>
+<p>In general, DataOps aims to provide the following organizational benefits:</p>
+<ul>
+<li>accelerated rate of innovation</li>
+<li>reduced cost and time to insight</li>
+<li>keeping pace with changes in the company's domain of work</li>
+<li>increased collaboration and work reuse</li>
+</ul>
+<h2 id="practices">Practices</h2>
+<p>Viewing DataOps from a practices&rsquo; perspective, it is a combination of Agile development, DevOps and Statistical Process Control. Applying these practices to digital data, results in DataOps.</p>
+<p><img src="/img/dataops.jpeg" alt=""></p>
+<h3 id="devops">DevOps</h3>
+<p>The initial push for DataOps comes from DevOps. Development and Operations (DevOps) is a methodology that sits at the intersection between software development and IT operations. It focuses on the continuous integration, delivery and deployment of software products.</p>
+<p>DataOps utilizes software engineering practices stemming from DevOps such as:</p>
+<ul>
+<li><strong>everything-as-code</strong> – the ability to specify every part of the domain that is modelled as a piece of source code</li>
+<li><strong>source code versioning</strong> – maintenance of an immutable audit log of how this source code changed over time. Source code versioning allows for reproducing every previous state with a pointer to the owner of each change.</li>
+<li><strong>source code testing</strong> – a practice that serves to verify that software behaves according to specification. It helps developers gain confidence in their delivery and enables a faster development lifecycle by testing evolving source code against an ever-increasing battery of tests.</li>
+<li><strong>deployment to multiple development environments</strong> – gives the ability to release software deliverables in isolation, preventing regressions in the product's functionality while allowing for multiple people to safely contribute product changes</li>
+<li><strong>automation</strong> – automation is the use of technology to perform tasks with reduced human assistance. Simplifying change through automation gains companies the time and energy to focus on innovation. Freeing staff to focus on bigger issues, resolving them, and - in turn - making them routine and eligible for automation themselves.</li>
+</ul>
+<h3 id="agile">Agile</h3>
+<p>For DataOps to be effective, it must support people by enabling better collaboration and faster innovation. Here is where the Agile development practices come into play. Agile as a process enables software development teams to produce new deliveries in short increments called &quot;sprints.&quot; With innovation occurring in rapid intervals, the team can continuously reassess its priorities and more easily adapt to evolving requirements.</p>
+<p>The following Agile practices apply to the DataOps methodology:</p>
+<ul>
+<li><strong>work in small, empowered teams with clear roles</strong> – establishing teams that consist of individuals with all the skills required for delivery that span across disciplines</li>
+<li><strong>deliver working software frequently, in short increments</strong> – leveraging the DevOps tools and practices, teams are enabled to deliver software at a high cadence</li>
+<li><strong>get frequent feedback from Line of Business (LoB)</strong> – allows for business representatives to see the progress and guide the development from a domain expert perspective. The team gains confidence in the direction they have developed their software. The project as a whole becomes accepting of changing requirements and comes as closest to reality as technically feasible.</li>
+</ul>
+<h3 id="statistical-process-control">Statistical Process Control</h3>
+<p>Taking inspiration from LEAN manufacturing practice, DataOps adds the third piece to the methodology – Statistical Process Control (SPC). It measures, and monitors data and operational characteristics of the data pipeline, ensuring that statistics remain within acceptable ranges. When SPC is applied to data analytics, it leads to improvements in efficiency, quality and transparency. With it in place, the data flowing through the operational system is verified to be correct. If an anomaly occurs, the data team can be notified through automated alerting.</p>
+<h3 id="data">Data</h3>
+<p>The practices discussed so far put focus on how the software built to manipulate data can be implemented in a stable and maintainable way. It also focuses on the skills and practices needed in order to be successful.</p>
+<p>These perspectives, however, don't address practices that reflect the inherent nature of data. Namely, it is domain knowledge captured in digital form. As such only domain experts can assess the true value it serves and its potential usages. Yet, these people typically lack the tools to make these findings. Furthermore, different contexts can view a single piece of data in a different manner. Hence, data has a binding effect on different contexts. Finally, data quality changes with time.</p>
+<p>The following practices aim to address these properties:</p>
+<ul>
+<li><strong>domain-driven design</strong> - data professionals need to work closely with the LoB in order to discover the ubiquitous language that the business uses, the bounded contexts that they use it in and the context mapping that describes how business representatives interact with one another. These findings need to power all processes interacting with data.</li>
+<li><strong>contracts and dependency management</strong> - alongside its intended purpose as a quality business insight, a data asset also serves as a contract between its producer and consumer. In a growing landscape of data, these contracts play an important role in system integration and establishment of trust between system owners. Knowing the format of data, the cadence at which it is delivered in and its current deviation in comparison to that contract, are key parameters that allow data teams to place trust in these assets when making business decisions.</li>
+<li><strong>feedback loops</strong> - in most enterprises, data flows unidirectional - from sources through data pipelines toward data warehouses, marts, and spreadsheets. The goal of a feedback loop is to give consumers the ability to communicate problems back to data stewards. This leads to systematic feedback mechanisms that enable data to flow from where it is consumed back up into the pipelines and all the way to the data sources.</li>
+</ul>
+<h2 id="lifecycle">Lifecycle</h2>
+<h3 id="the-value-pipeline">The Value Pipeline</h3>
+<p>Data analytics seeks to extract value from data - we call this the Value Pipeline. The Value Pipeline progressing horizontally from left to right where data enters the pipeline and moves into production processing. Production is generally a series of stages: access, transformation, and output e.g. models, visualizations and reports. When data exits the pipeline, in the form of useful analytics, value is created for the organization. Data in the Value Pipeline is updated on a continuous basis, but code is kept constant.</p>
+<p>A scenario to be avoided is for poor quality data to enter the Value Pipeline, as this has a detrimental effect on the output usefulness. DataOps prevents this by implementing data tests. Inspired by the SPC, data tests ensure that data values follow expected statical distributions and/or lay within acceptable ranges. Data tests validate data values at the inputs and outputs of each processing stage in the pipeline. Once data tests are in place, they work to guarantee the integrity of the Value Pipeline. If anomalous data flows through the pipeline, the data tests catch it and take action – in most cases this means sending an automated alert to the data team responsible who can investigate. SPC encodes this process into the software, ultimately minimizing manual work and allowing the team members to focus on their other major responsibility – the Innovation Pipeline.</p>
+<h3 id="the-innovation-pipeline">The Innovation Pipeline</h3>
+<p>The Innovation Pipeline seeks to improve analytics by implementing new ideas that yield analytic insights. As per software practices, a new feature undergoes development before
+it can be deployed to production systems. The Innovation Pipeline creates a feedback
+loop. Innovation spurs new questions and ideas for enhanced analytics. This requires more development leading to additional insight and innovation. During the development of new features, code changes, but data is kept constant. Keeping data static prevents changes in data from being falsely attributed to the impact of the new algorithm. A fixed data set can be setup when creating a development environment.</p>
+<p>DataOps implements continuous deployment of new ideas by automating the workflow for building and deploying new analytics. It reduces the overall cycle time of turning ideas into innovation. While doing this, the development team must avoid introducing new analytics that break production. The DataOps enterprise uses logic tests to validate new code before it is deployed. Logic tests ensure that data matches business assumptions.</p>
+<p>With logic tests in place, the development pipeline can be automated for continuous deployment, simplifying the release of new enhancements and enabling the data analytics team to focus on the next valuable feature. With DataOps the dev team can deploy without worrying about breaking the production systems. This is a key characteristic of a fulfilled, productive team.</p>
+<h3 id="the-value-innovation-pipeline">The Value-Innovation Pipeline</h3>
+<p>The two workflows are combined into the Value-Innovation Pipeline in the figure below.
+The Value-Innovation Pipeline captures the interplay between development and production, and between data and code. DataOps breaks down this barrier so that cycle time and quality can be improved. The practices it employs help orchestrate data to production and the deployment of new features, while maintaining quality. DataOps speeds the extraction of value from data and improves the velocity of new development while ensuring the quality of data and code in production systems.</p>
+<p><img src="/img/value-innovation.png" alt=""></p>
+<h2 id="process">Process</h2>
+<h3 id="development-and-deployment">Development and Deployment</h3>
+<p>DataOps builds upon the DevOps development model. The DevOps process flow includes a series of steps that are common to software development projects:</p>
+<ul>
+<li>Develop – create/modify an application</li>
+<li>Build – assemble application components</li>
+<li>Test – verify the application in a test environment</li>
+<li>Deploy – transition code into production</li>
+<li>Run – execute the application</li>
+</ul>
+<p>DevOps introduces three foundational concepts: Continuous Integration (CI), Continuous Delivery (CD) and Continuous Deployment. The goal of Continuous Integration is to enable an automated way to build, package, and test applications. Continuous Delivery is tasked with automating the delivery of applications to a given environment via manual release process. Finally, Continuous Deployment is the process of automatically releasing source code to a production environment.</p>
+<p>Once an application passes all qualification tests, it is deployed to production. Together CI and CD resolve the main constraint hampering Agile development. Before DevOps, Agile created a rapid succession of updates and innovations that would stall in a manual integration and deployment process. With automated CI and CD, DevOps has enabled companies to update their software many times per day.</p>
+<p><img src="/img/dataops-process.png" alt=""></p>
+<h3 id="testing">Testing</h3>
+<p>Tests in DataOps have a role in both the Value and Innovation Pipelines. In the Value Pipeline, tests monitor the data values flowing through, to catch anomalies or flag data values outside statistical norms. In the Innovation Pipeline, tests validate new analytics before deploying them.</p>
+<p>In DataOps, tests target either data or code. The Figure below illustrates this concept. Data that flows through the Value Pipeline is variable and subject to SPC and monitoring. Tests target the data which is continuously changing. Analytics in the Value Pipeline, on the other hand, are fixed and change only using a formal release process. In the Value Pipeline, analytics are revision controlled to minimize any disruptions in service that could affect the data pipeline.</p>
+<p>In the Innovation Pipeline code is variable and data is fixed. The analytics are revised and updated until complete. Once the sandbox (analytics development environment) is set up, the data usually doesn&rsquo;t change. In the Innovation Pipeline, tests target the code (analytics), not the data. All tests must pass before promoting (merging) new code into production. A good test suite serves as an automated form of impact analysis that runs on any and every code change before deployment.</p>
+<p>Some tests are aimed at both data and code. For example, a test that makes sure that a database has the right number of rows helps your data and code work together. Ultimately both data tests and code tests work together to ensure output quality.</p>
+<p><img src="/img/testing.png" alt=""></p>
+<h3 id="sandbox-and-test-data-management">Sandbox and test data management</h3>
+<p>When an engineer joins a software development team, one of their first steps is to create a &quot;sandbox.&quot; A sandbox is an isolated development environment where the engineer can write and test new application features, without impacting teammates who are developing other features in parallel.</p>
+<p>In order to create a dev environment for analytics, you have to create a copy of the Value Pipeline. This requires the data professional to replicate data which may have security, governance or licensing restrictions. It may be impractical or expensive to copy the entire data set, so some thought and care is required to construct a representative data set. Once a data set is sampled or filtered, it may have to be cleaned or redacted (have sensitive information removed). The data also requires infrastructure which may not be easy to replicate due to technical obstacles or license restrictions.</p>
+<p>The concept of test data management is a first order problem in DataOps whereas in most DevOps environments, it is an afterthought. To accelerate analytics development, DataOps has to automate the creation of development environments with the needed data, software, hardware and libraries so innovation keeps pace with Agile iterations.</p>
+<h3 id="data-lineage-and-cataloging">Data Lineage and Cataloging</h3>
+<p>Generating high quality data assets happens with a particular business need in mind. Dashboards, reports and bespoke applications are example beneficiaries of a piece of data. However, as time passes by, it becomes difficult to understand the interdependencies of systems partaking in producing and consuming data assets inside an organization. Being able to understand the importance of a data asset and its impact on other systems, allows for data teams to design and implement adequate software and processes correspondingly. Hence, data lineage is an important part of the DataOps process.</p>
+<p>Yet, it is orthogonal to the Value-Innovation pipeline, in that it delivers business value indirectly. Another such activity stems from the nature of data. Besides their intended purpose, the high quality data assets that are generated can be used for unexpected and initially unintended goals. By making discoverable curated labels and metadata about data assets a data catalog helps foster collaboration and work reuse.</p>
+<p>Lastly, this catalog needs to treat data assets as items in an online shop. Each item should have a dedicated section where LoB representatives can give feedback about it to the corresponding data stewards. This will effectively close the feedback loop and bring business value as LoB collaborates to uncover the inherent complexity of their domain of work by continuously refining the available data assets.</p>
+<h2 id="organizational-effect">Organizational effect</h2>
+<p>DevOps strives to help data and operations teams work together in an integrated fashion. The data team typically consists of data analysts, data scientists and data engineers who are responsible for creating data analytics products and quality data assets.</p>
+<p>The operations team supports and monitors the data pipeline. These are cloud engineers, but also customers – the users who create and consume analytics. DataOps enables them to work closer together.</p>
+<h3 id="freedom-vs-centralization">Freedom vs. Centralization</h3>
+<p>DataOps also brings the organization together across another dimension - data analytics. As data is becoming increasingly used throughout the business, it is natural to expect that data analytics development occurs increasingly throughout enterprise, in the business units and close to domain expertise. These analytics will naturally be developed using self-service tools such as Power BI, Alteryx, Excel or KNIME. These local teams, engaged in decentralized, distributed analytics creation play an essential role in delivering data-driven innovation to the business. Empowering these pockets of creativity maintains the enterprise's competitiveness, but a lack of governance and guidelines can increase the risk of work duplication and collaboration opportunity loss.</p>
+<p>Centralizing analytics development under the control of one group, such as IT, enables the organization to standardize metrics, control data quality, enforce security and governance, and eliminate islands of data. The issue is that too much centralization risks of inhibiting creativity.</p>
+<p>One important benefit of DataOps is its ability to harmonize the back-and-forth between the decentralized and centralized development of data analytics — the tension between centralization and freedom. In a DataOps enterprise, new analytics originate and undergo refinement in the local pockets of innovation. When an idea proves useful or is worthy of wider distribution, it is promoted to a centralized development group who can more efficiently and robustly implement it at scale.</p>
+<p>DataOps brings localized and centralized development together enabling organizations to reap the efficiencies of centralization while preserving localized development — the tip of the innovation spear.</p>
+<p><img src="/img/org-effect.png" alt=""></p>
+<h3 id="competences-and-roles">Competences and Roles</h3>
+<p>Looking closer into the data and operations teams, we find a set of competences necessary for extracting business value out of data. These are as follows:</p>
+<ul>
+<li>Business knowledge – understanding the domain the company operates in</li>
+<li>Data knowledge - understanding the data landscape with the organization that represents the domain in question</li>
+<li>Data management skills - ability to perform operations ETL on data</li>
+<li>Analytics skills - ability to explore the data</li>
+<li>Software engineering skills - ability to develop, maintain and operate</li>
+</ul>
+<p><img src="/img/roles-spider.png" alt=""></p>
+<p>The above diagram shows the distribution and overlap of these competences among the key roles that partake in the generation of a data asset. Those roles and their intersection are described below.</p>
+<h4 id="subject-matter-expert-sme">Subject-Matter Expert (SME)</h4>
+<p>The SME is a representative of the business. It is a role that represents a substantial amount of domain knowledge on a given subject. These professionals have an interest in extracting business insight from data as seen from their respective business context.</p>
+<p>They interface with:</p>
+<ul>
+<li>Data Stewards - in the process of data-refinement - where they provide feedback for the generated data assets</li>
+<li>Data Scientists/Data Analysts – by giving context on the problems that are solved and the acceptance criteria for a given data analytics solution</li>
+</ul>
+<h4 id="data-steward">Data Steward</h4>
+<p>Typically, they are tech-savvy SMEs, the Data Steward is the primary point of contact regarding data assets.</p>
+<p>They interact with:</p>
+<ul>
+<li>Data Engineers – with whom they establish Service Level Indicators (SLI) that drive Service Level Objectives (SLO)</li>
+<li>SMEs - with whom they engage in data asset refinement</li>
+<li>All data roles – to whom they communicate Service Level Agreements (SLA) regarding the data asset(s) they own</li>
+</ul>
+<h4 id="data-engineer">Data Engineer</h4>
+<p>A technical role that has the ability to manipulate data at scale. Those could be people with traditional software engineering background or tech-savvy representatives of LoB. The primary output of a Data Engineer is a data pipeline that leverages a toolbox spanning from code-centric solutions to visual &quot;drag-and-drop&quot; tools.</p>
+<p>They engage with:</p>
+<ul>
+<li>Data Scientists – by providing data in the right location, shape and amount</li>
+<li>Data Stewards – who give necessary domain context when defining SLIs towards SLOs</li>
+<li>ML Engineers – by collaborating integrate a machine learning model as part of an end-to-end data pipeline</li>
+</ul>
+<h4 id="data-scientist">Data Scientist</h4>
+<p>A technical role with the capability to extract insights out of data. The primary output of a Data Scientist is the desired business insight. That is achieved via the application of statistical methods which are applied to data and ultimately yield a machine learning model. The model represents a snapshot of time with respect to the data and techniques used to generate it.</p>
+<p>They conjoin their work with:</p>
+<ul>
+<li>Data Engineers – by providing requirements necessary for analysis of data</li>
+<li>SMEs – when learning the key features of the domain and the acceptance criteria for the insights that they should extract</li>
+<li>ML Engineers – when transferring ownership of machine learning models</li>
+</ul>
+<h4 id="ml-engineer">ML Engineer</h4>
+<p>A technical role with the capability of putting machine learning models in operation at scale. It sits at the intersection between data, data science and cloud infrastructure.</p>
+<p>They intersect with:</p>
+<ul>
+<li>Data Engineers – by collaborating to provide a scalable machine learning step to a data pipeline</li>
+<li>Data Scientists – when transitioning machine learning models in and out of use and scaling them to many users</li>
+</ul>
+<h4 id="cloud-engineer">Cloud Engineer</h4>
+<p>Albeit orthogonal to the data plane, the Cloud Engineer role is integral to every cloud solution. It provides the ability for all technical roles to utilize their capabilities in an environment that is secure, scalable and cost-effective. Keeping software up-to date, making sure that data products have high uptime and automating all procedures are the main tasks that a Cloud Engineer executes on a regular basis.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>DataOps Right - <a href="https://get.oreilly.com/ind_getting-dataops-right.html">https://get.oreilly.com/ind_getting-dataops-right.html</a></li>
+<li>DataOps Cookbook - <a href="https://datakitchen.io/the-dataops-cookbook">https://datakitchen.io/the-dataops-cookbook</a></li>
+</ol>
+<hr>
+<p><em>N.B. For a narrated version of this document with examples on how DataOps can materialize from a technical and organization point of view, please refer to <a href="https://www.youtube.com/watch?v=LQmtqQ79UoI&amp;t=1s">this video</a>.</em></p>
+<hr>
+<p><em>I would like to thank my colleagues from the Data &amp; Analytics department in R&amp;D at Leo Pharma for their time and feedback.
+I would very much like to thank my colleague <a href="https://www.linkedin.com/in/radudragusin/">Radu</a> for the contributions, sparring, feedback and excellent research on inspirational resources.</em></p>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">Read other posts</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+            
+              <span class="button next">
+                <a href="/posts/scala/">
+                  <span class="button__text">Scala</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+        
+
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2022 Alexander Zafirov</span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+      
+    </div>
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-77368278-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    
+  </body>
+</html>

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>Scala :: ./side_effects.sh</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Ever since its public release in 2004, Scala has been challenging the traditional development strategies. Due to its mix of object-oriented (OO) and functional programming (FP), the language has received a fair amount of criticism regarding being complex, unopinionated and slow to develop. Fast-forward to more recent times, I stumbled upon this post. In it the author mentions many valid criticisms towards Scala as an overall experience. Furthermore, he gives recommendations as to where Scala&amp;rsquo;s strength resides."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/scala/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Scala"/>
+<meta name="twitter:description" content="A language of self-discipline"/>
+
+
+
+<meta property="og:title" content="Scala" />
+<meta property="og:description" content="A language of self-discipline" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/scala/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-04-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-04-20T00:00:00+00:00" /><meta property="og:site_name" content="./side_effects.sh" />
+
+
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">./side_effects.sh</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/cv">CV</a></li>
+        
+      
+        
+          <li><a href="https://github.com/z4f1r0v">GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/zafirovalexander/">LinkedIn</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/cv">CV</a></li>
+      
+    
+      
+        <li><a href="https://github.com/z4f1r0v">GitHub</a></li>
+      
+    
+      
+        <li><a href="https://www.linkedin.com/in/zafirovalexander/">LinkedIn</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="/posts/scala/">Scala</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2021-04-20
+        </span>
+
+        
+          
+        
+      
+
+      
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="/tags/scala/">scala</a>&nbsp;
+        
+      </span>
+    
+
+    
+
+    <div class="post-content">
+      <p>Ever since its public release in 2004, Scala has been challenging the traditional development strategies.
+Due to its mix of object-oriented (OO) and functional programming (FP), the language has received a fair amount
+of criticism regarding being complex, unopinionated and slow to develop.
+Fast-forward to more recent times, I stumbled upon <a href="https://mungingdata.com/scala/maintenance-nightmare-upgrade/">this</a> post.
+In it the author mentions many valid criticisms towards Scala as an overall experience.
+Furthermore, he gives recommendations as to where Scala&rsquo;s strength resides.
+I was previously acquainted with the <a href="https://github.com/MrPowers">author</a> and his website.
+I must say that I have found his work and knowledge-sharing useful, so I believe his experiences are personal.</p>
+<p>Of course, the post stirred quite some conversations in the comment section and on reddit.
+Yet, after reading the majority of the content, I felt that my standpoint has not been sufficiently represented.
+Neither has the root of the problem been addressed.
+This event was followed by a set of LinkedIn conversations and &ldquo;Scala in the City&rdquo; presentations
+that ultimately gave me the push to state my opinion.</p>
+<p>What was initially thought of as a LinkedIn brain-dump, quickly escalated to the blog post you see before you.
+It has the aim to give an educated opinion on the professional experience of working with Scala
+in a majority of circumstances.
+The opinion is mine and as such is biased.
+Yet, as a software engineer that focuses on elegant, scalable and cost-effective solutions that solve real problems,
+I have taken my red marker and circled all key points that a newcomer or season developer should know about.</p>
+<p>As is the case with all my posts, I have aimed to follow a coherent thought process.
+That being said, I feel that the subsections in my experiences and recommendations, for the most part,
+can stand on their own.
+Therefore, I provide the reader with a table of contents, so they can jump ahead if they feel so inclined.</p>
+<ul>
+<li><a href="#on-my-scala-journey">On my Scala journey</a></li>
+<li><a href="#experiences">Experiences</a>
+<ul>
+<li><a href="#the-good">The good</a>
+<ul>
+<li><a href="#fun-to-write">Fun to write</a></li>
+<li><a href="#compiled-and-statically-typed">Compiled and statically-typed</a></li>
+<li><a href="#versatile">Versatile</a></li>
+<li><a href="#adaptive">Adaptive</a></li>
+<li><a href="#jvm-native">JVM-native</a></li>
+<li><a href="#robust">Robust</a></li>
+</ul>
+</li>
+<li><a href="#the-bad">The bad</a>
+<ul>
+<li><a href="#lack-of-scala-style">(Lack of) Scala style</a></li>
+<li><a href="#compilation-time">Compilation time</a></li>
+<li><a href="#backward-compatibility">Backward compatibility</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#recommendations">Recommendations</a>
+<ul>
+<li><a href="#principle-of-least-power">Principle of Least Power</a></li>
+<li><a href="#production-ready">Production ready</a></li>
+<li><a href="#tapping-further-into-data">Tapping further into data</a></li>
+</ul>
+</li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+<h1 id="on-my-scala-journey">On my Scala journey</h1>
+<p>When considering writing this post, I looked through the web and found quite a few of these.
+One thing that stood out to me was that the authors - for the most part - jump head-first into giving orders and assigning labels without bothering to give background on their source of knowledge.
+As developers often times we are quite impatient when going through tech articles and want to cut to the &ldquo;good stuff&rdquo;.
+Yet, I feel that putting labels on software needs to come from first-hand experiences.
+That being said, I have attempted to share a short reference - wherever applicable - from my humble journey in an attempt to give context.
+This comes as an alternative to making a long and potentially boring story of my <a href="https://www.linkedin.com/in/zafirovalexander/">LinkedIn</a> profile.
+Feel free to jump over if you feel uninterested.</p>
+<h1 id="experiences">Experiences</h1>
+<h2 id="the-good">The good</h2>
+<h3 id="fun-to-write">Fun to write</h3>
+<p>Right of the bat, Scala is fun to write.
+Every time I need to hit the keyboard, I feel inspired to tackle the technical problem I&rsquo;m working on.
+There is just something about the way one can express a solution they have in their mind,
+in a simple and powerful way using Scala, that I cannot find elsewhere.
+That may sound like my personal attitude, and it is.
+Still, my attitude needs the right vehicle to flourish.</p>
+<p>In today&rsquo;s world where application developers write glue code with a bit of domain logic,
+building nested trees of <code>for { for { if ... else } }</code> is equivalent to a lot of maintenance
+and decreased productivity.
+Scala allows for elegant solutions to these types of problems.
+By elegant I mean succinct and concrete.
+Fewer lines of code means fewer opportunities for bugs.
+Especially if those lines rest on language constructs.
+To illustrate my point, take a look at how Scala 3 <a href="https://dotty.epfl.ch/docs/reference/enums/enums.html">enums</a>
+take the concept to a <a href="https://dotty.epfl.ch/docs/reference/enums/adts.html">new level</a>.</p>
+<p>In general, I never felt that the language is stopping me from expressing a solution to a problem.
+If anything, there are so many ways to do one thing - I&rsquo;ll get back to that later.
+The main reason for the freedom I feel lays in Scala&rsquo;s building blocks.
+I&rsquo;m talking about the ability to encode state in types and move from one state to the next in a predictable manner -  through immutable iterations driven by powerful constructs that always return a result.</p>
+<h4 id="take-off">Take off</h4>
+<p>I became acquainted with Scala around 2014.
+A colleague suggested I try Martin Odersky&rsquo;s course on Coursera called &ldquo;Functional Programming Principles&rdquo; in Scala.
+Everything in Scala seemed familiar but with a twist.
+<code>map</code>-ing reminded my of the Java 1.8 streams API, pattern matching of <code>switch</code> statements, <code>object</code>s of static classes and
+the factory pattern.
+It felt so elegant and powerful.
+On the flip side, going back to work with Java felt like I&rsquo;m crippled in some way.
+The streams were a mock of functional programming, Optional values raised questions like
+&ldquo;but why can I just do <code>!= null</code>? instead&rdquo; among my colleagues and we had to write <code>final</code> everywhere just to feel a bit more immutable.</p>
+<h3 id="compiled-and-statically-typed">Compiled and statically-typed</h3>
+<p>I, honestly, cannot fathom who would willingly jump over the safety and quick feedback that you get from types
+enforced at compile time?
+Making sure that you are passing an <code>Int</code> instead <code>String</code> is useful.
+Now imagine encoding domain logic into types and crafting an elegant DSL that guides you to do the right thing.
+For example, no more databases returning mysterious nulls or empty strings or other nonsensical output.
+A call to the database gives back a type for all parties involved -
+asynchronous computation, presence/absence of value and, finally, the value itself.</p>
+<p>Sometimes it&rsquo;s tough to convince the compiler your solution is sound,
+but in return you get fast feedback which builds confidence in your deployment.
+That is something every employee and manager appreciates.</p>
+<h3 id="versatile">Versatile</h3>
+<p>I have heard so many times &ldquo;Scala is great for backend only when you are working in a complicated domain&rdquo;.
+Sure is!
+Just for a change, have you tried <a href="https://dzone.com/articles/scripting-library-in-scala-ammonite">writing</a> a
+<a href="https://ammonite.io">script</a> with it?
+Is that not more readable and maintainable than Bash?
+And more powerful than Python and Go?</p>
+<p>The point I&rsquo;m trying to make is that from simple to complex and front to back, Scala can cover much of the stack:</p>
+<ul>
+<li>scripts
+<ul>
+<li>if you want to do experiment/hack something with Scala, you have plenty of options besides Ammonite:
+<ul>
+<li>REPL</li>
+<li>worksheet</li>
+<li><code>extends App</code></li>
+<li><a href="https://polynote.org">Polynote</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>backend - pick one or more stacks
+<a href="https://zio.dev">zio</a>, <a href="https://akka.io">akka</a>, <a href="https://typelevel.org">typelevel stack</a></li>
+<li>data/distributed systems - Spark, Flink (partially), Kafka (partially)</li>
+<li>frontend - <a href="http://www.scala-js.org">Scala.js</a></li>
+<li>infra - e.g.
+<a href="https://coralogix.github.io/zio-k8s/">zio-k8s</a>, <a href="https://vigoo.github.io/zio-aws">zio-aws</a></li>
+<li>mobile - see what&rsquo;s possible for
+<a href="https://makingthematrix.wordpress.com/2021/04/07/how-to-build-an-android-app-in-scala-2-13/">Android</a></li>
+</ul>
+<h4 id="all-over-the-stack">All over the stack</h4>
+<p>At one employer dealing with reasonable amounts of airfare observations, we were using Scala for a plethora of things:</p>
+<ul>
+<li>Spark Streaming (with DStreams)</li>
+<li>Spark batch processing</li>
+<li>services</li>
+<li>writing libraries for metrics, Databricks cli management, etc.</li>
+</ul>
+<p>It was fun to try different problems with Scala. This experience also gave the team great insights into the amount of things we can throw at the language and still feel productive.</p>
+<h3 id="adaptive">Adaptive</h3>
+<p>Scala has been one of the few languages that explored the marriage between OO and FP.
+Throughout the years it became obvious that the initial attempts weren&rsquo;t perfect.
+And that is ok.
+The ability to adapt to the changing demands of the world around us should be viewed as a positive thing.
+Finding a common ground between the <a href="#versatile">versatile</a> software products that I listed,
+gives continuation and comfort to take baby steps when learning new things.
+Some projects are pretty new, some have been there for quite a while and are battle-tested.
+Seeing more work being done to this day, gives me confidence there are many sides of the language to be explored.</p>
+<p>Also, with the evolution of the language, comes the evolution of the practitioner.
+With Go, for example, the way your code looks after a year of using the langauge is pretty close to the way it looks after
+several years of experience.
+Scala just scales better with skill.
+The language allows for creating much more sophisticated abstractions thus allowing single individuals to absorb enormous amounts of complexity and still be productive.
+Think <a href="https://www.lihaoyi.com">Li Haoyi</a> or <a href="https://degoes.net">John de Goes</a>.
+They&rsquo;ve both spawned entire ecosystems of libraries in a rather short amount of time.
+The corresponding feat would have surely taken them much longer to build in other languages.</p>
+<h3 id="jvm-native">JVM-native</h3>
+<p>Software doesn&rsquo;t exist in isolation.
+Scala&rsquo;s ability to have a seamless integration with Java code is majorly overlooked.
+The last 30 years of Java have produced many libraries that any Scala project can utilize without impediments.
+Also, it cannot be overstated that the language runs on the JVM.
+The amount of developers working in this ecosystem is humongous.
+Lastly, at this point garbage collection is a science of its own.
+Any improvements made to the GC become available for Scala just like that.</p>
+<h3 id="robust">Robust</h3>
+<p>What happens after all the trails and tribulations that people list when it comes to Scala, and they
+finally put a service in production?
+Does it break very often?</p>
+<p>One of the things that I have experienced over and over in my carrier,
+is that a software solution written in Scala really takes a life of its own.
+Once the initial bug fixing cycle was completed,
+the majority of the time I revisited my implementation was to address business needs,
+and my inability to program against specification.
+Solely has it been due to the memory leaks and complicated concurrency issues.
+As much as this could be my luck and lack of right problem to push the tools to their limits,
+I still maintain the opinion that Scala is the right choice for building reliant software.</p>
+<h4 id="twitter-ingestion">Twitter ingestion</h4>
+<p>I was working at a growing social media management startup when my team got the green light to reimplement a core
+piece of functionality that ingested Twitter data.
+We wanted to use Scala.
+Lightbend (at the time Typesafe) had just released akka-streams 1.0.
+Albeit scarce on documentation, it was a major upgrade over other Java libraries like RxJava.
+We were an excited tag-team that spawned a set of services that made a 10x data ingestion throughput
+improvement.
+We implemented subscription management of Twitter accounts, real-time streaming of tweets,
+up-to-date refresh of tweets, re-streaming in case of failure, monitoring, alerting.
+We ended up with a stable product that succeeded our stay at the given employer.</p>
+<h2 id="the-bad">The bad</h2>
+<h3 id="lack-of-scala-style">(Lack of) Scala style</h3>
+<p>Depending on which developer/team&rsquo;s code you look at, you are getting different styles of programming in Scala.
+Unlike Python which is mostly written the same way, Scala&rsquo;s mix of OO and FP allow for wiggle room.
+That is quite bad if you are interested in getting better as a developer and attempt reading different
+source code.
+It is also bat when it comes to maintenance and knowledge-sharing.</p>
+<p>Unfortunately, there is no general solution to this one.
+It is about documenting your team&rsquo;s knowledge and experience with Scala and FP,
+education and automation of practises (formatting tools, linters, compiler warnings).
+Looking at the upcoming Scala 3, I&rsquo;d say the direction is more towards functional which is definitely helpful
+for the community as a whole.</p>
+<h4 id="schedule-it">Schedule it</h4>
+<p>I hope you are familiar with the <a href="http://alyjuma.com/wp-content/uploads/2017/09/myMatrix-904x1024.jpg">Eisenhower matrix</a>.
+At one of my employers, the backenders knew that we should sit down and make a common Scala style for all projects.
+I actually made a proposal.
+Besides the long discussion on PRs, the effort didn&rsquo;t get traction.
+Just because it was an important but not urgent task.
+We ended up not doing anything globally.
+It wasn&rsquo;t a devastating experience but the sense of shared values and common learnings was missing.</p>
+<p>From that pont on, settling on a Scala style is one of the first things that gets done on the projects I work on.
+Tools like <a href="https://scalameta.org/scalafmt/">scalafmt</a> make this process a breeze.</p>
+<h3 id="compilation-time">Compilation time</h3>
+<p>Much has been said about Scala&rsquo;s compilation speed over the years.
+Large projects, especially ones with macros,
+especially ones using <a href="https://github.com/milessabin/shapeless">shapeless</a> take the longest to compile.</p>
+<p>Luckily, the issue has been taken to heart by the developers of Scala and its main compilation tool
+<a href="https://www.scala-sbt.org">sbt</a>.
+The release of sbt 1.0 saw <a href="https://www.scala-lang.org/blog/2017/11/03/zinc-blog-1.0.html">zinc</a>
+speeding up compile times.
+Furthermore, articles like <a href="https://medium.com/graalvm/compiling-scala-faster-with-graalvm-86c5c0857fa3">this</a>
+have presented GraalVM as an alternative to solving the problem of compilation speed.</p>
+<h4 id="no-fun">No fun</h4>
+<p>The one time in my career when I felt compile time is too much was when I worked on a contracts library.
+The premise was that different services within the ecosystem needed to communicate on various planes.
+For the interservice communication there was Finagle and Scrooge.
+For the event bus - Avro.
+These contracts needed to evolve in lock-step - hence the common repo.
+Once all the classes needed to be generated based on the given binary encoding and their respective tests run, we ended up with a solid portion of time wasted on compilations.
+To add to the frustration was a sporadic flaky test that render 10s of minutes of waiting useless.</p>
+<h3 id="backward-compatibility">Backward compatibility</h3>
+<p><a href="https://www.quora.com/Why-isnt-Scala-backward-compatible?share=1">Here</a> is a great writeup of why Scala
+historically has broken minor (the y in x.y.z) version compatibility. The gist of it is:</p>
+<blockquote>
+<p>The reason why major versions break binary compatibility is, because JVM bytecode is written for Java, not Scala. When new features are introduced in Scala, the JVM doesn&rsquo;t change to support those features, so they have to be implemented in the bytecode generated by the compiler, and the differences in the bytecode being generated result in incompatibilities.</p>
+</blockquote>
+<p>The author goes on to say:</p>
+<blockquote>
+<p>Scala 3 will introduce an intermediary “bytecode” that is Scala-specific, which will allow different versions to maintain compatibility with each other.</p>
+</blockquote>
+<p>Right on queue we get a <a href="https://scala-lang.org/blog/2021/04/08/scala-3-in-sbt.html#a-new-compatibility-era">post</a>
+regarding that in Scala 3.</p>
+<h4 id="transitive-dependency-hell">Transitive dependency hell</h4>
+<p>I haven&rsquo;t had this problem too many times but when I did it took a lot of time to get right.
+I remember clearly how I was adding milestone versions of akka-http and hoping that the one I&rsquo;m using, is the one that would fit all my requirements.
+It was so tedious to look at the dependency graph on web pages, zooming in and out, trying to find what calls what.
+A tough task that when done leaves you with the feeling that you wasted your time for no good reason.</p>
+<h2 id="recommendations">Recommendations</h2>
+<h3 id="principle-of-least-power">Principle of Least Power</h3>
+<p>Recently Martin Odersky gave a <a href="https://youtu.be/tYqssg9wPK8?t=2262">talk</a>.
+By following the link you will navigate to, what I find, may be one of the most important slides he has made
+regarding Scala.
+There he mentions the key problems Scala needs to tackle.
+He has referenced the <a href="https://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html">Principle of Least Power</a>
+as one of the remedies.
+Do yourself a favour and read the post as well as the rest of the series.</p>
+<p>Another way to put this is don&rsquo;t leak category theory in your APIs.
+It serves nobody - especially beginners - that your code is super complex and fancy <em>on the outside</em>.
+Under the hood all hell can break loose paradigm-wise, but the user-facing APIs need to be simple and comprehensive.
+The way to make Scala accessible to a wider audience is to have the ecosystem be approachable without the
+need for a PhD.
+After all competitors like Go, Rust and Python rely on this very fact.</p>
+<p>A simple example is the use of symbolic operators.
+If you are writing a library it is important to always provide a textual method.
+For the fans of FP you can have something funky but that should be an alias - not the &ldquo;go to&rdquo; approach.
+If you are writing a small DSL for your domain, do <em>not</em> go beyond implementing simple arithmetic operators.
+Your colleagues and your future self would be grateful.</p>
+<h3 id="production-ready">Production ready</h3>
+<p>In a <a href="https://www.youtube.com/watch?v=v8IQ-X2HkGE">talk</a> that he gave in 2018,
+John De Goes bluntly stated that unlike competitors Go and Rust, Scala is not focusing on its primary audience -
+industry application developers.
+In the last couple of years he has sought to remedy the situation by making <a href="https://zio.dev">zio</a> and
+a great many libraries that bring simple, yet powerful constructs in Scala to the masses.
+The adoption has really been staggering and for a reason - zio gives us all the bells and whistles from FP
+but without the elitist, academic mentality.
+On the contrary - the focus falls on how to gear Scala towards production.
+In other words focusing on solving business problems and not looking for the implicits.</p>
+<p>In this category also falls the deployment of Scala applications.
+Historically those have been jar files, now wrapped in docker files.
+Compared to Go binaries, jars are bloated artifacts.
+Since <a href="https://www.graalvm.org/docs/getting-started/">GraalVM</a> entered the game this point has taken a hit.
+Not only that but <a href="https://medium.com/virtuslab/revisiting-scala-native-performance-67029089f241">Scala Native</a>
+has also given the standard JVM a run for its money.
+Regardless what technology powers Scala&rsquo;s future binary generation, deployment artifacts will be small
+allowing CI/CD pipelines to run faster.</p>
+<h3 id="tapping-further-into-data">Tapping further into data</h3>
+<p>I already mentioned how <a href="#versatile">versatile</a> Scala is.
+As far as data comes, it has been used to power some heavy-hitters in the space.
+Yet, the <a href="https://databricks.com/blog/2020/09/04/an-update-on-project-zen-improving-apache-spark-for-python-users.html">trend</a>
+that Databricks follows by promote Python as the go-to language for data-engineering seems wrong to me.
+Just because the heavy lifting in data is done by the frameworks, doesn&rsquo;t mean that the application code that
+data engineers write cannot benefit from the power of types.
+This <a href="https://itnext.io/making-the-spark-dataframe-composition-type-safe-r-7b6fed524ec2">article</a>
+gives a good idea of what I am hinting at.
+It requires more work than a data engineer unfamiliar with Scala would like to do, but the help you get from the
+compiler is invaluable.
+It is a good starting point for a conversation at least on programming languages can take data management
+to the next level.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>In this post I gave my perspective on Scala as an overall experience.
+During this exercise I came to a simple realization - Scala is a language where the developer needs to be the one
+exercising self-discipline.
+That is diametrically opposed to Python and Go where the language is nudging the developer&rsquo;s hand throughout
+the working process.
+What is the right way to go about it?
+The main decision-maker for both employers and employees is whether a given language and its ecosystem can
+generate revenue i.e. have practical application in the industry.
+For a developer that translates into ease of development, ability to find resources when getting stuck and,
+last but not least, joy in daily work.
+For employers that means ability to scale teams, deliver features and produce stable products.</p>
+<p>During its existence, Scala has managed to tick some of these checkboxes.
+Yet, things like gory FP elitism, and a multitude of ways to achieve the same thing have been a barrier for
+new developers attempting to enter the ecosystem.
+Hopefully a fix to the majority of the problems is coming <a href="https://scala3party.sphere.it">soon</a> in the face of
+<a href="https://docs.scala-lang.org/scala3/getting-started.html">Scala 3</a>.
+Behind it are Martin Odersky&rsquo;s theoretical proofs, years of industry experience with the current Scala version,
+and the voice of a community that clearly knows what it does <em>not</em> want.
+The first question mark for its success revolves around tooling.
+If the IDEs and the major libraries in the ecosystem are there to take the first wave of transition,
+all will be well.
+Another question mark is the adoption of big companies.
+I&rsquo;m primarily thinking of Spark.
+The folks supporting it have been <a href="https://issues.apache.org/jira/browse/SPARK-25075">trying</a> to go to Scala 2.13
+for a while.
+Once that happens, it would seem logical to move to Scala 3.
+Whether Databricks wants to invest in a future with Scala as a core language
+or <a href="https://databricks.com/blog/2020/06/24/introducing-delta-engine.html">not</a> remains to be seen.</p>
+<p>I am optimistic that Scala will continue to find applications across domains.
+It has already powered some of the most prominent software products many of us use on a daily basis.
+When looking at community surrounding the language, I see many bright and curious individuals,
+willing to take a step in uncharted territories.
+That brings one word to mind - excitement.</p>
+<hr>
+<p><em>I would like to thank <a href="https://www.linkedin.com/in/rune-pedersen-80723b93/">Rune</a> and <a href="https://www.linkedin.com/in/nguyenvietyen/">Viet</a> who where generous enough to pre-read and give feedback on this
+work.</em></p>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">Read other posts</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="/posts/dataops/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">DataOps</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="/posts/year_toughenup/">
+                  <span class="button__text">2020</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+        
+
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2022 Alexander Zafirov</span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+      
+    </div>
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-77368278-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    
+  </body>
+</html>
