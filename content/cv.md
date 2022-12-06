@@ -1,6 +1,7 @@
 +++ title = "Curriculum Vitae"
 +++
 
+- [Expanding technical leadership through high degree of hands-on](#expanding-technical-leadership-through-high-degree-of-hands-on)
 - [Focus on strategy](#focus-on-strategy)
     - [Lead Data Engineer, R&D Data and Analytics at Leo Pharma](#lead-data-engineer-rd-data-and-analytics-at-leo-pharma)
 - [Technical proficiency, a bit of strategy](#technical-proficiency-a-bit-of-strategy)
@@ -16,6 +17,35 @@
     - [Freelance developer](#freelance-developer)
     - [Software Developer at Abas Business Solutions Bulgaria Ltd.](#software-developer-at-abas-business-solutions-bulgaria-ltd)
     - [Teaching assistant at Technical University of Sofia](#teaching-assistant-at-technical-university-of-sofia)
+
+# Expanding technical leadership through high degree of hands-o
+
+_Aug 2022 - Present_
+
+## Lead Engineer at Logpoint
+
+Strategic contributions:
+
+- due diligence - necessary due to investor assessment, includes initial work on gaining visibility into developer productivity through DORA metrics
+- adoption of code coverage
+- adoption of Architecture Decision Records
+
+Individual contributions:
+
+- Enrichment service - a service that provides the cloud counterpart of Logpoint's on-premise VM, the ability to enrich logs from data coming from on-premise hosts. 
+
+Technologies:
+
+- Cloud - AWS
+- Databases - PostgreSQL
+- Services
+  - Typelevel (Scala)
+  - AWS Lambda (Python)
+- CI - GitLab CI
+- API spec - OpenAPI
+- Infrastructure-as-Code - Terraform
+- Container orchestration - ECS
+- Monitoring - AWS CloudWatch
 
 # Focus on strategy
 
@@ -66,7 +96,7 @@ Technologies:
 - Databases - PostgreSQL
 - Process orchestration - Azure Data Factory
 - Processing framework - Apache Spark (Python, Pandas), Delta Live Tables
-- Infrastructure orchestration - Terraform
+- Infrastructure-as-Code - Terraform
 - Container orchestration - Kubernetes, Azure App Service
 - Data Catalog - Azure Purview, Collibra
 - Data Warehouse - Snowflake, Delta Lake
@@ -159,7 +189,7 @@ Strategic contributions:
 Technologies:
 
 - Processing framework - Apache Spark (Scala)
-- Microservices/Libs - Spring Boot (Scala), ScalaTest, Mockito,
+- Microservices/Libs - Spring Boot (Scala), ScalaTest, Mockito
 - Monitoring - ElasticSearch, Kibana
 - CI - Jenkins 2.0
 - Event bus - Apache Kafka, AWS Kinesis
