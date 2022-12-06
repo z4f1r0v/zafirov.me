@@ -39,13 +39,14 @@ Technologies:
 
 - Cloud - AWS
 - Databases - PostgreSQL
+- Blob store - AWS S3
 - Service stack
   - Typelevel (Scala)
   - AWS Lambda (Python)
 - CI - GitLab CI
 - API spec - OpenAPI
 - Infrastructure-as-Code - Terraform
-- Container orchestration - ECS
+- Container orchestration - AWS ECS
 - Monitoring - AWS CloudWatch
 
 # Focus on strategy
