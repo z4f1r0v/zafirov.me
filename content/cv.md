@@ -18,7 +18,7 @@
     - [Software Developer at Abas Business Solutions Bulgaria Ltd.](#software-developer-at-abas-business-solutions-bulgaria-ltd)
     - [Teaching assistant at Technical University of Sofia](#teaching-assistant-at-technical-university-of-sofia)
 
-# Expanding technical leadership through high degree of hands-o
+# Expanding technical leadership through high degree of hands-on
 
 _Aug 2022 - Present_
 
