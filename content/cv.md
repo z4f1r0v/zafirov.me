@@ -33,7 +33,7 @@ Strategic contributions:
 
 Individual contributions:
 
-- Enrichment service - a service that provides the cloud counterpart of Logpoint's on-premise VM, the ability to enrich logs from data coming from on-premise hosts. 
+- Enrichment Sharing - a service that provides the cloud counterpart of Logpoint's on-premise VM, the ability to enrich logs from data coming from on-premise hosts. 
 
 Technologies:
 
