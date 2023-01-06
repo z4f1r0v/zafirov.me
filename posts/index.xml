@@ -6,7 +6,16 @@
     <description>Recent content in Posts on ./side_effects.sh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022</title>
+      <link>/posts/being_mortal/</link>
+      <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/being_mortal/</guid>
+      <description>This is my story of 2022. The story of how in the span of two weeks, I went from the best version of myself to someone I barely recognized. That and the experiences following. This story has been unfolding since the beginning of the year. It still is. I feel that I&amp;rsquo;m ready to talk about it now. Primarily, because I have achieved some milestones I set for myself. Also, because enough time has passed to put this journey in the long haul category.</description>
+    </item>
+    
     <item>
       <title>DataOps</title>
       <link>/posts/dataops/</link>
