@@ -6,6 +6,8 @@ then
     exit 1;
 fi
 
+rsync -av --delete "/Users/aza/Library/Mobile Documents/iCloud~md~obsidian/Documents/digital_brain/Blog/" '/Users/aza/workspace/mine/zafirov.me/content'
+
 echo "Deleting old publication"
 rm -rf public
 mkdir public
