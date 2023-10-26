@@ -19,7 +19,7 @@
     - [Software Developer at Abas Business Solutions Bulgaria Ltd.](#software-developer-at-abas-business-solutions-bulgaria-ltd)
     - [Teaching assistant at Technical University of Sofia](#teaching-assistant-at-technical-university-of-sofia)
 
-# Expanding technical leadership through high degree of hands-on
+# Expanding technical leadership through high degree of hands-on work
 
 _Aug 2022 - Present_
 
@@ -30,6 +30,12 @@ Strategic contributions:
 - due diligence - necessary due to investor assessment, includes initial work on gaining visibility into developer productivity through DORA metrics
 - adoption of code coverage
 - adoption of Architecture Decision Records
+- optimization of customer onboarding process - the aim of the project was to cut down on the time it takes to onboard customers so eventually they can try Logpoint with a single click. I performed the initial scoping of the problem, and broke it down into tasks split in low-hanging fruits and bigger workitems
+- native cloud log ingestion - the goal of the project was to make Logpoint appealing to cloud-native customers. I lead the team by:
+	- splitting the solutions into a stopgap and a strategic - a stopgap solution would allow Logpoint to onboard customers before they were ready with its strategic counterpart
+	- helped assemble a "Cloud Fetchers" team - one part of the strategic solution was retrieving data from cloud sources. I assisted in building a cross-organizational team spread across EU and Asia.
+	- crafted the roadmap for the "Cloud Fetchers" project
+	- contributed source code, Jira stories and documentation to capture learnings and architecture decisions
 
 Individual contributions:
 
@@ -38,16 +44,16 @@ Individual contributions:
 Technologies:
 
 - Cloud - AWS
-- Databases - PostgreSQL
+- Databases - PostgreSQL, MongoDB
 - Blob store - AWS S3
 - Service stack
-  - Typelevel (Scala)
-  - AWS Lambda (Python)
+	- Typelevel (Scala)
+	- AWS Lambda (Python)
 - CI - GitLab CI
 - API spec - OpenAPI
 - Infrastructure-as-Code - Terraform
-- Container orchestration - AWS ECS
-- Monitoring - AWS CloudWatch
+- Container orchestration - AWS ECS, Fargate
+- Monitoring - AWS CloudWatch, Grafana
 
 # Focus on strategy
 
@@ -81,16 +87,13 @@ Individual contributions:
 
 - Feasibility Recommendation Engine - took part in implementing a data pipeline for the use-case that allows to preserve
   corporate memory when accessing the feasibility of clinics chosen for trials of new drugs
-- MLOps platform - part of a team building a Kubernetes-backed platform that gives data scientists and statisticians a
-  service were they can deploy and monitor ML deployments at scale
-- Sample Catalogue - took part in implementing a data pipeline for an application, which enables the user to search and
-  inspect various samples from across the "Research" part of the organization
+- MLOps platform - part of a team building a Kubernetes-backed platform that gives data scientists and statisticians a service were they can deploy and monitor ML deployments at scale
+- Sample Catalogue - took part in implementing a data pipeline for an application, which enables the user to search and inspect various samples from across the "Research" part of the organization
 - Snowflake governance
-    - worked on defining roles and privileges implemented using the Snowflake governance model
-    - set up SSO with AAD
-    - orchestration done via Terraform
-- AlphaFold setup - using Azure Machine Learning to help "Research and Early Development" use state-of-the-art Deep
-  Learning in order to predict protein’s 3D structure from its amino acid sequence
+	- worked on defining roles and privileges implemented using the Snowflake governance model
+	- set up SSO with AAD
+	- orchestration done via Terraform
+- AlphaFold setup - using Azure Machine Learning to help "Research and Early Development" use state-of-the-art Deep Learning in order to predict protein’s 3D structure from its amino acid sequence
 
 Technologies:
 
