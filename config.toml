@@ -3,16 +3,6 @@ languageCode = "en-us"
 theme = "hello"
 paginate = 1000000
 
-[params]
-  # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
-  # "light" or "dark"
-  defaultTheme = "dark"
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 4
-  # Show reading time in minutes for posts
-  showReadingTime = false
-
 [languages]
   [languages.en]
     title = "./side_effects.sh"
@@ -29,12 +19,19 @@ paginate = 1000000
     dateFormatSingle = "2006-01-02"
     dateFormatList = "2006-01-02"
     googleAnalytics = "UA-77368278-1"
-    # leave empty to disable, enter display text to enable
-    # lastModDisplay = ""
+    [languages.en.params]
+      # dir name of your blog content (default is `content/posts`)
+      contentTypeName = "posts"
+      # "light" or "dark"
+      defaultTheme = "dark"
+      # if you set this to 0, only submenu trigger will be visible
+      showMenuItems = 4
+      # Show reading time in minutes for posts
+      showReadingTime = false
 
-    [languages.en.params.logo]
-      logoText = "./side_effects.sh"
-      logoHomeLink = "/"
+      [languages.en.params.logo]
+        logoText = "./side_effects.sh"
+        logoHomeLink = "/"
     # or
     #
     # path = "/img/your-example-logo.svg"
