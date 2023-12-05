@@ -39,7 +39,10 @@ Strategic contributions:
 
 Individual contributions:
 
-- Enrichment Sharing - a service that provides the cloud counterpart of Logpoint's on-premise VM, the ability to enrich logs from data coming from on-premise hosts. 
+- Enrichment Sharing - a service that provides the cloud counterpart of Logpoint's on-premise VM the ability to enrich logs from data coming from on-premise hosts
+- Cloud Fetchers 
+	- Fetcher Engine - platform for running a Fetcher by receiving configuration via a Rest API, scheduling work, carrying it out and forwarding the resulting logs to downstream consumers
+	- Fetchers - a specific implementation that runs on the aforementioned platform which extracts events from different platforms (e.g. AWS, Office365) and forward them 
 
 Technologies:
 
