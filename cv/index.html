@@ -43,6 +43,7 @@
 
 
 
+
   </head>
   <body class="dark-theme">
     <div class="container">
@@ -202,7 +203,13 @@
 </ul>
 <p>Individual contributions:</p>
 <ul>
-<li>Enrichment Sharing - a service that provides the cloud counterpart of Logpoint&rsquo;s on-premise VM, the ability to enrich logs from data coming from on-premise hosts.</li>
+<li>Enrichment Sharing - a service that provides the cloud counterpart of Logpoint&rsquo;s on-premise VM the ability to enrich logs from data coming from on-premise hosts</li>
+<li>Cloud Fetchers
+<ul>
+<li>Fetcher Engine - platform for running a Fetcher by receiving configuration via a Rest API, scheduling work, carrying it out and forwarding the resulting logs to downstream consumers</li>
+<li>Fetchers - a specific implementation that runs on the aforementioned platform which extracts events from different platforms (e.g. AWS, Office365) and forward them</li>
+</ul>
+</li>
 </ul>
 <p>Technologies:</p>
 <ul>
