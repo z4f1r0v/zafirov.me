@@ -14,7 +14,7 @@ paginate = 1000000
   showReadingTime = false
 
 [languages]
-  [languages.en]
+  [languages.en.params]
     title = "./side_effects.sh"
     subtitle = ""
     keywords = ""
