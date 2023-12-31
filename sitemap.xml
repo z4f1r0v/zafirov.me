@@ -3,18 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2022-12-31T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/being_mortal/</loc>
-    <lastmod>2022-12-31T00:00:00+00:00</lastmod>
+    <loc>/posts/year_redefinition/</loc>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2022-12-31T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/recap/</loc>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2022-12-31T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/thoughts/</loc>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/being_mortal/</loc>
     <lastmod>2022-12-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/dataops/</loc>
@@ -30,9 +36,6 @@
     <lastmod>2021-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/year_toughenup/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/recap/</loc>
     <lastmod>2020-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/fulfillment_tech/</loc>

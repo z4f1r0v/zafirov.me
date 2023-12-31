@@ -20,8 +20,7 @@
       <link>/posts/xmastree/</link>
       <pubDate>Thu, 29 Dec 2016 00:00:00 +0000</pubDate>
       <guid>/posts/xmastree/</guid>
-      <description>In the spirit of the Christmas and New Year&amp;rsquo;s festivities, I decided to share with you a short and fun recursive function that can warm your hearts. If not - hopefully it will warm your gray matter a bit.
-import scala.annotation.tailrec def xmasTree(height: Int): Unit = { @tailrec def xmasTree(n: Int, t: Int): Unit = { if (n == t) { println(&amp;#34; &amp;#34; * (t - n) + &amp;#34;*&amp;#34; * (1 + n * 2)) println(if (n == 1) &amp;#34; # &amp;#34; else if (n == 2) &amp;#34; # &amp;#34; else List.</description>
+      <description>In the spirit of the Christmas and New Year&amp;rsquo;s festivities, I decided to share with you a short and fun recursive function that can warm your hearts. If not - hopefully it will warm your gray matter a bit.&#xA;import scala.annotation.tailrec def xmasTree(height: Int): Unit = { @tailrec def xmasTree(n: Int, t: Int): Unit = { if (n == t) { println(&amp;#34; &amp;#34; * (t - n) + &amp;#34;*&amp;#34; * (1 + n * 2)) println(if (n == 1) &amp;#34; # &amp;#34; else if (n == 2) &amp;#34; # &amp;#34; else List.</description>
     </item>
     <item>
       <title>Working with nulls in Spark UDFs</title>
