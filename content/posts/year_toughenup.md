@@ -1,8 +1,10 @@
 ---
 title: "2020"
 date: 2020-12-30
-description: "A year to toughen up"
-tags: ["recap"]
+description: A year to toughen up
+tags:
+  - recap
+  - thoughts
 draft: false
 ---
 

@@ -1,8 +1,10 @@
 ---
 title: "2017"
 date: 2017-12-24
-description: "A year of challenges"
-tags: ["recap"]
+description: A year of challenges
+tags:
+  - recap
+  - thoughts
 draft: false
 ---
 

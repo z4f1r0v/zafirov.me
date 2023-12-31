@@ -1,8 +1,10 @@
 ---
 title: "2022"
 date: 2022-12-31
-description: "Feeling mortal for the first time"
-tags: ["thoughts"]
+description: Feeling mortal for the first time
+tags:
+  - thoughts
+  - recap
 draft: false
 ---
 
@@ -34,9 +36,9 @@ The last planned appointment with a doctor from all the ones I wanted to visit p
 
 Several months of quiet recovery (at last) where followed by another round of health issues - this time it was my hearing and my heart rate. Visiting the corresponding doctors confirmed what my family told me - I'm stressed. More unreasonably than not but I am. 
 
-With all of this being said, you must understand that I did my best. I tried almost all doctor profiles (all but a gynecologist) and came up with excellent grades. It is reassuring that all the hard work I did to put my body in an amazing state really did pay off. It is great to know that as a father, a husband, a son and a responsible adult desperately fighting to contain aging as a process that's taking place within their body.
+With all of this being said, you must understand that I did my best. I tried almost all doctor profiles (all but a gynaecologist) and came up with excellent grades. It is reassuring that all the hard work I did to put my body in an amazing state really did pay off. It is great to know that as a father, a husband, a son and a responsible adult desperately fighting to contain aging as a process that's taking place within their body.
 
-On the flip side - the fingers are still cold (diagnosis is Reynold's phenomenon) and body still experiences cracking and popping all around (diagnosis is "that's normal/it should go away"). Lower back still gets stiff form time to time and I am sure that I'm having some type of stress related condition.
+On the flip side - the fingers are still cold (diagnosis is Raynold's phenomenon) and body still experiences cracking and popping all around (diagnosis is "that's normal/it should go away"). Lower back still gets stiff form time to time and I am sure that I'm having some type of stress related condition.
 
 In the passed months, I opened up many times to people about he problems. I was lucky to see that some understood me and genuinely wanted to help. It has been beautiful to watch how many people were willing to listen to me and be considerate about my problems. The reality is that all of us are dealing with something. The question is whether we have the support system to handle what comes our way. Taking into account all that I have written above, I'd say the most important things are - positive mindset and a loving environment composed of family and friends.
 
