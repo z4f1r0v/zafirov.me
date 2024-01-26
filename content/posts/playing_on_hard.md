@@ -1,7 +1,7 @@
 ---
 title: Playing on “hard”
 date: 2024-01-26
-description: A year of (re)definition
+description: An inversion of a life's view point
 tags:
   - thoughts
 draft: false
