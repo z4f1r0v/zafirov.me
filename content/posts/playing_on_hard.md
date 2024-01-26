@@ -1,7 +1,7 @@
 ---
 title: Playing on “hard”
 date: 2024-01-26
-description: An inversion of a life's view point
+description: An inversion of a life's viewpoint
 tags:
   - thoughts
 draft: false
