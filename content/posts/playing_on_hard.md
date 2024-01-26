@@ -1,6 +1,6 @@
 ---
 title: Playing on “hard”
-date: 2024-01-31
+date: 2024-01-26
 description: A year of (re)definition
 tags:
   - thoughts
