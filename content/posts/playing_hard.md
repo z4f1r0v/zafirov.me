@@ -16,6 +16,6 @@ So what is hardship if not playing (the game of life) on "hard"? Obviously, one 
 
 It must be stated that the game of life is mostly non-deterministic. That is, it's hard to predict the weather or how two people's bodies react to the same decease. However, the perception of those events is totally in the control of those observing them. That's were playing on "hard" comes in. Knowing that hardship (i.e. stress) is inevitable (and also needed for positive adaptation) and framing the problem from the perspective of doing something difficult (possibly not by choice), is rewarding, in my opinion.
 
-Playing on "hard" requires adaptation due to the constant change in the environment. Rooms with fixed temperature, stocked fridge, two cars per family, sedentary lifestyle, prepared food at work, takeaway home. Playing on "hard" is not a social norm right now. 
+Playing on "hard" requires adaptation due to the constant change in the environment. Rooms with fixed temperature, stocked fridge, two cars per family, sedentary lifestyle, prepared food at work, take away at home. Playing on "hard" is not a social norm right now. 
 
  Yet, it is a way of life for [some](https://youtu.be/nDLb8_wgX50?si=FkjPN_5u_H1us8J5&t=478).
