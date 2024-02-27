@@ -16,8 +16,8 @@ Listening David Goggins talk about his ability to switch off, makes me jealous. 
 
 When I made this realization, I knew it is actually possible to have these "mini vacations", these moments of effortless presence. What I needed to do is remind myself of how it feels to be on vacation and disengage from everything by actively paying attention to the matter at hand. If I'm driving, I hold on to the steering wheel, focus on the road, listen to some music and enjoy the ride provided by modern day vehicles. If I'm working out, I focus on the movement I perform, take in my surroundings, feel the air on my face, the dirt on my skin, the pulse of my heart. If I'm in the bus, I listen to the sounds of the engine, I look around at my co-passengers as well as the passing views. If I'm talking to someone, I put my phone away, I listen to what they say, I pay attention to their body language and their facial expressions.
 
-The point is, I am trying to be there and engage.
+The point is, I am trying to be there and engage. At least, that's how I imagine things should be.
 
 I'm sure that by now you, dear reader, guessed that all of this is aimed at control. Owning the remote to what is on in my head at any given moment. Being kind to myself and not living with regret over the would-haves. Understanding that now is the only time when I can perform an action other than rumination. 
 
-
+As many other things in my life, this undertaking is very much a work in progress. Still, distilling these thoughts in my small corner of the web already provides an approach to experiencing greater fulfilment in life. And that's already a lot.
