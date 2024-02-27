@@ -20,4 +20,4 @@ The point is, I am trying to be there and engage. At least, that's how I imagine
 
 I'm sure that by now you, dear reader, guessed that all of this is aimed at control. Owning the remote to what is on in my head at any given moment. Being kind to myself and not living with regret over the would-haves. Understanding that now is the only time when I can perform an action other than rumination. 
 
-As many other things in my life, this undertaking is very much a work in progress. Still, distilling these thoughts in my small corner of the web already provides an approach to experiencing greater fulfilment in life. And that's already a lot.
+As many other things in my life, this undertaking is very much a work in progress. Still, distilling these thoughts in my small corner of the web provides one approach to experiencing greater fulfilment in life. And that's already a lot.
