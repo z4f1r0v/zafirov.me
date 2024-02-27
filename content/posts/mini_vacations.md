@@ -1,6 +1,6 @@
 ---
 title: Mini vacations
-date: 2024-02-28
+date: 2024-02-27
 description: Enabling the ultimate switch
 tags:
   - thoughts
