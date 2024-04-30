@@ -50,8 +50,8 @@ Technologies:
 - Databases - PostgreSQL, MongoDB
 - Blob store - AWS S3
 - Service stack
-	- Typelevel (Scala)
-	- AWS Lambda (Python)
+	- Scala - Typelevel stack
+	- Python - Flask, WSGI
 - CI - GitLab CI
 - API spec - OpenAPI
 - Infrastructure-as-Code - Terraform
