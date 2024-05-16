@@ -23,7 +23,7 @@ The results from this adjustment are quite telling:
 - resting heart rate is stable
 - emotional state is stable
 
-If I didn't have my one and only rule to guide me, I'd say that this would've been sufficient. Of course, that is not the case with me. So I kept an open mind and I was rewarded with [this](https://youtu.be/1PkshTBkWZ8?si=iCvDnWucqMaJLzXL)video. I have explored the essence of what Jessie talks about. Even though I fail to see the connection she makes between some topics, I was curious to play. So I went ahead and implemented the easiest rule of them all - start every meal with a veggie. 
+If I didn't have my one and only rule to guide me, I'd say that this would've been sufficient. Of course, that is not the case with me. So I kept an open mind and I was rewarded with [this](https://youtu.be/1PkshTBkWZ8?si=iCvDnWucqMaJLzXL) video. I have explored the essence of what Jessie talks about. Even though I fail to see the connection she makes between some topics, I was curious to play. So I went ahead and implemented the easiest rule of them all - start every meal with a veggie. 
 
 Due my new-found eating schedule, that felt quite easy to do. For a while I had no clue if that made any difference to how I felt or not. However, on days where I went for something sweet as the first thing I consumed for the day, I felt an immediate change. Primarily it was about how the blood in my body gets redistributed so that the food that has arrived is broken down and absorbed. I'm guessing that the sensitivity my system has developed towards glucose has increased.
 
