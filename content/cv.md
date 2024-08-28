@@ -27,33 +27,52 @@ _Aug 2022 - Present_
 
 Strategic contributions:
 
-- due diligence - necessary due to investor assessment, includes initial work on gaining visibility into developer productivity through DORA metrics
-- adoption of code coverage
-- adoption of Architecture Decision Records
-- optimization of customer onboarding process - the aim of the project was to cut down on the time it takes to onboard customers so eventually they can try Logpoint with a single click. I performed the initial scoping of the problem, and broke it down into tasks split in low-hanging fruits and bigger workitems
-- native cloud log ingestion - the goal of the project was to make Logpoint appealing to cloud-native customers. I lead the team by:
-	- splitting the solutions into a stopgap and a strategic - a stopgap solution would allow Logpoint to onboard customers before they were ready with its strategic counterpart
-	- helped assemble a "Cloud Fetchers" team - one part of the strategic solution was retrieving data from cloud sources. I assisted in building a cross-organizational team spread across EU and Asia.
-	- crafted the roadmap for the "Cloud Fetchers" project
-	- contributed source code, Jira stories and documentation to capture learnings and architecture decisions
+- Due Diligence - necessary due to investor assessment, includes initial work on gaining visibility into developer productivity through DORA metrics
+- Adoption of code coverage
+- Adoption of Architecture Decision Records
+- Optimization of customer onboarding process - the aim of the project was to cut down on the time it takes to onboard customers so eventually they can try Logpoint with a single click. I performed the initial scoping of the problem, and broke it down into tasks split in low-hanging fruits and bigger workitems
+- Native Cloud Log Ingestion
+	- goal - make Logpoint appealing to cloud-native customers
+	- contributions
+		- splitting the solutions into a stopgap and a strategic - a stopgap solution would allow Logpoint to onboard customers before they were ready with its strategic counterpart
+		- helped assemble a "Cloud Fetchers" team - one part of the strategic solution was retrieving data from cloud sources. I assisted in building a cross-organizational team spread across EU and Asia.
+		- crafted the roadmap for the "Cloud Fetchers" project
+		- contributed source code, Jira stories and documentation to capture learnings and architecture decisions
+- Centralized Management
+	- goal - give Logpoint customers the ability to access their SIEM installation in the cloud regardless if it was a cloud or on-premise installation
+	- contributions
+		- crafting product roadmap with Product and UX
+		- internal recruiting for staffing the team
+		- contributed source code, Jira stories and documentation to capture learnings and architecture decisions 
 
 Individual contributions:
 
-- Enrichment Sharing - a service that provides the cloud counterpart of Logpoint's on-premise VM the ability to enrich logs from data coming from on-premise hosts
+- Enrichment Sharing Service
+	- provides the cloud VMs with the ability to enrich logs with data coming from on-premise installations
 - Cloud Fetchers 
-	- Fetcher Engine - platform for running a Fetcher by receiving configuration via a Rest API, scheduling work, carrying it out and forwarding the resulting logs to downstream consumers
-	- Fetchers - a specific implementation that runs on the aforementioned platform which extracts events from different platforms (e.g. AWS, Office365)
-
+	- Fetcher Engine - platform for running a Fetcher by receiving configuration via a OpenAPI-based API, scheduling work, carrying it out and forwarding the resulting logs to downstream consumers
+	- Fetchers - specific implementations that run on the aforementioned platform tasked with extracting events from various log sources in the cloud (e.g. AWS, Office365)
+- Centralized Management
+	- Control plane 
+		- a multi-tenant cloud service which configures and observes the health of SIEM agents via OpAMP, and exposes that data via OpenAPI-based API for consumption by internal and external services
+	- SIEM agent 
+		- a lightweight executable meant for installation on on-prem SIEMs that receives configuration, and shares status with the control plane over OpAMP and configures the Tunnel client
+	- Tunnel client
+		- a lightweight executable configured by the SIEM agent which is meant to propagate gRPC-encoded HTTP requests coming from the Tunnel server to the SIEM web application
+	- Tunnel server
+		- a cloud service that receives incoming requests from frontend clients over HTTP and propagates them to the Tunnel client via gRPC
+	
 Technologies:
 
 - Cloud - AWS
 - Databases - PostgreSQL, MongoDB
 - Blob store - AWS S3
-- Service stack
+- Technologies
 	- Scala - Typelevel stack
 	- Python - Flask, WSGI
+	- Go 
 - CI - GitLab CI
-- API spec - OpenAPI
+- API design - OpenAPI, gRPC
 - Infrastructure-as-Code - Terraform
 - Container orchestration - AWS ECS, Fargate
 - Monitoring - AWS CloudWatch, Grafana
