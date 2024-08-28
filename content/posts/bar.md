@@ -4,7 +4,7 @@ date: 2024-08-09
 description: Bar
 tags:
   - thoughts
-draft: false
+draft: true
 ---
 If we can’t verify we have the same understanding of what colours are due to the Explanatory Gap and we change most cells every 7-10 years on average, 
 - https://youtu.be/evQsOFQju08?si=k9D2nZxpJw6GhmOv

@@ -4,7 +4,7 @@ date: 2024-06-30
 description: Bar
 tags:
   - thoughts
-draft: false
+draft: true
 ---
 I am on a quest for self-mastery. Every day during my waking hours I try to be better to myself and the others around me than the day before. As part of this exploration, in the past months the information sources that I consume keep presenting me with three fundamental and very powerful ideas. I would like to share them with you. Maybe they help you reflect on the difference between the image you have of yourself and reality.
 # Assume the other person's perspective
