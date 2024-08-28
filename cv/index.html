@@ -25,18 +25,19 @@
 <link rel="shortcut icon" href="/img/favicon.png">
 
 
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Curriculum Vitae">
-<meta name="twitter:description" content="Expanding technical leadership through high degree of hands-on Lead Engineer at Logpoint Focus on strategy Lead Data Engineer, R&amp;D Data and Analytics at Leo Pharma Technical proficiency, a bit of strategy Technical Lead, Advanced Analytics at TDC Net Senior Software Engineer at Dixa Expanding technical skills across the backend and data stack Platform Engineer at Infare Platform Engineer at Falcon.io Junior days Java Developer at WorldTicket A/S Side-hustle Java Developer Freelance developer Software Developer at Abas Business Solutions Bulgaria Ltd.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Curriculum Vitae">
+  <meta name="twitter:description" content="Expanding technical leadership through high degree of hands-on Lead Engineer at Logpoint Focus on strategy Lead Data Engineer, R&amp;D Data and Analytics at Leo Pharma Technical proficiency, a bit of strategy Technical Lead, Advanced Analytics at TDC Net Senior Software Engineer at Dixa Expanding technical skills across the backend and data stack Platform Engineer at Infare Platform Engineer at Falcon.io Junior days Java Developer at WorldTicket A/S Side-hustle Java Developer Freelance developer Software Developer at Abas Business Solutions Bulgaria Ltd.">
 
 
 
 <meta property="og:url" content="/cv/">
   <meta property="og:site_name" content="./side_effects.sh">
   <meta property="og:title" content="Curriculum Vitae">
-  <meta property="og:description" content="Expanding technical leadership through high degree of hands-on Lead Engineer at Logpoint Focus on strategy Lead Data Engineer, R&amp;amp;D Data and Analytics at Leo Pharma Technical proficiency, a bit of strategy Technical Lead, Advanced Analytics at TDC Net Senior Software Engineer at Dixa Expanding technical skills across the backend and data stack Platform Engineer at Infare Platform Engineer at Falcon.io Junior days Java Developer at WorldTicket A/S Side-hustle Java Developer Freelance developer Software Developer at Abas Business Solutions Bulgaria Ltd.">
+  <meta property="og:description" content="Expanding technical leadership through high degree of hands-on Lead Engineer at Logpoint Focus on strategy Lead Data Engineer, R&amp;D Data and Analytics at Leo Pharma Technical proficiency, a bit of strategy Technical Lead, Advanced Analytics at TDC Net Senior Software Engineer at Dixa Expanding technical skills across the backend and data stack Platform Engineer at Infare Platform Engineer at Falcon.io Junior days Java Developer at WorldTicket A/S Side-hustle Java Developer Freelance developer Software Developer at Abas Business Solutions Bulgaria Ltd.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-  <meta property="article:section" content="">
 
 
 
@@ -187,11 +188,14 @@
 <h2 id="lead-engineer-at-logpoint">Lead Engineer at Logpoint</h2>
 <p>Strategic contributions:</p>
 <ul>
-<li>due diligence - necessary due to investor assessment, includes initial work on gaining visibility into developer productivity through DORA metrics</li>
-<li>adoption of code coverage</li>
-<li>adoption of Architecture Decision Records</li>
-<li>optimization of customer onboarding process - the aim of the project was to cut down on the time it takes to onboard customers so eventually they can try Logpoint with a single click. I performed the initial scoping of the problem, and broke it down into tasks split in low-hanging fruits and bigger workitems</li>
-<li>native cloud log ingestion - the goal of the project was to make Logpoint appealing to cloud-native customers. I lead the team by:
+<li>Due Diligence - necessary due to investor assessment, includes initial work on gaining visibility into developer productivity through DORA metrics</li>
+<li>Adoption of code coverage</li>
+<li>Adoption of Architecture Decision Records</li>
+<li>Optimization of customer onboarding process - the aim of the project was to cut down on the time it takes to onboard customers so eventually they can try Logpoint with a single click. I performed the initial scoping of the problem, and broke it down into tasks split in low-hanging fruits and bigger workitems</li>
+<li>Native Cloud Log Ingestion
+<ul>
+<li>goal - make Logpoint appealing to cloud-native customers</li>
+<li>contributions
 <ul>
 <li>splitting the solutions into a stopgap and a strategic - a stopgap solution would allow Logpoint to onboard customers before they were ready with its strategic counterpart</li>
 <li>helped assemble a &ldquo;Cloud Fetchers&rdquo; team - one part of the strategic solution was retrieving data from cloud sources. I assisted in building a cross-organizational team spread across EU and Asia.</li>
@@ -200,13 +204,55 @@
 </ul>
 </li>
 </ul>
+</li>
+<li>Centralized Management
+<ul>
+<li>goal - give Logpoint customers the ability to access their SIEM installation in the cloud regardless if it was a cloud or on-premise installation</li>
+<li>contributions
+<ul>
+<li>crafting product roadmap with Product and UX</li>
+<li>internal recruiting for staffing the team</li>
+<li>contributed source code, Jira stories and documentation to capture learnings and architecture decisions</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <p>Individual contributions:</p>
 <ul>
-<li>Enrichment Sharing - a service that provides the cloud counterpart of Logpoint&rsquo;s on-premise VM the ability to enrich logs from data coming from on-premise hosts</li>
+<li>Enrichment Sharing Service
+<ul>
+<li>provides the cloud VMs with the ability to enrich logs with data coming from on-premise installations</li>
+</ul>
+</li>
 <li>Cloud Fetchers
 <ul>
-<li>Fetcher Engine - platform for running a Fetcher by receiving configuration via a Rest API, scheduling work, carrying it out and forwarding the resulting logs to downstream consumers</li>
-<li>Fetchers - a specific implementation that runs on the aforementioned platform which extracts events from different platforms (e.g. AWS, Office365)</li>
+<li>Fetcher Engine - platform for running a Fetcher by receiving configuration via a OpenAPI-based API, scheduling work, carrying it out and forwarding the resulting logs to downstream consumers</li>
+<li>Fetchers - specific implementations that run on the aforementioned platform tasked with extracting events from various log sources in the cloud (e.g. AWS, Office365)</li>
+</ul>
+</li>
+<li>Centralized Management
+<ul>
+<li>Control plane
+<ul>
+<li>a multi-tenant cloud service which configures and observes the health of SIEM agents via OpAMP, and exposes that data via OpenAPI-based API for consumption by internal and external services</li>
+</ul>
+</li>
+<li>SIEM agent
+<ul>
+<li>a lightweight executable meant for installation on on-prem SIEMs that receives configuration, and shares status with the control plane over OpAMP and configures the Tunnel client</li>
+</ul>
+</li>
+<li>Tunnel client
+<ul>
+<li>a lightweight executable configured by the SIEM agent which is meant to propagate gRPC-encoded HTTP requests coming from the Tunnel server to the SIEM web application</li>
+</ul>
+</li>
+<li>Tunnel server
+<ul>
+<li>a cloud service that receives incoming requests from frontend clients over HTTP and propagates them to the Tunnel client via gRPC</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -215,14 +261,15 @@
 <li>Cloud - AWS</li>
 <li>Databases - PostgreSQL, MongoDB</li>
 <li>Blob store - AWS S3</li>
-<li>Service stack
+<li>Technologies
 <ul>
 <li>Scala - Typelevel stack</li>
 <li>Python - Flask, WSGI</li>
+<li>Go</li>
 </ul>
 </li>
 <li>CI - GitLab CI</li>
-<li>API spec - OpenAPI</li>
+<li>API design - OpenAPI, gRPC</li>
 <li>Infrastructure-as-Code - Terraform</li>
 <li>Container orchestration - AWS ECS, Fargate</li>
 <li>Monitoring - AWS CloudWatch, Grafana</li>
